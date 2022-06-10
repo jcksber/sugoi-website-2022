@@ -1,4 +1,3 @@
-import NextHead from '../components/NextHead';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useEffect } from 'react';
@@ -11,7 +10,13 @@ export default function Home() {
         // on-render we want to trigger the "welcome animation"
     });
 
-    
+    return (
+        <div id="sugoi" className="max-w-full">
+
+            <h1>Hello World</h1>
+
+        </div>
+    )
 }
 
 

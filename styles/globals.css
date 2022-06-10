@@ -2,49 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	@font-face {
-		font-family: 'MoristonPersonal-Regular';
-		src: url('/fonts/MoristonPersonal-Regular.otf') format('opentype');
-	}
-	@font-face {
-		font-family: 'MoristonPersonal-Bold';
-		src: url('/fonts/MoristonPersonal-Bold.otf') format('opentype');
-	}
-	@font-face {
-		font-family: 'MoristonPersonal-Black';
-		src: url('/fonts/MoristonPersonal-Black.otf') format('opentype');
-	}
-	@font-face {
-		font-family: 'MoristonPersonal-Light';
-		src: url('/fonts/MoristonPersonal-Light.otf') format('opentype');
-	}
-	@font-face {
-		font-family: 'MoristonPersonal-Medium';
-		src: url('/fonts/MoristonPersonal-Medium.otf') format('opentype');
-	}
-	@font-face {
-		font-family: 'MoristonPersonal-SemiBold';
-		src: url('/fonts/MoristonPersonal-SemiBold.otf') format('opentype');
-	}
-}
+/**********************************************************
+ * TYPOGRAPHY
+ **********************************************************/
 
-@layer components {
-	.roadmap-card {
-		@apply rounded-xl bg-gray-roadmap-bg w-[250px] h-[250px] m-auto my-6 flex flex-col;
+@layer base {
+	/* KOSUGI MARU REGULAR (logo) */
+	@font-face {
+		font-family: 'KosugiMaru-Regular';
+		src: url('/fonts/KosugiMaru-Regular.ttf') format('truetype');
 	}
-	.roadmap-heading {
-		@apply bg-gray-roadmap-heading py-3 rounded-t-xl;
+
+	/* PALENT (headings) */
+	@font-face {
+		font-family: 'Palent-Regular';
+		src: url('/fonts/PalentRegular.ttf') format('truetype');
 	}
-	.roadmap-heading-text {
-		@apply text-xl text-yellow-main uppercase font-bold tracking-wide;
+	@font-face {
+		font-family: 'PalentItal-Italic';
+		src: url('/fonts/PalentItal-Italic.ttf') format('truetype');
 	}
-	.roadmap-divider {
-		@apply w-full h-2 bg-gray-roadmap-divider rounded-b-full;
+
+	/* ZEN OLD MINCHO */
+	@font-face {
+		font-family: 'ZenOldMincho-Regular';
+		src: url('/fonts/ZenOldMincho-Regular.ttf') format('truetype');
 	}
-	.roadmap-content {
-		max-width: 200px;
-		margin: auto auto;
+	@font-face {
+		font-family: 'ZenOldMincho-Bold';
+		src: url('/fonts/ZenOldMincho-Bold.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'ZenOldMincho-Black';
+		src: url('/fonts/ZenOldMincho-Black.ttf') format('truetype');
 	}
 }
 
@@ -120,9 +110,55 @@
 
 
 
+#sugoi {
+	position: absolute;
+	z-index: -1;
+	width: 100%; height: calc(100vh);
+	background-color: #f4f4f4;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @layer components {
+	.roadmap-card {
+		@apply rounded-xl bg-gray-roadmap-bg w-[250px] h-[250px] m-auto my-6 flex flex-col;
+	}
+	.roadmap-heading {
+		@apply bg-gray-roadmap-heading py-3 rounded-t-xl;
+	}
+	.roadmap-heading-text {
+		@apply text-xl text-yellow-main uppercase font-bold tracking-wide;
+	}
+	.roadmap-divider {
+		@apply w-full h-2 bg-gray-roadmap-divider rounded-b-full;
+	}
+	.roadmap-content {
+		max-width: 200px;
+		margin: auto auto;
+	}
+}
+
+
+*/
