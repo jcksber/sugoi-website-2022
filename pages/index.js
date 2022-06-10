@@ -4,6 +4,7 @@ import menuClose from '../public/img-assets.svg';
 import sugoiBanner from '../public/sugoi_banner.jpg';
 import takashiBg from '../public/placeholder2.jpg';
 import dottedLine from '../public/dot_line.png';
+import logikFlowers from '../public/placeholder1.png';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
@@ -28,6 +29,7 @@ export default function Home() {
 
     return (
         <div id="sugoi" className="max-w-full">
+            {/* nav bar / button */}
             <div id="nav-btn">
                 {/* 
                     onClick this button needs to retract the landing
@@ -54,6 +56,7 @@ export default function Home() {
                 */}
             </div>
 
+            {/* landing / hero section */}
             <div id="hero-menu">
                 <div className="hero-banner img-container">
                     <img src={sugoiBanner.src} />
@@ -67,7 +70,6 @@ export default function Home() {
                     ) :
                     (
                         <div className="closed">
-                            {/* this will simply be our landing page image (takashi) */}
                             <img src={takashiBg.src} />
                         </div>
                     )
@@ -76,7 +78,7 @@ export default function Home() {
                     <img src={sugoiBanner.src} />
                 </div>
             </div>
-            
+
             {/* sugoi by logik section  */}
             <div id="bylogik" className="section text-olive-green">
                 <h1 className="header">
@@ -100,6 +102,13 @@ export default function Home() {
                     </li>
                 </ul>
 
+                <a href="https://getjuice.today/sugoi" id="mint" className="bg-yellow">NEED A KEY? MINT HERE</a>
+                <a href="https://nftaccess.app/..." id="rsvp" className="bg-yellow">HAVE A KEY? RSVP HERE</a>
+                <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
+
+                <div id="logik-flowers" className="img-container">
+                    <img src={logikFlowers.src} />
+                </div>
             </div>
 
             <div className="dotted-line img-container">

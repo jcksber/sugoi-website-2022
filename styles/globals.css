@@ -127,7 +127,7 @@
 	position: relative;
 	width: 100%; min-height: 200px;
 	margin: 0 auto;
-	margin-top: 180px; margin-bottom: 100px;
+	margin-top: 160px; margin-bottom: 120px;
 	padding-left: 22.5%;
 	padding-right: 22.5%;
 }
@@ -158,7 +158,7 @@ ul.body {
 
 #sugoi {
 	position: absolute;
-	z-index: -1;
+	z-index: -10;
 	width: 100%; min-height: calc(100vh);
 	background-color: #f4f4f4;
 }
@@ -200,9 +200,41 @@ ul.body {
 	margin-top: 22px;
 }
 
+#bylogik > a {
+	position: relative;
+	margin-bottom: 15px;
+	width: 340px; height: 35px;
+	padding: 3px;
+	display: block;
+	text-align: center;
+	font-size: 1.15em;
+	font-family: 'KosugiMaru-Regular';
+	border: solid 1px #574a10;
+	border-radius: 10px;
+}
+#bylogik > a#mint {
+	margin-top: 45px;
+}
+#bylogik > a#digital-swag {
+	margin-bottom: 0;
+}
 
+#bylogik #logik-flowers {
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	width: 299px; height: 350px;
+	top: 240px; left: 580px;
+	border: solid 1px #574a10;
+	border-bottom-left-radius: 11em;
+	border-bottom-right-radius: 8em;
+	border-top-left-radius: 10em;
+	border-top-right-radius: 9em;
+}
 
+#bylogik #logik-flowers > img {
 
+}
 
 
 
