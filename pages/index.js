@@ -168,9 +168,9 @@ export default function Home() {
                         EVENT<br/>
                         SCHEDULE
                     </h1>
-                    <button id="day1" onClick={day1Clicked} className={ day1 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>DAY 1</button>
-                    <button id="day2" onClick={day2Clicked} className={ day2 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>DAY 2</button>
-                    <button id="day3" onClick={day3Clicked} className={ day3 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>DAY 3</button>
+                    <button id="day1" onClick={day1Clicked} className={ day1 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>TUES, JUNE 21</button>
+                    <button id="day2" onClick={day2Clicked} className={ day2 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>WED, JUNE 22</button>
+                    <button id="day3" onClick={day3Clicked} className={ day3 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>THUR, JUNE 23</button>
                 </div>
                 <div className="vh">
                     {day1 && !day2 && !day3 &&
@@ -270,7 +270,19 @@ export default function Home() {
             </div>
             {/* tickets and merch  */}
             <div id="tickets" className="section">
-                
+                <div className="vh">
+                    <h1 className="header text-olive-green">
+                        TICKETS<br/>
+                        AND<br/>
+                        MERCH
+                    </h1>
+                    <a href="https://getjuice.today/sugoi" id="mint" className="long-btn bg-yellow">NEED A KEY? MINT HERE</a>
+                    <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP HERE</a>
+                    <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
+                </div>
+                <div className="vh">
+                    
+                </div>
             </div>
 
             <div id="sponsors" className="section">

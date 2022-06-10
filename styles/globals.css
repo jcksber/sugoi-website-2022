@@ -379,10 +379,22 @@ ul.body {
 	margin-bottom: 12px;
 }
 
+/**********************************************************
+ * TICKETS & MERCH SECTION
+ **********************************************************/
 
+#tickets {
+	height: 650px;
+}
 
+#tickets h1.header {
+	text-align: right;
+	margin-bottom: 30px;
+}
 
-
+#tickets a.long-btn {
+	width: 100%;
+}
 
 
 
