@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'MoristonPersonal-Regular';
+		src: url('/fonts/MoristonPersonal-Regular.otf') format('opentype');
+	}
+	@font-face {
+		font-family: 'MoristonPersonal-Bold';
+		src: url('/fonts/MoristonPersonal-Bold.otf') format('opentype');
+	}
+	@font-face {
+		font-family: 'MoristonPersonal-Black';
+		src: url('/fonts/MoristonPersonal-Black.otf') format('opentype');
+	}
+	@font-face {
+		font-family: 'MoristonPersonal-Light';
+		src: url('/fonts/MoristonPersonal-Light.otf') format('opentype');
+	}
+	@font-face {
+		font-family: 'MoristonPersonal-Medium';
+		src: url('/fonts/MoristonPersonal-Medium.otf') format('opentype');
+	}
+	@font-face {
+		font-family: 'MoristonPersonal-SemiBold';
+		src: url('/fonts/MoristonPersonal-SemiBold.otf') format('opentype');
+	}
+}
+
+@layer components {
+	.roadmap-card {
+		@apply rounded-xl bg-gray-roadmap-bg w-[250px] h-[250px] m-auto my-6 flex flex-col;
+	}
+	.roadmap-heading {
+		@apply bg-gray-roadmap-heading py-3 rounded-t-xl;
+	}
+	.roadmap-heading-text {
+		@apply text-xl text-yellow-main uppercase font-bold tracking-wide;
+	}
+	.roadmap-divider {
+		@apply w-full h-2 bg-gray-roadmap-divider rounded-b-full;
+	}
+	.roadmap-content {
+		max-width: 200px;
+		margin: auto auto;
+	}
+}
+
+/**********************************************************
+ * COLORS
+ **********************************************************/
+
+/* LIGHT WHITE */
+.text-light-white {
+	color: #f3f3f3;
+}
+.bg-light-white {
+	background-color: #f3f3f3;
+}
+
+/* MEDIUM GREY */
+.text-medium-grey {
+	color: #d0cbbe;
+}
+.bg-medium-grey {
+	background-color: #d0cbbe;
+}
+
+/* OLIVE GREEN */
+.text-olive-green {
+	color: #574b07;
+}
+.bg-olive-green {
+	background-color: #574b07;
+}
+
+/* YELLOW */
+.text-yellow {
+	color: #ffff00;
+}
+.bg-yellow {
+	background-color: #ffff00;
+}
+
+/* PEACH */
+.text-peach {
+	color: #ffd486;
+}
+.bg-peach {
+	background-color: #ffd486;
+}
+
+/* DARK GREY */
+.text-dark-grey {
+	color: #494636;
+}
+.bg-dark-grey {
+	background-color: #494636;
+}
+
+/* BLACK */
+.text-black {
+	color: #000000;
+}
+.bg-black {
+	background-color: #000000;
+}
+
+/* ORANGE */
+.text-orange {
+	color: #ff9800;
+}
+.bg-orange {
+	background-color: #ff9800;
+}
+
+
+
+
+
+
+
+
+
+
+
