@@ -1,4 +1,5 @@
 import ArtistCarousel from '../components/ArtistCarousel';
+import PanelistCarousel from '../components/PanelistCarousel';
 
 import Image from 'next/image';
 import menuOpen from '../public/menu-open.svg';
@@ -98,13 +99,11 @@ export default function Home() {
                     AT NFT NYC 2022,<br/>
                     JUNE 20-23
                 </h1>
-
                 <h5 id="location" className="sub-header text-olive-green">LOCATION</h5>
                 <ul className="body text-olive-green">
                     <li>THE MODE, 65 Jay St</li>
                     <li>Brooklyn, NY 11201</li>
                 </ul>
-
                 <h5 id="details" className="sub-header text-olive-green">DETAILS</h5>
                 <ul className="body text-olive-green">
                     <li>
@@ -113,11 +112,9 @@ export default function Home() {
                         something games, continue
                     </li>
                 </ul>
-
                 <a href="https://getjuice.today/sugoi" id="mint" className="long-btn bg-yellow">NEED A KEY? MINT HERE</a>
                 <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP HERE</a>
                 <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
-
                 <div id="logik-flowers" className="img-container">
                     <img src={logikFlowers.src} />
                 </div>
@@ -126,20 +123,12 @@ export default function Home() {
             <div className="dotted-line img-container">
                 <img src={dottedLine.src} />
             </div>
-            {/* featured artists section (has gradient) */}
+            {/* featured artists section */}
             <div id="artists" className="section text-olive-green">
                 <h1 className="header">FEATURING</h1>
-
-                <button id="view-artists" className="long-btn bg-yellow">VIEW ARTISTS</button>
-                <button id="view-panelists" className="long-btn bg-peach">VIEW PANELISTS</button>
-                {viewArtists ?
-                    (
-                        <ArtistCarousel />
-                    ) :
-                    (
-                        <PanelistCarousel />
-                    )
-                }
+                <button id="view-artists" onClick={viewArtistsClicked} className={ viewArtists ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>VIEW ARTISTS</button>
+                <button id="view-panelists" onClick={viewPanelistsClicked} className={ viewArtists ? 'long-btn bg-peach' : 'long-btn bg-yellow'}>VIEW PANELISTS</button>
+                { viewArtists ? (<ArtistCarousel />) : (<PanelistCarousel />) }
             </div>
 
             <div className="dotted-line img-container">
