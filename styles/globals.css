@@ -19,7 +19,7 @@
 		src: url('/fonts/PalentRegular.ttf') format('truetype');
 	}
 	@font-face {
-		font-family: 'PalentItal-Italic';
+		font-family: 'Palent-Italic';
 		src: url('/fonts/PalentItal-Italic.ttf') format('truetype');
 	}
 
@@ -60,10 +60,10 @@
 
 /* OLIVE GREEN */
 .text-olive-green {
-	color: #574b07;
+	color: #574a10;
 }
 .bg-olive-green {
-	background-color: #574b07;
+	background-color: #574a10;
 }
 
 /* YELLOW */
@@ -107,18 +107,98 @@
 }
 
 
+.img-container > img {
+	width: 100%; height: 100%;
+	margin: 0; padding: 0;
+}
 
+.dotted-line {
+	position: relative;
+	display: block;
+	margin: 0 auto; padding: 0;
+}
+.img-container.dotted-line > img {
+	position: relative;
+	left: 20%;
+	width: 60%;
+}
+
+.section {
+	position: relative;
+	width: 100%; min-height: 200px;
+	margin: 0 auto;
+	margin-top: 180px; margin-bottom: 100px;
+	padding-left: 22.5%;
+	padding-right: 22.5%;
+}
+
+.header {
+	font-family: 'Palent-Regular';
+}
+.sub-header {
+	font-family: 'Palent-Italic';
+}
+.body {
+	font-family: 'ZenOldMincho-Regular';
+}
+ul.body {
+	line-height: 23px;
+}
+
+.section h1.header {
+	font-size: 4em;
+	line-height: 59px;
+}
+
+.section h5.sub-header {
+	font-size: 1.1em;
+	line-height: 20px;
+}
 
 
 #sugoi {
 	position: absolute;
 	z-index: -1;
-	width: 100%; height: calc(100vh);
+	width: 100%; min-height: calc(100vh);
 	background-color: #f4f4f4;
 }
 
+/**********************************************************
+ * HERO SECTION
+ **********************************************************/
 
+/* NAV BAR */
+#sugoi #nav-btn {
+	position: relative;
+	width: 100%; height: 66px;
+	padding: 7px;
+	margin: 0;
+}
 
+/* NAV MENU & PLACEHOLDER IMG */
+#sugoi #hero-menu {
+	position: relative;
+	width: 100%; height: 500px;
+	margin-top: 20px;
+}
+
+#sugoi #hero-menu .closed {
+	display: block;
+	width: 100%; height: 500px;
+	overflow: hidden;
+}
+
+/**********************************************************
+ * BY LOGIK SECTION
+ **********************************************************/
+
+#bylogik h5#location {
+	margin-top: 50px;
+}
+
+#bylogik h5#details {
+	margin-top: 22px;
+}
 
 
 
