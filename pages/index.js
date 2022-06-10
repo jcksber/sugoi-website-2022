@@ -1,3 +1,5 @@
+import ArtistCarousel from '../components/ArtistCarousel';
+
 import Image from 'next/image';
 import menuOpen from '../public/menu-open.svg';
 import menuClose from '../public/img-assets.svg';
@@ -14,6 +16,7 @@ config.autoAddCss = false;
 export default function Home() {
 
     const [menuShown, setMenuShown] = useState(false);
+    const [viewArtists, setViewArtists] = useState(true);
 
     useEffect(() => {
         // on-render we want to trigger the "welcome animation"
@@ -26,6 +29,15 @@ export default function Home() {
             setMenuShwon(true);
         }
     };
+
+    const viewArtistsClicked = async () => {
+        if (!viewArtists)
+            setViewArtists(true);
+    }
+    const viewPanelistsClicked = async () => {
+        if (viewArtists)
+            setViewArtists(false);
+    }
 
     return (
         <div id="sugoi" className="max-w-full">
@@ -102,9 +114,9 @@ export default function Home() {
                     </li>
                 </ul>
 
-                <a href="https://getjuice.today/sugoi" id="mint" className="bg-yellow">NEED A KEY? MINT HERE</a>
-                <a href="https://nftaccess.app/..." id="rsvp" className="bg-yellow">HAVE A KEY? RSVP HERE</a>
-                <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
+                <a href="https://getjuice.today/sugoi" id="mint" className="long-btn bg-yellow">NEED A KEY? MINT HERE</a>
+                <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP HERE</a>
+                <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
 
                 <div id="logik-flowers" className="img-container">
                     <img src={logikFlowers.src} />
@@ -115,8 +127,19 @@ export default function Home() {
                 <img src={dottedLine.src} />
             </div>
             {/* featured artists section (has gradient) */}
-            <div id="artists" className="section">
-                
+            <div id="artists" className="section text-olive-green">
+                <h1 className="header">FEATURING</h1>
+
+                <button id="view-artists" className="long-btn bg-yellow">VIEW ARTISTS</button>
+                <button id="view-panelists" className="long-btn bg-peach">VIEW PANELISTS</button>
+                {viewArtists ?
+                    (
+                        <ArtistCarousel />
+                    ) :
+                    (
+                        <PanelistCarousel />
+                    )
+                }
             </div>
 
             <div className="dotted-line img-container">

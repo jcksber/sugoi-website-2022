@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 /**********************************************************
  * TYPOGRAPHY
@@ -76,10 +77,10 @@
 
 /* PEACH */
 .text-peach {
-	color: #ffd486;
+	color: #ffd38b;
 }
 .bg-peach {
-	background-color: #ffd486;
+	background-color: #ffd38b;
 }
 
 /* DARK GREY */
@@ -127,7 +128,7 @@
 	position: relative;
 	width: 100%; min-height: 200px;
 	margin: 0 auto;
-	margin-top: 160px; margin-bottom: 120px;
+	margin-top: 110px; margin-bottom: 120px;
 	padding-left: 22.5%;
 	padding-right: 22.5%;
 }
@@ -154,7 +155,6 @@ ul.body {
 	font-size: 1.1em;
 	line-height: 20px;
 }
-
 
 #sugoi {
 	position: absolute;
@@ -192,6 +192,10 @@ ul.body {
  * BY LOGIK SECTION
  **********************************************************/
 
+#bylogik {
+	margin-top: 160px;
+}
+
 #bylogik h5#location {
 	margin-top: 50px;
 }
@@ -200,7 +204,7 @@ ul.body {
 	margin-top: 22px;
 }
 
-#bylogik > a {
+.long-btn {
 	position: relative;
 	margin-bottom: 15px;
 	width: 340px; height: 35px;
@@ -209,9 +213,15 @@ ul.body {
 	text-align: center;
 	font-size: 1.15em;
 	font-family: 'KosugiMaru-Regular';
+	color: #574a10;
 	border: solid 1px #574a10;
 	border-radius: 10px;
+	box-shadow: 0px 0px 8px -4px #574a10;
 }
+.long-btn:hover {
+	opacity: 0.85;
+}
+
 #bylogik > a#mint {
 	margin-top: 45px;
 }
@@ -232,10 +242,77 @@ ul.body {
 	border-top-right-radius: 9em;
 }
 
-#bylogik #logik-flowers > img {
+/**********************************************************
+ * FEATURED ARTISTS SECTION
+ **********************************************************/
 
+#artists {
+	height: 700px;
+	margin-bottom: 0;
+	padding: 0;
+	text-align: center;
+	background: linear-gradient(180deg, rgba(244,244,244,1) 0%, rgba(255,211,139,0.6) 50%, rgba(244,244,244,1) 100%);
 }
 
+#artists > h1 {
+	margin-bottom: 26px;
+}
+
+#artists .long-btn {
+	display: inline-block;
+	margin: 0 auto;
+}
+#artists #view-artists.long-btn {
+	margin-right: 15px;
+}
+
+.alice-carousel {
+	/* override */
+	margin-top: 90px !important;
+}
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+	/* override */
+	display: none !important;
+}
+.caro-card {
+	width: 200px;
+	height: 300px;
+	display: inline-block;
+	background-color: #f4f4f4;
+	border-radius: 9px;
+	border: solid 1px #494637;
+}
+
+.caro-card > .img-container {
+	position: relative;
+	height: 190px;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	overflow: hidden;
+	/*temporary!*/
+	background-color: #494637;
+}
+
+.caro-card > h5 {
+	margin-top: 14px;
+}
+
+.caro-card > p {
+	font-size: 0.92em;
+}
+
+.caro-card > a {
+	position: relative;
+	top: 20px;
+}
+.caro-card > a:hover {
+	opacity: 0.9;
+}
+
+.caro-card > a:first-of-type {
+	margin-right: 16px;
+}
 
 
 
