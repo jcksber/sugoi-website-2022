@@ -101,12 +101,15 @@
 
 /* ORANGE */
 .text-orange {
-	color: #ff9800;
+	color: #ff9700;
 }
 .bg-orange {
-	background-color: #ff9800;
+	background-color: #ff9700;
 }
 
+/**********************************************************
+ * GENERAL STYLES
+ **********************************************************/
 
 .img-container > img {
 	width: 100%; height: 100%;
@@ -133,6 +136,12 @@
 	padding-right: 22.5%;
 }
 
+.section > .vh {
+	width: 49%;
+	padding-left: 20px; padding-right: 20px;
+	float: left;
+}
+
 .header {
 	font-family: 'Palent-Regular';
 }
@@ -154,6 +163,39 @@ ul.body {
 .section h5.sub-header {
 	font-size: 1.1em;
 	line-height: 20px;
+}
+
+.long-btn {
+	position: relative;
+	margin-bottom: 15px;
+	width: 340px; height: 35px;
+	padding: 3px;
+	display: block;
+	text-align: center;
+	font-size: 1.15em;
+	font-family: 'KosugiMaru-Regular';
+	color: #574a10;
+	border: solid 1px #574a10;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px -4px #574a10;
+}
+.short-btn {
+	position: relative;
+	margin-bottom: 15px;
+	width: 170px; height: 35px;
+	padding: 3px;
+	display: block;
+	text-align: center;
+	font-size: 1.15em;
+	font-family: 'KosugiMaru-Regular';
+	color: #574a10;
+	border: solid 1px #574a10;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px -4px #574a10;
+}
+.long-btn:hover,
+.short-btn:hover {
+	opacity: 0.85;
 }
 
 #sugoi {
@@ -202,24 +244,6 @@ ul.body {
 
 #bylogik h5#details {
 	margin-top: 22px;
-}
-
-.long-btn {
-	position: relative;
-	margin-bottom: 15px;
-	width: 340px; height: 35px;
-	padding: 3px;
-	display: block;
-	text-align: center;
-	font-size: 1.15em;
-	font-family: 'KosugiMaru-Regular';
-	color: #574a10;
-	border: solid 1px #574a10;
-	border-radius: 10px;
-	box-shadow: 0px 0px 8px -4px #574a10;
-}
-.long-btn:hover {
-	opacity: 0.85;
 }
 
 #bylogik > a#mint {
@@ -313,6 +337,52 @@ ul.body {
 .caro-card > a:first-of-type {
 	margin-right: 16px;
 }
+
+/**********************************************************
+ * EVENT SCHEDULE SECTION
+ **********************************************************/
+
+#events {
+	height: 660px;
+}
+
+#events h1.header {
+	text-align: right;
+	margin-bottom: 30px;
+}
+
+#events button.short-btn {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+}
+
+#events div.vh:last-of-type {
+	position: relative;
+	height: 600px;
+}
+
+#events h3.event-header {
+	margin-top: 25px;
+	color: #ff9700;
+	font-size: 1.6em;
+	font-family: 'Palent-Regular';
+}
+
+#events h5.sub-header,
+#events p.body {
+	color: #494637;
+}
+
+#events p.body {
+	font-size: 0.8em;
+	margin-bottom: 12px;
+}
+
+
+
+
+
 
 
 

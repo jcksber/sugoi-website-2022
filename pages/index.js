@@ -18,6 +18,9 @@ export default function Home() {
 
     const [menuShown, setMenuShown] = useState(false);
     const [viewArtists, setViewArtists] = useState(true);
+    const [day1, setDay1] = useState(true);
+    const [day2, setDay2] = useState(false);
+    const [day3, setDay3] = useState(false);
 
     useEffect(() => {
         // on-render we want to trigger the "welcome animation"
@@ -26,8 +29,10 @@ export default function Home() {
     const menuButtonClicked = async () => {
         if (menuShown) {
             setMenuShown(false);
+            //need to add animations
         } else {
             setMenuShwon(true);
+            //need to add animations
         }
     };
 
@@ -40,6 +45,28 @@ export default function Home() {
             setViewArtists(false);
     }
 
+    const day1Clicked = async () => {
+        if (!day1) {
+            setDay1(true);
+            setDay2(false);
+            setDay3(false);
+        }
+    }
+    const day2Clicked = async () => {
+        if (!day2) {
+            setDay2(true);
+            setDay1(false);
+            setDay3(false);
+        }
+    }
+    const day3Clicked = async () => {
+        if (!day3) {
+            setDay3(true);
+            setDay2(false);
+            setDay1(false);
+        }
+    }
+
     return (
         <div id="sugoi" className="max-w-full">
             {/* nav bar / button */}
@@ -50,14 +77,14 @@ export default function Home() {
                 */}
                 {menuShown ?
                     (
-                        <button className="close">
+                        <button onClick={menuButtonClicked} className="close">
                             <div className="img-container">
                             {/* <Image src={menuClose} /> */}
                             </div>
                         </button>
                     ) : 
                     (
-                        <button className="open">
+                        <button onClick={menuButtonClicked} className="open">
                             <div className="img-container">
                             </div>
                         </button>
@@ -134,9 +161,108 @@ export default function Home() {
             <div className="dotted-line img-container">
                 <img src={dottedLine.src} />
             </div>
-            {/* event schedule */}
+            {/* event schedule section */}
             <div id="events" className="section">
-                
+                <div className="vh">
+                    <h1 className="header text-olive-green">
+                        EVENT<br/>
+                        SCHEDULE
+                    </h1>
+                    <button id="day1" onClick={day1Clicked} className={ day1 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>DAY 1</button>
+                    <button id="day2" onClick={day2Clicked} className={ day2 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>DAY 2</button>
+                    <button id="day3" onClick={day3Clicked} className={ day3 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>DAY 3</button>
+                </div>
+                <div className="vh">
+                    {day1 && !day2 && !day3 &&
+                        <div>
+                            <h3 className="event-header">DOORS OPEN</h3>
+                            <h5 className="sub-header">11AM</h5>
+                            <p className="body">LOGIK intro to SUGOI</p>
+
+                            <h3 className="event-header">PANELS</h3>
+                            <h5 className="sub-header">11:30AM</h5>
+                            <p className="body">The Importance of Onboarding</p>
+                            <h5 className="sub-header">NOON</h5>
+                            <p className="body">NFT Roadmaps: Then and Now</p>
+                            <h5 className="sub-header">1PM</h5>
+                            <p className="body">Artists Smart Contracts</p>
+                            <h5 className="sub-header">1:30PM</h5>
+                            <p className="body">The Keys to Tokengated Experiences</p>
+                            <h5 className="sub-header">2:30PM</h5>
+                            <p className="body">WTF is a DAO</p>
+                            <h5 className="sub-header">3:00PM</h5>
+                            <p className="body">Redefining the Music Industry</p>
+                            <h5 className="sub-header">3:30PM</h5>
+                            <p className="body">Ethics and Innovation</p>
+                            <h5 className="sub-header">4:00PM</h5>
+                            <p className="body">Owning Your Voice in Web3</p>
+
+                            <h3 className="event-header">MIX & MINGLE</h3>
+                            <h5 className="sub-header">5PM-7PM</h5>
+                            <p className="body">Live music with DJs Blue and Gianni</p>
+                        </div>
+                    }
+                    { !day1 && day2 && !day3 &&
+                        <div>
+                            <h3 className="event-header">PANELS</h3>
+                            <h5 className="sub-header">10AM</h5>
+                            <p className="body">The Art of Community</p>
+                            <h5 className="sub-header">11AM</h5>
+                            <p className="body">Into the Metaverse</p>
+                            <h5 className="sub-header">11:30AM</h5>
+                            <p className="body">Making an Impact in Web3 with Storytelling</p>
+                            <h5 className="sub-header">NOON</h5>
+                            <p className="body">Navigating Unprecedented Success in Web3</p>
+                            <h5 className="sub-header">1PM</h5>
+                            <p className="body">Diversity & Inclusivity in Web3</p>
+                            <h5 className="sub-header">1:30PM</h5>
+                            <p className="body">Corporate Agenda in Web3</p>
+                            <h5 className="sub-header">2PM</h5>
+                            <p className="body">The Convergence of Pop Culture and Web3</p>
+                            <h5 className="sub-header">3PM</h5>
+                            <p className="body">Swopes sunrise Panel</p>
+
+                            <h3 className="event-header">TREETRUNK TAKEOVER</h3>
+                            <h5 className="sub-header">4PM</h5>
+                            <p className="body">Specialty Drinks + DJ</p>
+                            <h5 className="sub-header">5PM</h5>
+                            <p className="body">TreeTrunk Founders Panel</p>
+                            <h5 className="sub-header">5:45PM</h5>
+                            <p className="body">TreeTrunk Artists Panel</p>
+                            <h5 className="sub-header">6:30PM</h5>
+                            <p className="body">Closing DJ</p>
+                        </div>
+                    }
+                    { !day1 && !day2 && day3 &&
+                        <div>
+                            <h3 className="event-header">PANELS</h3>
+                            <h5 className="sub-header">10AM</h5>
+                            <p className="body">Mindfulness in the Metaverse</p>
+                            <h5 className="sub-header">11AM</h5>
+                            <p className="body">Artists vs PFPs</p>
+                            <h5 className="sub-header">NOON</h5>
+                            <p className="body">Photography / Film / Fashion</p>
+                            <h5 className="sub-header">12:30PM</h5>
+                            <p className="body">Physical / Digital Items</p>
+                            <h5 className="sub-header">1PM</h5>
+                            <p className="body">World Building in Web3</p>
+                            <h5 className="sub-header">1:30PM</h5>
+                            <p className="body">Build It & They Will Come</p>
+                            <h5 className="sub-header">2:30PM</h5>
+                            <p className="body">Keepin' it G in Web3</p>
+                            <h5 className="sub-header">3PM</h5>
+                            <p className="body">The Power of Smart Contracts</p>
+                            <h5 className="sub-header">3:30PM</h5>
+                            <p className="body">NFTs for the Culture</p>
+
+                            <h3 className="event-header">PERFORMANCES</h3>
+                            <h5 className="sub-header">4PM</h5>
+                            <p className="body">Specialty Drinks + DJ</p>
+                            <h5 className="sub-header">8PM</h5>
+                            <p className="body">Headline Act</p>
+                        </div>
+                    }
+                </div>
             </div>
             
             <div className="dotted-line img-container">
