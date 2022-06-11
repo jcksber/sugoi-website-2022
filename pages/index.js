@@ -322,8 +322,37 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id="sponsors" className="section">
-                
+            <div id="sponsors" className="section text-dark-grey">
+                <h1 className="header">
+                    THANK YOU TO<br/>
+                    OUR SPONSORS
+                </h1>
+                <div className="row">
+                    <div className="col-33">
+                        <div className="img-container">
+                        <img src={plugKey.src} />
+                        </div>
+                        <p className="body">
+                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
+                        </p>
+                    </div>
+                    <div className="col-33">
+                        <div className="img-container">
+                        <img src={plugKey.src} />
+                        </div>
+                        <p className="body">
+                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
+                        </p>
+                    </div>
+                    <div className="col-33">
+                        <div className="img-container">
+                            <img src={plugKey.src} />
+                        </div>
+                        <p className="body">
+                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div id="contact" className="section">
