@@ -384,7 +384,7 @@ ul.body {
  **********************************************************/
 
 #tickets {
-	height: 650px;
+	height: 670px;
 }
 
 #tickets h1.header {
@@ -396,9 +396,26 @@ ul.body {
 	width: 100%;
 }
 
+.ticket-container {
+	position: relative;
+	width: 200px; height: 200px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+#frens.ticket-container {
+	margin-top: 40px;
+}
+#plug.ticket-container {
+	position: absolute;
+	top: 190px;
+	right: calc(32% - 200px);
+}
 
-
-
+.ticket-container p.body {
+	line-height: 17px;
+	font-size: 0.8em;
+	margin-top: 5px;
+}
 
 
 

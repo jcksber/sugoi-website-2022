@@ -8,6 +8,9 @@ import sugoiBanner from '../public/sugoi_banner.jpg';
 import takashiBg from '../public/placeholder2.jpg';
 import dottedLine from '../public/dot_line.png';
 import logikFlowers from '../public/placeholder1.png';
+import frensKey from '../public/Sugo_zine_A4_green.png';
+import plugKey from '../public/Sugo_zine_A4_orange.png';
+import hustlerKey from '../public/Sugo_zine_A4_yellow.png';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
@@ -281,7 +284,41 @@ export default function Home() {
                     <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
                 </div>
                 <div className="vh">
-                    
+                    <div id="frens" className="ticket-container text-olive-green">
+                        <div className="img-container">
+                            <img src={frensKey.src}/>
+                        </div>
+                        <h5 className="sub-header">FRENS</h5>
+                        <p className="body">
+                            General Admission<br/>
+                            Digital swag bag
+                        </p>
+                    </div>
+                    <div id="plug" className="ticket-container text-olive-green">
+                        <div className="img-container">
+                            <img src={plugKey.src}/>
+                        </div>
+                        <h5 className="sub-header">PLUGS</h5>
+                        <p className="body">
+                            Plug NFT Holders Only<br/>
+                            Exclusive key artwork<br/>
+                            Champagne at Sugoi<br/>
+                            Digital swag bag
+                        </p>
+                    </div>
+                    <div id="hustler" className="ticket-container text-olive-green">
+                        <div className="img-container">
+                            <img src={hustlerKey.src}/>
+                        </div>
+                        <h5 className="sub-header">HUSTLERS</h5>
+                        <p className="body">
+                            Plug (Hustler) NFT Holders Only<br/>
+                            Rarest key artwork<br/>
+                            Champagne at Sugoi<br/>
+                            Physical swag bag<br/>
+                            Digital swag bag
+                        </p>
+                    </div>
                 </div>
             </div>
 
