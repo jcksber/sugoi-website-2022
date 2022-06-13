@@ -236,7 +236,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	.section h1.header {
 		font-size: 3.2em;
 		line-height: 44px;
@@ -339,7 +339,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	.hero-banner {
 		overflow-x: hidden;
 	}
@@ -400,7 +400,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	#bylogik {
 		margin-top: 70px;
 		overflow-x: hidden;
@@ -511,7 +511,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	#artists {
 		height: 690px;
 	}
@@ -561,7 +561,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	#events {
 		height: 1620px;
 	}
@@ -661,7 +661,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	#tickets {
 		height: 1500px;
 	}
@@ -766,7 +766,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	#sponsors {
 		height: 2000px;
 	}
@@ -821,7 +821,7 @@ ul.body {
 }
 
 /*phones (vertical)*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 512px) {
 	#contact p.body {
 		font-size: 1.1em;
 	}

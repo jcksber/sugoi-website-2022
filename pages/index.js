@@ -73,7 +73,6 @@ export default function Home() {
 
     return (
         <div id="sugoi" className="max-w-full">
-            <meta content="width=device-width, initial-scale=1" name="viewport" />
             {/* nav bar / button */}
             <div id="nav-btn">
                 {menuShown ?
