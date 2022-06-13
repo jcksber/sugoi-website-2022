@@ -1,7 +1,6 @@
 import ArtistCarousel from '../components/ArtistCarousel';
 import PanelistCarousel from '../components/PanelistCarousel';
 
-import Image from 'next/image';
 import menuOpen from '../public/menu-open-01.png';
 import menuClose from '../public/img-assets-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
@@ -375,7 +374,7 @@ export default function Home() {
                         MERCH
                     </h1>
                     <a href="https://getjuice.today/sugoi" id="mint" className="long-btn bg-yellow">NEED A KEY? MINT HERE</a>
-                    <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
+                    <a href="https://nftaccess.app/event/sugoi-nft-nyc-2022" id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
                     <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
                 </div>
                 <div className="vh">

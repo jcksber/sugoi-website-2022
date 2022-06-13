@@ -1,5 +1,4 @@
-import { Mainnet, DAppProvider, useEtherBalance, useEthers, Config } from '@usedapp/core'
-import { formatEther } from '@ethersproject/units'
+import { DAppProvider } from '@usedapp/core'
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import '../styles/globals.css'
