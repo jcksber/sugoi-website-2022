@@ -139,7 +139,7 @@
 .row {
 	position: relative;
 	width: 100%;
-	min-height: 200px;
+	min-height: 100px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -148,6 +148,12 @@
 	position: relative;
 	display: inline-block;
 	width: 33.3333%;
+}
+
+.col-25 {
+	position: relative;
+	display: inline-block;
+	width: 25%;
 }
 
 .section > .vh {
@@ -212,11 +218,50 @@ ul.body {
 	opacity: 0.85;
 }
 
+/*iPad*/
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+	.section {
+		padding-left: 7%; padding-right: 7%;
+	}
+	.section h1.header {
+		font-size: 3.8em;
+	}
+	.long-btn {
+		height: 55px;
+		padding-top: 13px;
+	}
+	.short-btn {
+		height: 55px;
+	}
+}
+
+/**********************************************************
+ * SUGOI (HIGHEST PARENT DIV)
+ **********************************************************/
+
 #sugoi {
 	position: absolute;
 	z-index: -10;
 	width: 100%; min-height: calc(100vh);
-	background-color: #f4f4f4;
+	/* background-color: #f4f4f4; */
+	/*background-image: url('../public/SUGOI-background.png');*/
+}
+@media screen and (min-width: 430px) {
+	/*iPhone 12 + 2px*/
+	#sugoi {
+		background-image: url('../public/SUGOI-background-ipad.png');
+	}
+}
+@media screen and (min-width: 812px) {
+	/*iPad + 2px*/
+	#sugoi {
+		background-image: url('../public/SUGOI-background.png');
+	}
+}
+@media screen and (min-width: 1307px) {
+	#sugoi {
+		background-image: url('../public/SUGOI-background-lg.png');
+	}
 }
 
 /**********************************************************
@@ -229,6 +274,22 @@ ul.body {
 	width: 100%; height: 66px;
 	padding: 7px;
 	margin: 0;
+	text-align: right;
+}
+
+#sugoi #nav-btn button {
+	position: relative;
+	width: 50px; height: 50px;
+	top: 10px;
+	right: 10px;
+}
+#sugoi #nav-btn button:hover {
+	opacity: 0.6;
+}
+
+.hero-banner {
+	border-top: solid 1px #574a10;
+	border-bottom: solid 1px #574a10;
 }
 
 /* NAV MENU & PLACEHOLDER IMG */
@@ -242,6 +303,20 @@ ul.body {
 	display: block;
 	width: 100%; height: 500px;
 	overflow: hidden;
+}
+
+/*iPad*/
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+	#sugoi #nav-btn button {
+		top: 2px;
+	}
+	#sugoi #hero-menu {
+		height: 360px;
+		margin-top: 0;
+	}
+	#sugoi #hero-menu .closed {
+		height: 360px;
+	}
 }
 
 /**********************************************************
@@ -280,6 +355,16 @@ ul.body {
 	border-top-right-radius: 9em;
 }
 
+/*iPad*/
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+	#bylogik {
+		margin-top: 90px;
+	}
+	#bylogik #logik-flowers {
+		left: 450px;
+	}
+}
+
 /**********************************************************
  * FEATURED ARTISTS SECTION
  **********************************************************/
@@ -293,7 +378,8 @@ ul.body {
 }
 
 #artists > h1 {
-	margin-bottom: 26px;
+	position: relative;
+	bottom: 30px;
 }
 
 #artists .long-btn {
@@ -352,12 +438,36 @@ ul.body {
 	margin-right: 16px;
 }
 
+.alice-carousel__dots-item:not(.__custom) {
+	background-color: #ffd38b !important;
+}
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+	background-color: #ff9700 !important;
+}
+
+/*iPad*/
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+	#artists {
+		height: 660px;
+	}
+	#artists #view-artists.long-btn {
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+	#artists .long-btn {
+		display: block;
+	}
+	.alice-carousel {
+		margin-top: 60px !important;
+	}
+}
+
 /**********************************************************
  * EVENT SCHEDULE SECTION
  **********************************************************/
 
 #events {
-	height: 660px;
+	height: 950px;
 }
 
 #events h1.header {
@@ -366,8 +476,7 @@ ul.body {
 }
 
 #events button.short-btn {
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 25px;
 	margin-left: auto;
 }
 
@@ -431,18 +540,168 @@ ul.body {
 	margin-top: 5px;
 }
 
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+	#tickets {
+		height: 1120px;
+	}
+	#tickets .vh {
+		float: none;
+		display: block;
+		width: 50%;
+		margin: 5px auto;
+		text-align: center;
+	}
+	#tickets .vh:last-of-type {
+		padding: 0;
+	}
+	#tickets h1.header {
+		text-align: center;
+	}
+	#tickets .ticket-container {
+		width: 240px; height: 240px;
+	}
+	#tickets #frens.ticket-container {
+		right: 60px;
+	}
+	#tickets #plug.ticket-container {
+		top: 550px;
+		right: calc(32% - 100px);
+	}
+	#tickets #hustler.ticket-container {
+		right: 60px;
+	}
+}
 
 
+/**********************************************************
+ * SPONSORS SECTION
+ **********************************************************/
 
 #sponsors {
-	height: 850px;
+	height: 1000px;
 	background-color: #d0cbbf;
 	border: solid 1px #494637;
 }
 
 #sponsors h1.header {
 	text-align: right;
-	margin-top: 120px;
+	margin-top: 120px; margin-bottom: 20px;
+}
+
+#sponsors #second.row {
+	margin-top: 80px;
+}
+
+#sponsors .row .col-25,
+#sponsors .row .col-33 {
+	text-align: center;
+}
+
+#sponsors .row .col-25 .img-container,
+#sponsors .row .col-33 .img-container {
+	width: 150px; height: 150px;
+	margin: 0 auto;
+}
+
+#sponsors .row .col-25 .img-container img,
+#sponsors .row .col-33 .img-container img {
+	transform: rotate(90deg);
+}
+
+#sponsors .row .col-33 > p {
+	line-height: 20px;
+}
+
+#sponsors .row .col-33 > a {
+	position: relative;
+	top: 35px;
+}
+#sponsors .row .col-33 > a:hover {
+	opacity: 0.9;
+}
+
+#sponsors .row .col-33 > a:first-of-type {
+	margin-right: 16px;
+}
+
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+	#sponsors {
+		height: 1400px;
+	}
+	#sponsors h1.header {
+		margin-bottom: 50px;
+	}
+	#sponsors .row .col-33 {
+		width: 49%;
+	}
+	#sponsors .row .col-33:last-of-type {
+		display: block;
+		margin: 15px auto;
+	}
+	#sponsors .row .col-33 .img-container {
+		width: 200px; height: 200px;
+	}
+	#sponsors .row .col-33 p {
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+
+/**********************************************************
+ * CONTACT US SECTION
+ **********************************************************/
+
+#contact {
+	height: 300px;
+	padding-top: 30px; padding-bottom: 80px;
+	text-align: center;
+}
+
+#contact h1.header {
+	margin-bottom: 45px;
+}
+
+#contact p.body {
+	margin-bottom: 25px;
+}
+
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+	#contact {
+		height: 350px;
+	}
+}
+
+/**********************************************************
+ * FOOTER
+ **********************************************************/
+
+#footer {
+	position: absolute;
+	padding: 0; margin: 0;
+	text-align: center;
+}
+
+#footer .hero-banner {
+	position: relative;
+	margin-bottom: 140px;
+}
+
+#footer p {
+	font-family: 'KosugiMaru-Regular';
+	margin-bottom: 20px;
+}
+
+#footer #sugoi-logo {
+	position: relative;
+	margin: 0 auto;
+	width: 50px; height: 29px;
+}
+
+#footer #logik-logo {
+	position: relative;
+	margin: 0 auto;
+	width: 100px; height: 59px;
+	margin-bottom: 30px;
 }
 
 
@@ -450,24 +709,11 @@ ul.body {
 
 
 
-/* @layer components {
-	.roadmap-card {
-		@apply rounded-xl bg-gray-roadmap-bg w-[250px] h-[250px] m-auto my-6 flex flex-col;
-	}
-	.roadmap-heading {
-		@apply bg-gray-roadmap-heading py-3 rounded-t-xl;
-	}
-	.roadmap-heading-text {
-		@apply text-xl text-yellow-main uppercase font-bold tracking-wide;
-	}
-	.roadmap-divider {
-		@apply w-full h-2 bg-gray-roadmap-divider rounded-b-full;
-	}
-	.roadmap-content {
-		max-width: 200px;
-		margin: auto auto;
-	}
-}
 
 
-*/
+
+
+
+
+
+

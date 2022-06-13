@@ -2,8 +2,8 @@ import ArtistCarousel from '../components/ArtistCarousel';
 import PanelistCarousel from '../components/PanelistCarousel';
 
 import Image from 'next/image';
-import menuOpen from '../public/menu-open.svg';
-import menuClose from '../public/img-assets.svg';
+import menuOpen from '../public/menu-open-01.png';
+import menuClose from '../public/img-assets-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
 import takashiBg from '../public/placeholder2.jpg';
 import dottedLine from '../public/dot_line.png';
@@ -11,6 +11,8 @@ import logikFlowers from '../public/placeholder1.png';
 import frensKey from '../public/Sugo_zine_A4_green.png';
 import plugKey from '../public/Sugo_zine_A4_orange.png';
 import hustlerKey from '../public/Sugo_zine_A4_yellow.png';
+import footerSugoi from '../public/sugoi_footer-01.png';
+import footerLogik from '../public/logik_peach-01.png';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
@@ -34,7 +36,7 @@ export default function Home() {
             setMenuShown(false);
             //need to add animations
         } else {
-            setMenuShwon(true);
+            setMenuShown(true);
             //need to add animations
         }
     };
@@ -74,29 +76,22 @@ export default function Home() {
         <div id="sugoi" className="max-w-full">
             {/* nav bar / button */}
             <div id="nav-btn">
-                {/* 
-                    onClick this button needs to retract the landing
-                    area and roll out the nav menu        
-                */}
                 {menuShown ?
                     (
                         <button onClick={menuButtonClicked} className="close">
                             <div className="img-container">
-                            {/* <Image src={menuClose} /> */}
+                                <img src={menuClose.src} />
                             </div>
                         </button>
                     ) : 
                     (
                         <button onClick={menuButtonClicked} className="open">
                             <div className="img-container">
+                                <img src={menuOpen.src} />
                             </div>
                         </button>
                     )
-                } 
-                {/* 
-                    onClick this button needs to retract the nav menu 
-                    and roll out the landing img        
-                */}
+                }
             </div>
 
             {/* landing / hero section */}
@@ -108,7 +103,17 @@ export default function Home() {
                 {menuShown ?
                     (
                         <div className="open">
-                            {/* in here we're going to display a block list of possible links for navigation */}
+                            <div id="nav-menu">
+                                <ul>
+                                    <li><a href="">HOME</a></li>
+                                    <li><a href="">FEATURED GUESTS</a></li>
+                                    <li><a href="">EVENT SCHEDULE</a></li>
+                                    <li><a href="">MINT KEY & RSVP</a></li>
+                                    <li><a href="">DIGITAL SWAG BAGS</a></li>
+                                    <li><a href="">SPONSORS</a></li>
+                                    <li><a href="">CONTACT</a></li>
+                                </ul>
+                            </div>
                         </div>
                     ) :
                     (
@@ -184,21 +189,51 @@ export default function Home() {
 
                             <h3 className="event-header">PANELS</h3>
                             <h5 className="sub-header">11:30AM</h5>
-                            <p className="body">The Importance of Onboarding</p>
+                            <p className="body">
+                                The Importance of Onboarding<br/>
+                                Host: Kas Vegas / Trish<br/>
+                                Speakers: Emily Lazar, Natalie Crue
+                            </p>
                             <h5 className="sub-header">NOON</h5>
-                            <p className="body">NFT Roadmaps: Then and Now</p>
+                            <p className="body">
+                                NFT Roadmaps: Then and Now<br/>
+                                Host: Trish<br/>
+                                Speakers: Phen, Gabe
+                            </p>
                             <h5 className="sub-header">1PM</h5>
-                            <p className="body">Artists Smart Contracts</p>
+                            <p className="body">
+                                Smart Contracts for Artists<br/>
+                                Host: LOGIK<br/>
+                                Speakers: VGF, satoshigoat, John Wolpert, Jiwa
+                            </p>
                             <h5 className="sub-header">1:30PM</h5>
-                            <p className="body">The Keys to Tokengated Experiences</p>
+                            <p className="body">
+                                The Keys to Tokengated Experiences<br/>
+                                Speakers: darkblock.io
+                            </p>
                             <h5 className="sub-header">2:30PM</h5>
-                            <p className="body">WTF is a DAO</p>
+                            <p className="body">
+                                WTF is a DAO<br/>
+                                Host: KrayTrain<br/>
+                                Speakers: Snax, Natalie Crue, Jonah Blake
+                            </p>
                             <h5 className="sub-header">3:00PM</h5>
-                            <p className="body">Redefining the Music Industry</p>
+                            <p className="body">
+                                Redefining the Music Industry<br/>
+                                Host: Black Dave<br/>
+                                Speakers: Emily Lazar, Illa Da Producer, Spottie Wifi, Trish
+                            </p>
                             <h5 className="sub-header">3:30PM</h5>
-                            <p className="body">Ethics and Innovation</p>
+                            <p className="body">
+                                Ethics and Innovation<br/>
+                                Host: Israel Wilson<br/>
+                                Speakers: Natalie Crue, Ruff Draft, Mecyver
+                            </p>
                             <h5 className="sub-header">4:00PM</h5>
-                            <p className="body">Owning Your Voice in Web3</p>
+                            <p className="body">
+                                Owning Your Voice in Web3<br/>
+                                Speakers: Manouska, Ishita
+                            </p>
 
                             <h3 className="event-header">MIX & MINGLE</h3>
                             <h5 className="sub-header">5PM-7PM</h5>
@@ -209,27 +244,57 @@ export default function Home() {
                         <div>
                             <h3 className="event-header">PANELS</h3>
                             <h5 className="sub-header">10AM</h5>
-                            <p className="body">The Art of Community</p>
+                            <p className="body">
+                                The Art of Community<br/>
+                                Speakers: Morgan, Natalie Crue, Trish
+                            </p>
                             <h5 className="sub-header">11AM</h5>
-                            <p className="body">Into the Metaverse</p>
+                            <p className="body">
+                                Into the Metaverse<br/>
+                                Speakers: Sankofa, Mike B, VGF, Aneesh Sachdeva (ALT)
+                            </p>
                             <h5 className="sub-header">11:30AM</h5>
-                            <p className="body">Making an Impact in Web3 with Storytelling</p>
+                            <p className="body">
+                                Making an Impact in Web3 via Storytelling<br/>
+                                Speakers: Terrell Jones, Shavonne Wong
+                            </p>
                             <h5 className="sub-header">NOON</h5>
-                            <p className="body">Navigating Unprecedented Success in Web3</p>
+                            <p className="body">
+                                Navigating Unprecedented Success in Web3<br/>
+                                Host: LOGIK<br/>
+                                Speakers: All Smilesss, JR, Cory Van Lou, Sabet
+                            </p>
                             <h5 className="sub-header">1PM</h5>
-                            <p className="body">Diversity & Inclusivity in Web3</p>
+                            <p className="body">
+                                Diversity & Inclusivity in Web3<br/>
+                                Host: LOGIK<br/>
+                                Speakers: Ruff Draft, Ishita, Ed Balloon
+                            </p>
                             <h5 className="sub-header">1:30PM</h5>
-                            <p className="body">Corporate Agenda in Web3</p>
+                            <p className="body">
+                                Corporate Agenda in Web3<br/>
+                                Speakers: Faith Love, Alexander Bercow, VGF, Jonah Blake
+                            </p>
                             <h5 className="sub-header">2PM</h5>
-                            <p className="body">The Convergence of Pop Culture and Web3</p>
+                            <p className="body">
+                                The Convergence of Pop Culture and Web3<br/>
+                                Speakers: Ed Balloon, Byan Calhoun, Efdot, Lizzy
+                            </p>
                             <h5 className="sub-header">3PM</h5>
-                            <p className="body">Swopes sunrise Panel</p>
+                            <p className="body">
+                                Swopes sunrise Panel<br/>
+                                Host: Swopes<br/>
+                                Speakers: Sunrise Collective
+                            </p>
 
                             <h3 className="event-header">TREETRUNK TAKEOVER</h3>
                             <h5 className="sub-header">4PM</h5>
                             <p className="body">Specialty Drinks + DJ</p>
                             <h5 className="sub-header">5PM</h5>
-                            <p className="body">TreeTrunk Founders Panel</p>
+                            <p className="body">
+                                TreeTrunk Founders Panel<br/>
+                                Speakers: John Wolpert
+                            </p>
                             <h5 className="sub-header">5:45PM</h5>
                             <p className="body">TreeTrunk Artists Panel</p>
                             <h5 className="sub-header">6:30PM</h5>
@@ -240,23 +305,53 @@ export default function Home() {
                         <div>
                             <h3 className="event-header">PANELS</h3>
                             <h5 className="sub-header">10AM</h5>
-                            <p className="body">Mindfulness in the Metaverse</p>
+                            <p className="body">
+                                Mindfulness in the Metaverse
+                            </p>
                             <h5 className="sub-header">11AM</h5>
-                            <p className="body">Artists vs PFPs</p>
+                            <p className="body">
+                                Artists vs PFPs<br/>
+                                Speakers: JR, Eddie Ganglan, Waheed
+                            </p>
                             <h5 className="sub-header">NOON</h5>
-                            <p className="body">Photography / Film / Fashion</p>
+                            <p className="body">
+                                Photography / Film / Fashion<br/>
+                                Speakers: Zoe Stekkle, Anita Sadowska, Manouska
+                            </p>
                             <h5 className="sub-header">12:30PM</h5>
-                            <p className="body">Physical / Digital Items</p>
+                            <p className="body">
+                                Physical / Digital Items<br/>
+                                Host: LOGIK<br/>
+                                Speakers: americana.io
+                            </p>
                             <h5 className="sub-header">1PM</h5>
-                            <p className="body">World Building in Web3</p>
+                            <p className="body">
+                                World Building in Web3<br/>
+                                Speakers: LOGIK, Phen, Justin Fredricks, Efdot
+                            </p>
                             <h5 className="sub-header">1:30PM</h5>
-                            <p className="body">Build It & They Will Come</p>
+                            <p className="body">
+                                Build It & They Will Come<br/>
+                                Speakers: Eddie Ganglan, Crypto Jeweler
+                            </p>
                             <h5 className="sub-header">2:30PM</h5>
-                            <p className="body">Keepin' it G in Web3</p>
+                            <p className="body">
+                                Keepin' it G in Web3<br/>
+                                Host: LOGIK<br/>
+                                Speakers: Ruff Draft, Jonah Blake, Mr. Brian Design
+                            </p>
                             <h5 className="sub-header">3PM</h5>
-                            <p className="body">The Power of Smart Contracts</p>
+                            <p className="body">
+                                The Power of Smart Contracts<br/>
+                                Host: Trish<br/>
+                                Speakers: Black Dave, Matt Monday
+                            </p>
                             <h5 className="sub-header">3:30PM</h5>
-                            <p className="body">NFTs for the Culture</p>
+                            <p className="body">
+                                NFTs for the Culture<br/>
+                                Host: Vic<br/>
+                                Speakers: LOGIK, Eric, Trish
+                            </p>
 
                             <h3 className="event-header">PERFORMANCES</h3>
                             <h5 className="sub-header">4PM</h5>
@@ -280,7 +375,7 @@ export default function Home() {
                         MERCH
                     </h1>
                     <a href="https://getjuice.today/sugoi" id="mint" className="long-btn bg-yellow">NEED A KEY? MINT HERE</a>
-                    <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP HERE</a>
+                    <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
                     <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
                 </div>
                 <div className="vh">
@@ -330,19 +425,19 @@ export default function Home() {
                 <div className="row">
                     <div className="col-33">
                         <div className="img-container">
-                        <img src={plugKey.src} />
+                            <img src={plugKey.src} />
                         </div>
                         <p className="body">
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
-                    </div>
-                    <div className="col-33">
-                        <div className="img-container">
-                        <img src={plugKey.src} />
-                        </div>
-                        <p className="body">
-                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
-                        </p>
+                        <a href="twitter" className="social">
+                            {/* twitter icon */}
+                            Twitter
+                        </a>
+                        <a href="ig" className="social">
+                            {/* ig icon */}
+                            IG
+                        </a>
                     </div>
                     <div className="col-33">
                         <div className="img-container">
@@ -351,16 +446,106 @@ export default function Home() {
                         <p className="body">
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
+                        <a href="twitter" className="social">
+                            {/* twitter icon */}
+                            Twitter
+                        </a>
+                        <a href="ig" className="social">
+                            {/* ig icon */}
+                            IG
+                        </a>
+                    </div>
+                    <div className="col-33">
+                        <div className="img-container">
+                            <img src={plugKey.src} />
+                        </div>
+                        <p className="body">
+                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
+                        </p>
+                        <a href="twitter" className="social">
+                            {/* twitter icon */}
+                            Twitter
+                        </a>
+                        <a href="ig" className="social">
+                            {/* ig icon */}
+                            IG
+                        </a>
+                    </div>
+                </div>
+                <div id="second" className="row">
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={frensKey.src} />
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="contact" className="section">
-                
+            <div id="contact" className="section text-olive-green">
+                <h1 className="header">CONTACT US</h1>
+
+                <h5 className="sub-header">GENERAL</h5>
+                <p className="body">email@address.com</p>
+
+                <h5 className="sub-header">SPONSORS/BRAND PARTNERS</h5>
+                <p className="body">email@address.com</p>
+
+                <h5 className="sub-header">NAME NAME</h5>
+                <p className="body">email@address.com</p> 
             </div>
 
-            <div id="footer" className="section">
-
+            <div id="footer" className="section bg-olive-green">
+                <div className="hero-banner img-container">
+                    <img src={sugoiBanner.src} />
+                </div>
+                <div id="sugoi-logo" className="img-container">
+                    <img src={footerSugoi.src} />
+                </div>
+                <div id="logik-logo" className="img-container">
+                    <img src={footerLogik.src} />
+                </div>
+                <p className="text-peach">
+                    Sugoi connects Web3 and Big Tech to the Culture<br/>
+                    (C) 2022 LOGIK Studios. All rights reserved.<br/>
+                    Brand architecture by <a href="https://twitter.com/ennischung">@ennischung</a>
+                </p>
             </div>
 
         </div>
