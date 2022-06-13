@@ -219,7 +219,7 @@ ul.body {
 }
 
 /*iPad*/
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	.section {
 		padding-left: 7%; padding-right: 7%;
 	}
@@ -235,6 +235,21 @@ ul.body {
 	}
 }
 
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	.section h1.header {
+		font-size: 3.2em;
+		line-height: 44px;
+	}
+	.img-container.dotted-line > img {
+		width: 90%;
+		left: 5%;
+	}
+	.long-btn {
+		width: 100%;
+	}
+}
+
 /**********************************************************
  * SUGOI (HIGHEST PARENT DIV)
  **********************************************************/
@@ -243,8 +258,12 @@ ul.body {
 	position: absolute;
 	z-index: -10;
 	width: 100%; min-height: calc(100vh);
-	/* background-color: #f4f4f4; */
-	/*background-image: url('../public/SUGOI-background.png');*/
+	background-color: #f4f4f4;
+}
+@media screen and (min-width: 1px) {
+	#sugoi {
+		background-image: url('../public/SUGOI-background-sm.png');
+	}
 }
 @media screen and (min-width: 430px) {
 	/*iPhone 12 + 2px*/
@@ -306,7 +325,7 @@ ul.body {
 }
 
 /*iPad*/
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#sugoi #nav-btn button {
 		top: 2px;
 	}
@@ -316,6 +335,21 @@ ul.body {
 	}
 	#sugoi #hero-menu .closed {
 		height: 360px;
+	}
+}
+
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	.hero-banner {
+		overflow-x: hidden;
+	}
+	.hero-banner .img-container {
+		width: 220%;
+	}
+	#sugoi #hero-menu,
+	#sugoi #hero-menu .closed,
+	#sugoi #hero-menu .closed img {
+		height: 280px;
 	}
 }
 
@@ -356,12 +390,24 @@ ul.body {
 }
 
 /*iPad*/
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#bylogik {
 		margin-top: 90px;
 	}
 	#bylogik #logik-flowers {
 		left: 450px;
+	}
+}
+
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	#bylogik {
+		margin-top: 70px;
+		overflow-x: hidden;
+	}
+	#bylogik #logik-flowers {
+		width: 150px; height: 175px;
+		top: 160px; left: 250px;
 	}
 }
 
@@ -446,9 +492,11 @@ ul.body {
 }
 
 /*iPad*/
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#artists {
 		height: 660px;
+		padding-left: 7%;
+		padding-right: 7%;
 	}
 	#artists #view-artists.long-btn {
 		margin-right: auto;
@@ -459,6 +507,16 @@ ul.body {
 	}
 	.alice-carousel {
 		margin-top: 60px !important;
+	}
+}
+
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	#artists {
+		height: 690px;
+	}
+	#artists .long-btn {
+		padding-top: 4px;
 	}
 }
 
@@ -502,6 +560,36 @@ ul.body {
 	margin-bottom: 12px;
 }
 
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	#events {
+		height: 1620px;
+	}
+	#events h1.header {
+		text-align: center;
+	}
+	#events.section .vh {
+		position: relative;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	#events h1.header {
+		margin-bottom: 5px;
+	}
+	#events button.short-btn {
+		display: inline-block;
+		width: 28%;
+		margin-left: 7px;
+		margin-right: 7px;
+		font-size: 1em;
+	}
+	#events p.body {
+		font-size: 1.1em;
+		margin-bottom: 25px;
+	}
+}
+
 /**********************************************************
  * TICKETS & MERCH SECTION
  **********************************************************/
@@ -540,7 +628,7 @@ ul.body {
 	margin-top: 5px;
 }
 
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#tickets {
 		height: 1120px;
 	}
@@ -569,6 +657,36 @@ ul.body {
 	}
 	#tickets #hustler.ticket-container {
 		right: 60px;
+	}
+}
+
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	#tickets {
+		height: 1500px;
+	}
+	#tickets.section .vh {
+		position: relative;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	#tickets .ticket-container {
+		position: relative;
+		margin-left: auto; margin-right: auto;
+	}
+	#tickets #frens.ticket-container,
+	#tickets #plug.ticket-container,
+	#tickets #hustler.ticket-container {
+		right: 0;
+		top: 0;
+	}
+	#tickets #plug.ticket-container {
+		margin-bottom: 140px;
+	}
+	#tickets .ticket-container p.body {
+		font-size: 1.1em;
+		line-height: 22px;
 	}
 }
 
@@ -624,7 +742,7 @@ ul.body {
 	margin-right: 16px;
 }
 
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#sponsors {
 		height: 1400px;
 	}
@@ -647,6 +765,36 @@ ul.body {
 	}
 }
 
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	#sponsors {
+		height: 2000px;
+	}
+	#sponsors h1.header {
+		text-align: center;
+		font-size: 2.9em;
+		margin-bottom: 0;
+	}
+	#sponsors .row .col-33 {
+		width: 100%;
+		margin: 15px auto;
+	}
+	#sponsors .row .col-33 > a {
+		top: 20px;
+	}
+	#sponsors #second.row {
+		text-align: center;
+		margin-top: 50px;
+	}
+	#sponsors .row .col-25 {
+		float: none;
+		position: relative;
+		display: inline-block;
+		width: 46%;
+		margin: 10px 5px;
+	}
+}
+
 /**********************************************************
  * CONTACT US SECTION
  **********************************************************/
@@ -665,9 +813,17 @@ ul.body {
 	margin-bottom: 25px;
 }
 
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+/*iPad*/
+@media screen and (max-width: 1000px) {
 	#contact {
 		height: 350px;
+	}
+}
+
+/*phones (vertical)*/
+@media screen and (max-width: 430px) {
+	#contact p.body {
+		font-size: 1.1em;
 	}
 }
 

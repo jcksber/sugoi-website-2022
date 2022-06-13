@@ -95,8 +95,10 @@ export default function Home() {
 
             {/* landing / hero section */}
             <div id="hero-menu">
-                <div className="hero-banner img-container">
-                    <img src={sugoiBanner.src} />
+                <div className="hero-banner">
+                    <div className="img-container">
+                        <img src={sugoiBanner.src} />
+                    </div>
                 </div>
                 {/* this section right here is what will be animated on above button pushes */}
                 {menuShown ?
@@ -121,8 +123,10 @@ export default function Home() {
                         </div>
                     )
                 }
-                <div className="hero-banner img-container">
-                    <img src={sugoiBanner.src} />
+                <div className="hero-banner">
+                    <div className="img-container">
+                        <img src={sugoiBanner.src} />
+                    </div>
                 </div>
             </div>
 
@@ -131,7 +135,7 @@ export default function Home() {
                 <h1 className="header">
                     SUGOI BY LOGIK<br/>
                     AT NFT NYC 2022,<br/>
-                    JUNE 20-23
+                    JUNE 21-23
                 </h1>
                 <h5 id="location" className="sub-header text-olive-green">LOCATION</h5>
                 <ul className="body text-olive-green">
@@ -531,8 +535,10 @@ export default function Home() {
             </div>
 
             <div id="footer" className="section bg-olive-green">
-                <div className="hero-banner img-container">
-                    <img src={sugoiBanner.src} />
+                <div className="hero-banner">
+                    <div className="img-container">
+                        <img src={sugoiBanner.src} />
+                    </div>
                 </div>
                 <div id="sugoi-logo" className="img-container">
                     <img src={footerSugoi.src} />
