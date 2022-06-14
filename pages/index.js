@@ -569,8 +569,7 @@ export default function Home() {
                         </div>
                         <h5 className="sub-header">FRENS</h5>
                         <p className="body">
-                            General Admission<br/>
-                            Digital swag bag
+                            General Admission
                         </p>
                     </div>
                     <div id="plug" className="ticket-container text-olive-green">

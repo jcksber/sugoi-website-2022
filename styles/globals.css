@@ -482,13 +482,16 @@ input:focus-visible {
 		top: 160px; left: 250px;
 	}
 	#bylogik .claim-field {
-		width: 33%; height: 55px;
+		width: 32%; height: 55px;
 	}
 	#bylogik input.claim-field:first-of-type {
-		margin-right: 1px;
+		margin: 0;
+	}
+	#bylogik input.claim-field:last-of-type {
+		margin-left: 1.75%; margin-right: 1.75%;
 	}
 	#bylogik .claim-field:last-child {
-		margin-left: 2px;
+		margin: 0;
 	}
 }
 
@@ -718,7 +721,7 @@ input:focus-visible {
 
 #tickets .claim-field {
 	display: inline-block;
-	width: 33%; height: 35px;
+	width: 32%; height: 35px;
 	margin: auto;
 	border-radius: 10px;
 	text-align: center;
@@ -731,7 +734,7 @@ input:focus-visible {
 }
 
 #tickets input.claim-field:last-of-type {
-	margin-left: 0.5%; margin-right: 0.5%;
+	margin-left: 1.75%; margin-right: 1.75%;
 }
 #tickets .claim-field:last-child {
 	padding-top: 2px;
@@ -799,7 +802,7 @@ input:focus-visible {
 		top: 0;
 	}
 	#tickets #frens.ticket-container {
-		margin-top: 80px; margin-bottom: 130px;
+		margin-top: 80px; margin-bottom: 110px;
 	}
 	#tickets #plug.ticket-container {
 		margin-bottom: 130px;
@@ -837,7 +840,7 @@ input:focus-visible {
 
 #sponsors .row .col-25 .img-container,
 #sponsors .row .col-33 .img-container {
-	width: 150px; height: 150px;
+	width: 90px; height: 150px;
 	margin: 0 auto;
 }
 
@@ -877,7 +880,7 @@ input:focus-visible {
 		margin: 15px auto;
 	}
 	#sponsors .row .col-33 .img-container {
-		width: 200px; height: 200px;
+		width: 130px; height: 200px;
 	}
 	#sponsors .row .col-33 p {
 		width: 75%;
