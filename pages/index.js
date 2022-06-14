@@ -1,3 +1,6 @@
+import sugoiKeyAbi from '../utils/sugoi_key_aboi.json';
+import plugAbi from '../utils/plug_abi.json';
+
 import ArtistCarousel from '../components/ArtistCarousel';
 import PanelistCarousel from '../components/PanelistCarousel';
 
@@ -15,11 +18,33 @@ import footerLogik from '../public/logik_peach-01.png';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import { ethers, utils } from 'ethers';
+import { useEthers } from '@usedapp/core';
 
 config.autoAddCss = false;
 
 export default function Home() {
 
+    /* CONNECTION TO NETWORK */
+    const { activateBrowserWallet, account } = useEthers();
+
+    /* NECESSARY ERC-721 STATIC DATA */
+    const KEY_ADDRESS = "0x8088f4612eaDB9d60D5C8Abf4a9D0FDfC3dF2f1E";
+    const KEY_ABI = new utils.Interface(sugoiKeyAbi);
+    const PLUG_ADDRESS = "0x2Bb501A0374ff3Af41f2009509E9D6a36D56A6c0";
+    const PLUG_ABI = new utils.Interface(plugAbi);
+
+    /* WEB3 FUNCTIONALITY */
+    const [numKeys, setKeyCount] = useState(0);
+    const [numPlugs, setPlugCount] = useState(0);
+    const [keyQuantity, setKeyQuantity] = useState(0);
+	const [plugTid, setPlugTid] = useState("");
+	const [ownerOfPlugTid, setOwnerOfPlugTid] = useState("");
+
+    /* UI FUNCTIONALITY */
     const [menuShown, setMenuShown] = useState(false);
     const [viewArtists, setViewArtists] = useState(true);
     const [day1, setDay1] = useState(true);
@@ -28,7 +53,40 @@ export default function Home() {
 
     useEffect(() => {
         // on-render we want to trigger the "welcome animation"
-    });
+        if (account) {
+			setKeyCount(getNumKeys());
+            setPlugCount(getNumPlugs());
+		}
+        console.log("num keys: " + numKeys);
+        console.log("num plugs: " + numPlugs);
+    }, [account]);
+
+    // Obtain the number of Keys in connected wallet
+	const getNumKeys = async () => {
+		const provider = new ethers.providers.Web3Provider(window.ethereum);
+		const signer = provider.getSigner();
+		const keyContract = await new ethers.Contract(
+			KEY_ADDRESS,
+			KEY_ABI,
+			signer
+		);
+		const numKeys = await keyContract.balanceOf(account);
+        setKeyCount(parseInt(numKeys.toHexString(), 16));
+		return parseInt(numKeys.toHexString(), 16);
+	};
+    // Obtain the number of Plugs in connected wallet
+	const getNumPlugs = async () => {
+		const provider = new ethers.providers.Web3Provider(window.ethereum);
+		const signer = provider.getSigner();
+		const plugContract = await new ethers.Contract(
+			PLUG_ADDRESS,
+			PLUG_ABI,
+			signer
+		);
+		const numPlugs = await plugContract.balanceOf(account);
+        setPlugCount(parseInt(numPlugs.toHexString(), 16));
+		return parseInt(numPlugs.toHexString(), 16);
+	};
 
     const menuButtonClicked = async () => {
         if (menuShown) {
@@ -49,6 +107,7 @@ export default function Home() {
             setViewArtists(false);
     }
 
+    /* EVENTS SECTION */
     const day1Clicked = async () => {
         if (!day1) {
             setDay1(true);
@@ -70,6 +129,61 @@ export default function Home() {
             setDay1(false);
         }
     }
+
+    const handleQuantityChange = (e) => {
+		if (e.target.value < 0) {
+			setKeyQuantity(0);
+		} else {
+			setKeyQuantity(e.target.value);
+		}
+	};
+	const handlePlugTidChange = (e) => {
+		if (e.target.value < 0) {
+			setPlugTid(null);
+		} else {
+			setPlugTid(e.target.value);
+		}
+	};
+
+    const claimSugoiKey = async () => {
+		// Load our smart contract using ethers
+		const provider = new ethers.providers.Web3Provider(window.ethereum);
+		const signer = provider.getSigner();
+		const keyContract = await new ethers.Contract(
+			KEY_ADDRESS,
+			KEY_ABI,
+			signer
+		);
+        const plugContract = await new ethers.Contract(
+			PLUG_ADDRESS,
+			PLUG_ABI,
+			signer
+		);
+
+		// Sign the txn via metamask
+		try {
+            if (numPlugs > 0) {
+
+
+            } else if (numKeys > 0) {
+                toast("If you don't own a Plug, you can only claim 1 key");
+                return;
+            } else {
+                const txn = await keyContract.publicClaim(account);
+            }
+			return {
+				success: true,
+				status: "✅ Check out your transaction on Etherscan: https://etherscan.io/tx/" + txn.hash
+			}
+		} catch (error) {
+			toast("Something went wrong :(")
+            console.log(error.message);
+			return {
+				success: false,
+				status: "😥 Something went wrong: " + error.message
+			}
+		}
+	};
 
     return (
         <div id="sugoi" className="max-w-full">
@@ -150,7 +264,19 @@ export default function Home() {
                         something games, continue
                     </li>
                 </ul>
-                <a href="https://getjuice.today/sugoi" id="mint" className="long-btn bg-yellow">NEED A KEY? MINT HERE</a>
+                {account && 
+                 numPlugs == 0 && 
+                 <button id="mint" onClick={claimSugoiKey} className="long-btn bg-yellow">NEED A KEY? MINT</button>
+                }
+                {account &&
+                 numPlugs >= 1 &&
+                 <div id="claim-container">
+                    <input type="number" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
+	                <input type="number" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
+                    <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
+                 </div>
+                }
+                {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT WALLET</button>}
                 <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP HERE</a>
                 <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
                 <div id="logik-flowers" className="img-container">
@@ -550,6 +676,7 @@ export default function Home() {
                     Sugoi connects Web3 and Big Tech to the Culture<br/>
                     (C) 2022 LOGIK Studios. All rights reserved.<br/>
                     Brand architecture by <a href="https://twitter.com/ennischung">@ennischung</a>
+                    Dev by <a href="https://twitter.com/satoshigoat">@satoshigoat</a>
                 </p>
             </div>
 

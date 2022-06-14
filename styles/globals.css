@@ -369,7 +369,8 @@ ul.body {
 	margin-top: 22px;
 }
 
-#bylogik > a#mint {
+#bylogik > button#mint,
+#bylogik > button#connect {
 	margin-top: 45px;
 }
 #bylogik > a#digital-swag {
@@ -387,6 +388,33 @@ ul.body {
 	border-bottom-right-radius: 8em;
 	border-top-left-radius: 10em;
 	border-top-right-radius: 9em;
+}
+
+#claim-container {
+	margin-top: 20px; margin-bottom: 15px;
+}
+#bylogik .claim-field {
+	display: inline-block;
+	width: 103px; height: 35px;
+	margin: auto;
+	border-radius: 10px;
+	text-align: center;
+}
+#bylogik input.claim-field {
+	height: 35px;
+	border: solid 2px #ffff00;
+	box-shadow: 0px 0px 8px -4px #eee;
+}
+#bylogik input.claim-field:first-of-type {
+	margin-left: 0;
+	margin-right: 10px;
+}
+#bylogik .claim-field:last-of-type {
+	margin-left: 10px;
+	margin-right: 0;
+}
+input:focus-visible {
+	outline: none;
 }
 
 /*iPad*/
