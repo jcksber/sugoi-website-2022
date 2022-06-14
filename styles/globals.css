@@ -482,7 +482,7 @@ input:focus-visible {
 		top: 160px; left: 250px;
 	}
 	#bylogik .claim-field {
-		width: 106px; height: 55px;
+		width: 33%; height: 55px;
 	}
 	#bylogik input.claim-field:first-of-type {
 		margin-right: 1px;
