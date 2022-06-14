@@ -26,6 +26,37 @@ import { useEthers } from '@usedapp/core';
 
 config.autoAddCss = false;
 
+function goToGuests(){
+    document.querySelector('#artists').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+function goToEvents(){
+    document.querySelector('#events').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+function goToMint(){
+    document.querySelector('#tickets').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+function goToSwag(){
+    document.querySelector('#tickets').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+function goToSponsors(){
+    document.querySelector('#sponsors').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+function goToContact(){
+    document.querySelector('#contact').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 export default function Home() {
 
     /* CONNECTION TO NETWORK */
@@ -233,28 +264,22 @@ export default function Home() {
                     </div>
                 </div>
                 {/* this section right here is what will be animated on above button pushes */}
-                {menuShown ?
-                    (
-                        <div className="open">
-                            <div id="nav-menu">
-                                <ul>
-                                    <li><a href="">HOME</a></li>
-                                    <li><a href="">FEATURED GUESTS</a></li>
-                                    <li><a href="">EVENT SCHEDULE</a></li>
-                                    <li><a href="">MINT KEY & RSVP</a></li>
-                                    <li><a href="">DIGITAL SWAG BAGS</a></li>
-                                    <li><a href="">SPONSORS</a></li>
-                                    <li><a href="">CONTACT</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    ) :
-                    (
-                        <div className="closed">
-                            <img src={takashiBg.src} />
-                        </div>
-                    )
-                }
+            
+                <div className={menuShown ? "opened" : "closed"}>
+                    <img src={takashiBg.src} />
+                    <div id="nav-menu">
+                        <ul>
+                            {/* <li className="bg-peach"><a onClick={goHome}>HOME</a></li> */}
+                            <li className="bg-peach"><a onClick={goToGuests}>FEATURED GUESTS</a></li>
+                            <li className="bg-peach"><a onClick={goToEvents}>EVENT SCHEDULE</a></li>
+                            <li className="bg-peach"><a onClick={goToMint}>MINT KEY & RSVP</a></li>
+                            <li className="bg-peach"><a onClick={goToSwag}>DIGITAL SWAG BAGS</a></li>
+                            <li className="bg-peach"><a onClick={goToSponsors}>SPONSORS</a></li>
+                            <li className="bg-peach"><a onClick={goToContact}>CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div className="hero-banner">
                     <div className="img-container">
                         <img src={sugoiBanner.src} />

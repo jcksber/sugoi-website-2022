@@ -318,6 +318,36 @@ ul.body {
 	margin-top: 20px;
 }
 
+.opened, .closed {
+	transition: height 1s ease-in;
+	-webkit-transition: height 1s ease-in;
+}
+
+#sugoi .opened img,
+#sugoi .closed #nav-menu {
+	height: 0;
+}
+
+#nav-menu ul li {
+	height: 68px;
+	border-bottom: solid 1px #574a10;
+}
+#nav-menu ul li:last-of-type {
+	border: none;
+}
+#nav-menu ul li a {
+	position: relative;
+	bottom: 15px;
+	margin-left: 25px;
+	font-family: 'Palent-Regular';
+	font-size: 4em;
+	color: #574a10;
+	cursor: pointer;
+}
+#nav-menu ul li:hover {
+	background-color: #ff0;
+}
+
 #sugoi #hero-menu .closed {
 	display: block;
 	width: 100%; height: 500px;
@@ -342,6 +372,8 @@ ul.body {
 @media screen and (max-width: 512px) {
 	.hero-banner {
 		overflow-x: hidden;
+		position: relative;
+		z-index: 1;
 	}
 	.hero-banner .img-container {
 		width: 220%;
@@ -350,6 +382,13 @@ ul.body {
 	#sugoi #hero-menu .closed,
 	#sugoi #hero-menu .closed img {
 		height: 280px;
+	}
+	#sugoi #hero-menu {
+		z-index: 1;
+	}
+	#nav-menu ul li a {
+		font-size: 2.5em;
+		top: 3px; bottom: 0;
 	}
 }
 
