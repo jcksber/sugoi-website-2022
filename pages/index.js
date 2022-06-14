@@ -21,7 +21,7 @@ import { useState, useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { ethers, utils } from 'ethers';
+import { ethers, utils, BigNumber } from 'ethers';
 import { useEthers } from '@usedapp/core';
 
 config.autoAddCss = false;
@@ -159,7 +159,6 @@ export default function Home() {
 			PLUG_ABI,
 			signer
 		);
-
 		// Sign the txn via metamask
 		try {
             let txn = "";
