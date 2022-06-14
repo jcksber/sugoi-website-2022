@@ -9,9 +9,15 @@ const numItems = {
         items: 1
     },
     512: {
+        items: 2
+    },
+    728: {
         items: 3
     },
-    1024: {
+    928: {
+        items: 4
+    },
+    1224: {
         items: 5
     }
 }

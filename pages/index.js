@@ -162,14 +162,33 @@ export default function Home() {
 
 		// Sign the txn via metamask
 		try {
+            let txn = "";
             if (numPlugs > 0) {
-
-
+                try {
+                    const owner = await plugContract.ownerOf(BigNumber.from(plugTid));
+			        setOwnerOfPlugTid(owner);
+                } catch (error) {
+                    toast("You don't seem to own that Plug token ID");
+                    console.log(error.message);
+                    return;
+                }
+                if (keyQuantity <= 0) {
+                    toast("Must enter a valid # of keys to claim");
+                    return;
+                } else if (keyQuantity > 5 && numPlugs < keyQuantity) {
+                    toast("You don't have enough Plugs to claim that many keys");
+                    return;
+                } else if (ownerOfPlugTid != account && ownerOfPlugTid != "") {
+                    toast("You don't own that Plug ID!");
+                    return;
+                } else {
+                    txn = await keyContract.claim(account, keyQuantity, plugTid);
+                }
             } else if (numKeys > 0) {
                 toast("If you don't own a Plug, you can only claim 1 key");
                 return;
             } else {
-                const txn = await keyContract.publicClaim(account);
+                txn = await keyContract.publicClaim(account);
             }
 			return {
 				success: true,
@@ -310,7 +329,7 @@ export default function Home() {
                     <button id="day3" onClick={day3Clicked} className={ day3 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>THUR, JUNE 23</button>
                 </div>
                 <div className="vh">
-                    {day1 && !day2 && !day3 &&
+                    { day1 &&
                         <div>
                             <h3 className="event-header">DOORS OPEN</h3>
                             <h5 className="sub-header">11AM</h5>
@@ -369,7 +388,7 @@ export default function Home() {
                             <p className="body">Live music with DJs Blue and Gianni</p>
                         </div>
                     }
-                    { !day1 && day2 && !day3 &&
+                    { day2 &&
                         <div>
                             <h3 className="event-header">PANELS</h3>
                             <h5 className="sub-header">10AM</h5>
@@ -430,7 +449,7 @@ export default function Home() {
                             <p className="body">Closing DJ</p>
                         </div>
                     }
-                    { !day1 && !day2 && day3 &&
+                    { day3 &&
                         <div>
                             <h3 className="event-header">PANELS</h3>
                             <h5 className="sub-header">10AM</h5>
@@ -503,7 +522,19 @@ export default function Home() {
                         AND<br/>
                         MERCH
                     </h1>
-                    <a href="https://getjuice.today/sugoi" id="mint" className="long-btn bg-yellow">NEED A KEY? MINT HERE</a>
+                    {account && 
+                     numPlugs == 0 && 
+                     <button id="mint" onClick={claimSugoiKey} className="long-btn bg-yellow">NEED A KEY? MINT</button>
+                    }
+                    {account &&
+                     numPlugs >= 1 &&
+                     <div id="claim-container">
+                        <input type="number" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
+                        <input type="number" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
+                        <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
+                     </div>
+                    }
+                    {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT WALLET</button>}
                     <a href="https://nftaccess.app/event/sugoi-nft-nyc-2022" id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
                     <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
                 </div>
@@ -675,8 +706,8 @@ export default function Home() {
                 <p className="text-peach">
                     Sugoi connects Web3 and Big Tech to the Culture<br/>
                     (C) 2022 LOGIK Studios. All rights reserved.<br/>
-                    Brand architecture by <a href="https://twitter.com/ennischung">@ennischung</a>
-                    Dev by <a href="https://twitter.com/satoshigoat">@satoshigoat</a>
+                    Brand architecture by <a href="https://twitter.com/ennischung" className="text-orange">@ennischung</a><br/>
+                    Frontend & NFT by <a href="https://twitter.com/satoshigoat" className="text-orange">@satoshigoat</a>
                 </p>
             </div>
 
