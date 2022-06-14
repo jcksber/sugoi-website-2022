@@ -705,6 +705,11 @@ input:focus-visible {
 	right: calc(32% - 200px);
 }
 
+
+.ticket-container .img-container {
+	-webkit-box-shadow: -5px 6px 6px 0px #7E7E7E; 
+	box-shadow: -5px 6px 6px 0px #7E7E7E;
+}
 .ticket-container p.body {
 	line-height: 17px;
 	font-size: 0.8em;
@@ -751,8 +756,11 @@ input:focus-visible {
 	#tickets h1.header {
 		text-align: center;
 	}
+	#tickets h5.sub-header {
+		margin-top: 12px;
+	}
 	#tickets .ticket-container {
-		width: 240px; height: 240px;
+		width: 150px; height: 240px;
 	}
 	#tickets #frens.ticket-container {
 		right: 60px;
@@ -790,8 +798,11 @@ input:focus-visible {
 		right: 0;
 		top: 0;
 	}
+	#tickets #frens.ticket-container {
+		margin-top: 80px; margin-bottom: 130px;
+	}
 	#tickets #plug.ticket-container {
-		margin-bottom: 140px;
+		margin-bottom: 130px;
 	}
 	#tickets .ticket-container p.body {
 		font-size: 1.1em;

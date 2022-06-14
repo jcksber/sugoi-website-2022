@@ -10,9 +10,9 @@ import sugoiBanner from '../public/sugoi_banner.jpg';
 import takashiBg from '../public/placeholder2.jpg';
 import dottedLine from '../public/dot_line.png';
 import logikFlowers from '../public/placeholder1.png';
-import frensKey from '../public/Sugo_zine_A4_green.png';
-import plugKey from '../public/Sugo_zine_A4_orange.png';
-import hustlerKey from '../public/Sugo_zine_A4_yellow.png';
+import frensKey from '../public/sugoi_keys_tomodachi.jpeg';
+import plugKey from '../public/sugoi_keys_plugholders.jpeg';
+import hustlerKey from '../public/sugoi_keys_hustler.jpeg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
 
@@ -579,10 +579,7 @@ export default function Home() {
                         </div>
                         <h5 className="sub-header">PLUGS</h5>
                         <p className="body">
-                            Plug NFT Holders Only<br/>
-                            Exclusive key artwork<br/>
-                            Champagne at Sugoi<br/>
-                            Digital swag bag
+                            Plug NFT Holders Only
                         </p>
                     </div>
                     <div id="hustler" className="ticket-container text-olive-green">
@@ -591,11 +588,7 @@ export default function Home() {
                         </div>
                         <h5 className="sub-header">HUSTLERS</h5>
                         <p className="body">
-                            Plug (Hustler) NFT Holders Only<br/>
-                            Rarest key artwork<br/>
-                            Champagne at Sugoi<br/>
-                            Physical swag bag<br/>
-                            Digital swag bag
+                            Plug (Hustler) NFT Holders Only
                         </p>
                     </div>
                 </div>
