@@ -429,7 +429,7 @@ ul.body {
 	border-top-right-radius: 9em;
 }
 
-#claim-container {
+#bylogik #claim-container {
 	width: 340px;
 	margin-top: 20px; margin-bottom: 15px;
 }
@@ -467,8 +467,13 @@ input:focus-visible {
 	#bylogik #logik-flowers {
 		left: 450px;
 	}
-	#bylogik > button#mint {
-		padding-top: 5px;
+	#bylogik > button#mint,
+	#bylogik > button#connect {
+		padding-top: 2px;
+		/*maybe 0???*/
+	}
+	#bylogik .claim-field {
+		width: 32%; height: 55px;
 	}
 }
 
@@ -484,9 +489,6 @@ input:focus-visible {
 	}
 	#claim-container {
 		width: 100%;
-	}
-	#bylogik .claim-field {
-		width: 32%; height: 55px;
 	}
 	#bylogik input.claim-field:first-of-type {
 		margin: 0;
@@ -596,6 +598,7 @@ input:focus-visible {
 	}
 	#artists .long-btn {
 		display: block;
+		padding-top: 3px;
 	}
 	.alice-carousel {
 		margin-top: 60px !important;
@@ -701,6 +704,10 @@ input:focus-visible {
 	width: 100%;
 }
 
+#tickets #claim-container {
+	margin-bottom: 15px;
+}
+
 .ticket-container {
 	position: relative;
 	width: 180px; height: 200px;
@@ -775,20 +782,24 @@ input:focus-visible {
 		margin-top: 12px;
 	}
 	#tickets .ticket-container {
-		width: 150px; height: 240px;
+		width: 150px; height: 220px;
 	}
 	#tickets #frens.ticket-container {
-		right: 60px;
+		top: 50px;
+	}
+	#tickets #frens.ticket-container,
+	#tickets #hustler.ticket-container {
+		right: 30px;
 	}
 	#tickets #plug.ticket-container {
-		top: 550px;
-		right: calc(32% - 100px);
-	}
-	#tickets #hustler.ticket-container {
-		right: 60px;
+		top: 620px;
+		right: calc(32% - 50px);
 	}
 	#tickets .claim-field {
 		height: 55px;
+	}
+	#tickets button.long-btn#mint {
+		padding-top: 3px;
 	}
 }
 

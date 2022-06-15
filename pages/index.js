@@ -318,7 +318,7 @@ export default function Home() {
                 {account &&
                  numPlugs >= 1 &&
                  <div id="claim-container">
-                    <input id="hidden-input" autocomplete="false" name="hidden"></input>
+                    <input id="hidden-input" autocomplete="false" name="hidden" value="none"></input>
                     <input autoComplete="none" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
 	                <input autoComplete="none" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
                     <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
@@ -558,6 +558,7 @@ export default function Home() {
                     {account &&
                      numPlugs >= 1 &&
                      <div id="claim-container">
+                        <input id="hidden-input" autocomplete="false" name="hidden"></input>
                         <input placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
                         <input placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
                         <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
