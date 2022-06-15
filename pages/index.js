@@ -6,9 +6,7 @@ import PanelistCarousel from '../components/PanelistCarousel';
 
 import menuOpen from '../public/menu-open-01.png';
 import menuClose from '../public/img-assets-01.png';
-import igGreen from '../public/instagram_green-01.png';
 import igGrey from '../public/instagram_grey-01.png';
-import twGreen from '../public/twitter_green-01.png';
 import twGrey from '../public/twitter_grey-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
 import wow from '../public/wow-01.png';
@@ -320,8 +318,9 @@ export default function Home() {
                 {account &&
                  numPlugs >= 1 &&
                  <div id="claim-container">
-                    <input type="number" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
-	                <input type="number" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
+                    <input id="hidden-input" autocomplete="false" name="hidden"></input>
+                    <input autoComplete="none" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
+	                <input autoComplete="none" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
                     <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
                  </div>
                 }
@@ -613,12 +612,14 @@ export default function Home() {
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
                         <a href="twitter" className="social">
-                            {/* twitter icon */}
-                            Twitter
+                            <div className="img-container">
+                                <img src={twGrey.src} />
+                            </div>
                         </a>
                         <a href="ig" className="social">
-                            {/* ig icon */}
-                            IG
+                            <div className="img-container">
+                                <img src={igGrey.src} />
+                            </div>
                         </a>
                     </div>
                     <div className="col-33">
@@ -629,12 +630,14 @@ export default function Home() {
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
                         <a href="twitter" className="social">
-                            {/* twitter icon */}
-                            Twitter
+                            <div className="img-container">
+                                <img src={twGrey.src} />
+                            </div>
                         </a>
                         <a href="ig" className="social">
-                            {/* ig icon */}
-                            IG
+                            <div className="img-container">
+                                <img src={igGrey.src} />
+                            </div>
                         </a>
                     </div>
                     <div className="col-33">
@@ -645,12 +648,14 @@ export default function Home() {
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
                         <a href="twitter" className="social">
-                            {/* twitter icon */}
-                            Twitter
+                            <div className="img-container">
+                                <img src={twGrey.src} />
+                            </div>
                         </a>
                         <a href="ig" className="social">
-                            {/* ig icon */}
-                            IG
+                            <div className="img-container">
+                                <img src={igGrey.src} />
+                            </div>
                         </a>
                     </div>
                 </div>
