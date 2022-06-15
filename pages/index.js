@@ -6,7 +6,12 @@ import PanelistCarousel from '../components/PanelistCarousel';
 
 import menuOpen from '../public/menu-open-01.png';
 import menuClose from '../public/img-assets-01.png';
+import igGreen from '../public/instagram_green-01.png';
+import igGrey from '../public/instagram_grey-01.png';
+import twGreen from '../public/twitter_green-01.png';
+import twGrey from '../public/twitter_grey-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
+import wow from '../public/wow-01.png';
 import takashiBg from '../public/placeholder2.jpg';
 import dottedLine from '../public/dot_line.png';
 import logikFlowers from '../public/placeholder1.png';
@@ -15,6 +20,7 @@ import plugKey from '../public/sugoi_keys_plugholders.jpeg';
 import hustlerKey from '../public/sugoi_keys_hustler.jpeg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
+import darkblockLogo from '../public/darkblock_logo.png';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
@@ -553,8 +559,8 @@ export default function Home() {
                     {account &&
                      numPlugs >= 1 &&
                      <div id="claim-container">
-                        <input type="number" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
-                        <input type="number" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
+                        <input placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
+                        <input placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
                         <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
                      </div>
                     }

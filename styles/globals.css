@@ -558,14 +558,18 @@ input:focus-visible {
 
 .caro-card > a {
 	position: relative;
+	text-align: center;
 	top: 20px;
 }
 .caro-card > a:hover {
 	opacity: 0.9;
 }
-
 .caro-card > a:first-of-type {
-	margin-right: 16px;
+	margin-right: 25px;
+}
+.caro-card > a .img-container {
+	display: inline-block;
+	width: 20px; height: 20px;
 }
 
 .alice-carousel__dots-item:not(.__custom) {
