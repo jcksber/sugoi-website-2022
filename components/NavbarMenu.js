@@ -41,10 +41,19 @@ export default function NavbarMenu() {
     
     const [menuShown, setMenuShown] = useState(false);
 
+    useEffect(() => {
+        // on-render we want to trigger the "welcome animation"
+        const menu = document.getElementById('hero-menu');
+
+        setTimeout(function(){
+            menu.classList.add('welcome')
+       }, 250);
+    });
+
     const menuButtonClicked = async () => {
         const menuOpen = document.getElementById('menu-open');
         const menuClose = document.getElementById('menu-close');
-        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('hero-menu');
         // const navList = document.getElementById('nav-menu');
 
         if (menuShown) {
@@ -53,14 +62,16 @@ export default function NavbarMenu() {
             menuClose.classList.remove('active');
             menuOpen.classList.add('active');
             //close menu animation
-            hamburger.classList.remove('open');
+            menu.classList.remove('open');
+            menu.classList.add('close');
         } else {
             setMenuShown(true);
             //change the button displayed in nav
             menuOpen.classList.remove('active');
             menuClose.classList.add('active');
             //open menu animation
-            hamburger.classList.add('open');
+            menu.classList.add('open');
+            menu.classList.remove('close');
         }
     };
 
@@ -84,12 +95,20 @@ export default function NavbarMenu() {
                 <div className="hero-banner">
                     <div className="img-container">
                         <img src={sugoiBanner.src} />
+            
                     </div>
                 </div>
                 {/* this section right here is what will be animated on above button pushes */}
 
+      
+
+                <div id="scroll">
                 <div id="hamburger" className="hamburger">
-                    <img id="hero-bg-img" src={takashiBg.src} />
+                    <div id="hero-bg-img-wrapper">
+                 
+                        <img id="hero-bg-img" src={takashiBg.src} />
+                        <img class="absolute w-full" src={wow.src} />
+                    </div>
                     <div id="nav-menu">
                         <ul>
                             {/* <li className="bg-peach"><a onClick={goHome}>HOME</a></li> */}
@@ -102,11 +121,11 @@ export default function NavbarMenu() {
                         </ul>
                     </div>
                 </div>
-
                 <div className="hero-banner">
                     <div className="img-container">
                         <img src={sugoiBanner.src} />
                     </div>
+                </div>
                 </div>
             </div>
         </div>
