@@ -460,7 +460,7 @@ ul.body {
 	animation: 3s wowsers forwards;
 }
 
-/* M here I know these keyframes are incredibely dumb this should all be a javascript function but I started down this path and I not a fucking quitter*/
+/* M here I know these keyframes are incredibely dumb this should all be a javascript function but I started down this path and I'm not a fucking quitter*/
 @keyframes wow {
 	0% {
 		visibility: hidden;
