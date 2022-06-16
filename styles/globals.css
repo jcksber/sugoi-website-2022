@@ -749,6 +749,10 @@ input:focus-visible {
 #artists #view-artists.long-btn {
 	margin-right: 15px;
 }
+#artists .long-btn:last-of-type {
+	display: block;
+	margin: 0 auto; margin-top: 15px;
+}
 
 .alice-carousel {
 	/* override */
@@ -812,7 +816,7 @@ input:focus-visible {
 /*iPad*/
 @media screen and (max-width: 1000px) {
 	#artists {
-		height: 660px;
+		height: 760px;
 		padding-left: 7%;
 		padding-right: 7%;
 	}
@@ -832,7 +836,6 @@ input:focus-visible {
 /*phones (vertical)*/
 @media screen and (max-width: 512px) {
 	#artists {
-		height: 690px;
 		margin-top: 150px;
 	}
 	#artists .long-btn {

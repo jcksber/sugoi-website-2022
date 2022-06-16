@@ -2,7 +2,8 @@ import sugoiKeyAbi from '../utils/sugoi_key_aboi.json';
 import plugAbi from '../utils/plug_abi.json';
 
 import ArtistCarousel from '../components/ArtistCarousel';
-import PanelistCarousel from '../components/PanelistCarousel';
+import SpeakerCarousel from '../components/SpeakerCarousel';
+import HostCarousel from '../components/HostCarousel';
 import NavbarMenu from '../components/NavbarMenu';
 import EventsSchedule from '../components/EventsSchedule';
 
@@ -48,6 +49,8 @@ export default function Home() {
 
     /*UI FUNCTIONALITY*/
     const [viewArtists, setViewArtists] = useState(true);
+    const [viewHosts, setViewHosts] = useState(false);
+    const [viewSpeakers, setViewSpeakers] = useState(false);
     
 
     useEffect(() => {
@@ -88,12 +91,25 @@ export default function Home() {
 	};
 
     const viewArtistsClicked = async () => {
-        if (!viewArtists)
+        if (!viewArtists) {
             setViewArtists(true);
+            setViewHosts(false);
+            setViewSpeakers(false);
+        }
     }
-    const viewPanelistsClicked = async () => {
-        if (viewArtists)
+    const viewHostsClicked = async () => {
+        if (!viewHosts) {
             setViewArtists(false);
+            setViewHosts(true);
+            setViewSpeakers(false);
+        }
+    }
+    const viewSpeakersClicked = async () => {
+        if (!viewSpeakers) {
+            setViewArtists(false);
+            setViewHosts(false);
+            setViewSpeakers(true);
+        }
     }
 
     const handleQuantityChange = (e) => {
@@ -187,9 +203,10 @@ export default function Home() {
                 <h5 id="details" className="sub-header text-olive-green">DETAILS</h5>
                 <ul className="body text-olive-green">
                     <li>
-                        3 days of events like Cocktail mixer,<br/>
-                        live music, educational panels, food,<br/>
-                        something games, continue
+                        3 days of events including informative<br/>
+                        panels, live music, immersive NFT art,<br/>
+                        and minting<br/>
+                        IRL connections with web3 homies
                     </li>
                 </ul>
                 {account && 
@@ -220,8 +237,11 @@ export default function Home() {
             <div id="artists" className="section text-olive-green">
                 <h1 className="header">FEATURING</h1>
                 <button id="view-artists" onClick={viewArtistsClicked} className={ viewArtists ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>VIEW ARTISTS</button>
-                <button id="view-panelists" onClick={viewPanelistsClicked} className={ viewArtists ? 'long-btn bg-peach' : 'long-btn bg-yellow'}>VIEW PANELISTS</button>
-                { viewArtists ? (<ArtistCarousel />) : (<PanelistCarousel />) }
+                <button id="view-hosts" onClick={viewHostsClicked} className={ viewHosts ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>VIEW HOSTS</button>
+                <button id="view-speakers" onClick={viewSpeakersClicked} className={ viewSpeakers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>VIEW SPEAKERS</button>
+                { viewArtists && <ArtistCarousel />}
+                { viewHosts && <HostCarousel /> }
+                { viewSpeakers && <SpeakerCarousel />}
             </div>
 
             <div className="dotted-line img-container">
