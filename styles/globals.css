@@ -709,7 +709,7 @@ input:focus-visible {
 	}
 	#bylogik #logik-flowers {
 		width: 150px; height: 175px;
-		top: 160px; left: 250px;
+		top: 120px; left: 250px;
 	}
 	#bylogik #claim-container {
 		width: 100%;
@@ -726,7 +726,7 @@ input:focus-visible {
 }
 
 /**********************************************************
- * FEATURED ARTISTS SECTION
+ * FEATURED ARTISTS++ SECTION
  **********************************************************/
 
 #artists {
@@ -781,6 +781,9 @@ input:focus-visible {
 	/*temporary!*/
 	background-color: #494637;
 }
+.caro-card > .img-container > img {
+	height: auto;
+}
 
 .caro-card > h5 {
 	margin-top: 14px;
@@ -798,9 +801,9 @@ input:focus-visible {
 .caro-card > a:hover {
 	opacity: 0.9;
 }
-.caro-card > a:first-of-type {
+/* .caro-card > a:first-of-type {
 	margin-right: 25px;
-}
+} */
 .caro-card > a .img-container {
 	display: inline-block;
 	width: 20px; height: 20px;

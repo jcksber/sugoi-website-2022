@@ -30,8 +30,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -47,8 +47,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -64,8 +64,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -81,8 +81,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -98,8 +98,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -115,8 +115,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -132,8 +132,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -149,8 +149,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -166,8 +166,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -183,8 +183,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -200,8 +200,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -217,8 +217,8 @@ const panelists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">PANELIST NAME</h5>
-        <p className="body">Quick bio about panelist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />

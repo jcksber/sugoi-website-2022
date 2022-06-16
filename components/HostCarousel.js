@@ -29,8 +29,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -46,8 +46,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -63,8 +63,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -80,8 +80,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -97,8 +97,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -114,8 +114,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -131,8 +131,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -148,8 +148,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -165,8 +165,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -182,8 +182,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -199,8 +199,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -216,8 +216,8 @@ const hosts = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">HOST NAME</h5>
-        <p className="body">Quick bio about artist</p>
+        <h5 className="sub-header">COMING SOON</h5>
+        <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
