@@ -449,6 +449,7 @@ ul.body {
 
 #wow {
 	display: none;
+	height: 500px;
 }
 
 #hero-menu.welcome #wow {
@@ -504,7 +505,7 @@ ul.body {
 }
 
 #nav-menu ul li {
-	height: 68px;
+	height: 84px;
 	border-bottom: solid 1px #574a10;
 }
 #nav-menu ul li:last-of-type {
@@ -512,7 +513,7 @@ ul.body {
 }
 #nav-menu ul li a {
 	position: relative;
-	bottom: 15px;
+	bottom: 7px;
 	margin-left: 25px;
 	font-family: 'Palent-Regular';
 	font-size: 4em;
@@ -521,6 +522,9 @@ ul.body {
 }
 #nav-menu ul li:hover {
 	background-color: #ff0;
+}
+#nav-menu ul li a span {
+	font-size: 0.4em;
 }
 
 #sugoi #hero-menu .closed {
@@ -535,11 +539,28 @@ ul.body {
 		top: 2px;
 	}
 	#sugoi #hero-menu {
-		height: 360px;
+		height: 470px;
 		margin-top: 0;
 	}
-	#sugoi #hero-menu .closed {
-		height: 360px;
+	#scroll {
+		height: 470px;
+		padding-top: 14px;
+	}
+	#wow {
+		height: 442px;
+	}
+	#hamburger {
+		height: 442px;
+	}
+	#nav-menu ul li {
+		height: 74px;
+	}
+	#nav-menu ul li a {
+		font-size: 3.5em;
+		bottom: 5px;
+	}
+	#nav-menu ul li a span {
+		font-size: 0.3em;
 	}
 }
 
@@ -553,18 +574,36 @@ ul.body {
 	.hero-banner .img-container {
 		width: 220%;
 	}
-	#sugoi #hero-menu,
-	#sugoi #hero-menu .closed,
-	#sugoi #hero-menu .closed img {
+	#sugoi #hero-menu {
 		height: 280px;
 	}
 	#sugoi #hero-menu {
 		z-index: 1;
 	}
-	#nav-menu ul li a {
-		font-size: 2.3em;
-		top: 6px; bottom: 0;
+	#nav-menu ul li {
+		height: 42px;
 	}
+	#nav-menu ul li a {
+		font-size: 2.1em;
+		bottom: 6px;
+	}
+	#nav-menu ul li#swag a {
+		font-size: 1.5em;
+		top: 2px; bottom: 0;
+	}
+	#scroll {
+		padding-top: 0;
+	}
+	#hero-bg-img {
+		height: 252px;
+	}
+	#hero-bg-img-wrapper {
+		height: 252px;
+	}
+	#hamburger {
+		height: 252px;
+	}
+	
 }
 
 /**********************************************************

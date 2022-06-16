@@ -54,7 +54,6 @@ export default function NavbarMenu() {
         const menuOpen = document.getElementById('menu-open');
         const menuClose = document.getElementById('menu-close');
         const menu = document.getElementById('hero-menu');
-        // const navList = document.getElementById('nav-menu');
 
         if (menuShown) {
             setMenuShown(false);
@@ -98,10 +97,6 @@ export default function NavbarMenu() {
             
                     </div>
                 </div>
-                {/* this section right here is what will be animated on above button pushes */}
-
-      
-
                 <div id="scroll">
                 <div id="hamburger" className="hamburger">
                     <div id="hero-bg-img-wrapper">
@@ -115,7 +110,7 @@ export default function NavbarMenu() {
                             <li className="bg-peach"><a onClick={goToGuests}>FEATURED GUESTS</a></li>
                             <li className="bg-peach"><a onClick={goToEvents}>EVENT SCHEDULE</a></li>
                             <li className="bg-peach"><a onClick={goToMint}>MINT KEY & RSVP</a></li>
-                            <li className="bg-peach"><a onClick={goToSwag}>DIGITAL SWAG BAGS</a></li>
+                            <li id="swag" className="bg-peach"><a onClick={goToSwag}>DIGITAL SWAG BAGS <span>POWERED BY DARKBLOCK.IO</span></a></li>
                             <li className="bg-peach"><a onClick={goToSponsors}>SPONSORS</a></li>
                             <li className="bg-peach"><a onClick={goToContact}>CONTACT</a></li>
                         </ul>

@@ -195,9 +195,7 @@ export default function Home() {
 
     return (
         <div id="sugoi" className="max-w-full">
-            {/* nav bar / button */}
             <NavbarMenu />
-
             {/* sugoi by logik section  */}
             <div id="bylogik" className="section text-olive-green">
                 <h1 className="header">
