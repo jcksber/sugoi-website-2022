@@ -4,6 +4,7 @@ import plugAbi from '../utils/plug_abi.json';
 import ArtistCarousel from '../components/ArtistCarousel';
 import PanelistCarousel from '../components/PanelistCarousel';
 import NavbarMenu from '../components/NavbarMenu';
+import EventsSchedule from '../components/EventsSchedule';
 
 import igGrey from '../public/instagram_grey-01.png';
 import twGrey from '../public/twitter_grey-01.png';
@@ -45,11 +46,9 @@ export default function Home() {
 	const [plugTid, setPlugTid] = useState("");
 	const [ownerOfPlugTid, setOwnerOfPlugTid] = useState("");
 
-    /* UI FUNCTIONALITY */
+    /*UI FUNCTIONALITY*/
     const [viewArtists, setViewArtists] = useState(true);
-    const [day1, setDay1] = useState(true);
-    const [day2, setDay2] = useState(false);
-    const [day3, setDay3] = useState(false);
+    
 
     useEffect(() => {
         // on-render we want to trigger the "welcome animation"
@@ -95,29 +94,6 @@ export default function Home() {
     const viewPanelistsClicked = async () => {
         if (viewArtists)
             setViewArtists(false);
-    }
-
-    /* EVENTS SECTION */
-    const day1Clicked = async () => {
-        if (!day1) {
-            setDay1(true);
-            setDay2(false);
-            setDay3(false);
-        }
-    }
-    const day2Clicked = async () => {
-        if (!day2) {
-            setDay2(true);
-            setDay1(false);
-            setDay3(false);
-        }
-    }
-    const day3Clicked = async () => {
-        if (!day3) {
-            setDay3(true);
-            setDay2(false);
-            setDay1(false);
-        }
     }
 
     const handleQuantityChange = (e) => {
@@ -252,198 +228,7 @@ export default function Home() {
                 <img src={dottedLine.src} />
             </div>
             {/* event schedule section */}
-            <div id="events" className="section">
-                <div className="vh">
-                    <h1 className="header text-olive-green">
-                        EVENT<br/>
-                        SCHEDULE
-                    </h1>
-                    <button id="day1" onClick={day1Clicked} className={ day1 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>TUES, JUNE 21</button>
-                    <button id="day2" onClick={day2Clicked} className={ day2 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>WED, JUNE 22</button>
-                    <button id="day3" onClick={day3Clicked} className={ day3 ? 'short-btn bg-yellow' : 'short-btn bg-peach'}>THUR, JUNE 23</button>
-                </div>
-                <div className="vh">
-                    { day1 &&
-                        <div>
-                            <h3 className="event-header">DOORS OPEN</h3>
-                            <h5 className="sub-header">11AM</h5>
-                            <p className="body">LOGIK intro to SUGOI</p>
-
-                            <h3 className="event-header">PANELS</h3>
-                            <h5 className="sub-header">11:30AM</h5>
-                            <p className="body">
-                                The Importance of Onboarding<br/>
-                                Host: Kas Vegas / Trish<br/>
-                                Speakers: Emily Lazar, Natalie Crue
-                            </p>
-                            <h5 className="sub-header">NOON</h5>
-                            <p className="body">
-                                NFT Roadmaps: Then and Now<br/>
-                                Host: Trish<br/>
-                                Speakers: Phen, Gabe
-                            </p>
-                            <h5 className="sub-header">1PM</h5>
-                            <p className="body">
-                                Smart Contracts for Artists<br/>
-                                Host: LOGIK<br/>
-                                Speakers: VGF, satoshigoat, John Wolpert, Jiwa
-                            </p>
-                            <h5 className="sub-header">1:30PM</h5>
-                            <p className="body">
-                                The Keys to Tokengated Experiences<br/>
-                                Speakers: darkblock.io
-                            </p>
-                            <h5 className="sub-header">2:30PM</h5>
-                            <p className="body">
-                                WTF is a DAO<br/>
-                                Host: KrayTrain<br/>
-                                Speakers: Snax, Natalie Crue, Jonah Blake
-                            </p>
-                            <h5 className="sub-header">3:00PM</h5>
-                            <p className="body">
-                                Redefining the Music Industry<br/>
-                                Host: Black Dave<br/>
-                                Speakers: Emily Lazar, Illa Da Producer, Spottie Wifi, Trish
-                            </p>
-                            <h5 className="sub-header">3:30PM</h5>
-                            <p className="body">
-                                Ethics and Innovation<br/>
-                                Host: Israel Wilson<br/>
-                                Speakers: Natalie Crue, Ruff Draft, Mecyver
-                            </p>
-                            <h5 className="sub-header">4:00PM</h5>
-                            <p className="body">
-                                Owning Your Voice in Web3<br/>
-                                Speakers: Manouska, Ishita
-                            </p>
-
-                            <h3 className="event-header">MIX & MINGLE</h3>
-                            <h5 className="sub-header">5PM-7PM</h5>
-                            <p className="body">Live music with DJs Blue and Gianni</p>
-                        </div>
-                    }
-                    { day2 &&
-                        <div>
-                            <h3 className="event-header">PANELS</h3>
-                            <h5 className="sub-header">10AM</h5>
-                            <p className="body">
-                                The Art of Community<br/>
-                                Speakers: Morgan, Natalie Crue, Trish
-                            </p>
-                            <h5 className="sub-header">11AM</h5>
-                            <p className="body">
-                                Into the Metaverse<br/>
-                                Speakers: Sankofa, Mike B, VGF, Aneesh Sachdeva (ALT)
-                            </p>
-                            <h5 className="sub-header">11:30AM</h5>
-                            <p className="body">
-                                Making an Impact in Web3 via Storytelling<br/>
-                                Speakers: Terrell Jones, Shavonne Wong
-                            </p>
-                            <h5 className="sub-header">NOON</h5>
-                            <p className="body">
-                                Navigating Unprecedented Success in Web3<br/>
-                                Host: LOGIK<br/>
-                                Speakers: All Smilesss, JR, Cory Van Lou, Sabet
-                            </p>
-                            <h5 className="sub-header">1PM</h5>
-                            <p className="body">
-                                Diversity & Inclusivity in Web3<br/>
-                                Host: LOGIK<br/>
-                                Speakers: Ruff Draft, Ishita, Ed Balloon
-                            </p>
-                            <h5 className="sub-header">1:30PM</h5>
-                            <p className="body">
-                                Corporate Agenda in Web3<br/>
-                                Speakers: Faith Love, Alexander Bercow, VGF, Jonah Blake
-                            </p>
-                            <h5 className="sub-header">2PM</h5>
-                            <p className="body">
-                                The Convergence of Pop Culture and Web3<br/>
-                                Speakers: Ed Balloon, Byan Calhoun, Efdot, Lizzy
-                            </p>
-                            <h5 className="sub-header">3PM</h5>
-                            <p className="body">
-                                Swopes sunrise Panel<br/>
-                                Host: Swopes<br/>
-                                Speakers: Sunrise Collective
-                            </p>
-
-                            <h3 className="event-header">TREETRUNK TAKEOVER</h3>
-                            <h5 className="sub-header">4PM</h5>
-                            <p className="body">Specialty Drinks + DJ</p>
-                            <h5 className="sub-header">5PM</h5>
-                            <p className="body">
-                                TreeTrunk Founders Panel<br/>
-                                Speakers: John Wolpert
-                            </p>
-                            <h5 className="sub-header">5:45PM</h5>
-                            <p className="body">TreeTrunk Artists Panel</p>
-                            <h5 className="sub-header">6:30PM</h5>
-                            <p className="body">Closing DJ</p>
-                        </div>
-                    }
-                    { day3 &&
-                        <div>
-                            <h3 className="event-header">PANELS</h3>
-                            <h5 className="sub-header">10AM</h5>
-                            <p className="body">
-                                Mindfulness in the Metaverse
-                            </p>
-                            <h5 className="sub-header">11AM</h5>
-                            <p className="body">
-                                Artists vs PFPs<br/>
-                                Speakers: JR, Eddie Ganglan, Waheed
-                            </p>
-                            <h5 className="sub-header">NOON</h5>
-                            <p className="body">
-                                Photography / Film / Fashion<br/>
-                                Speakers: Zoe Stekkle, Anita Sadowska, Manouska
-                            </p>
-                            <h5 className="sub-header">12:30PM</h5>
-                            <p className="body">
-                                Physical / Digital Items<br/>
-                                Host: LOGIK<br/>
-                                Speakers: americana.io
-                            </p>
-                            <h5 className="sub-header">1PM</h5>
-                            <p className="body">
-                                World Building in Web3<br/>
-                                Speakers: LOGIK, Phen, Justin Fredricks, Efdot
-                            </p>
-                            <h5 className="sub-header">1:30PM</h5>
-                            <p className="body">
-                                Build It & They Will Come<br/>
-                                Speakers: Eddie Ganglan, Crypto Jeweler
-                            </p>
-                            <h5 className="sub-header">2:30PM</h5>
-                            <p className="body">
-                                Keepin' it G in Web3<br/>
-                                Host: LOGIK<br/>
-                                Speakers: Ruff Draft, Jonah Blake, Mr. Brian Design
-                            </p>
-                            <h5 className="sub-header">3PM</h5>
-                            <p className="body">
-                                The Power of Smart Contracts<br/>
-                                Host: Trish<br/>
-                                Speakers: Black Dave, Matt Monday
-                            </p>
-                            <h5 className="sub-header">3:30PM</h5>
-                            <p className="body">
-                                NFTs for the Culture<br/>
-                                Host: Vic<br/>
-                                Speakers: LOGIK, Eric, Trish
-                            </p>
-
-                            <h3 className="event-header">PERFORMANCES</h3>
-                            <h5 className="sub-header">4PM</h5>
-                            <p className="body">Specialty Drinks + DJ</p>
-                            <h5 className="sub-header">8PM</h5>
-                            <p className="body">Headline Act</p>
-                        </div>
-                    }
-                </div>
-            </div>
+            <EventsSchedule />
             
             <div className="dotted-line img-container">
                 <img src={dottedLine.src} />

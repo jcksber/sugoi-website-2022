@@ -883,7 +883,7 @@ input:focus-visible {
 /*phones (vertical)*/
 @media screen and (max-width: 512px) {
 	#events {
-		height: 1620px;
+		height: 1840px;
 	}
 	#events h1.header {
 		text-align: center;
