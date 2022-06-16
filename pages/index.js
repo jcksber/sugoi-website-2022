@@ -3,11 +3,11 @@ import plugAbi from '../utils/plug_abi.json';
 
 import ArtistCarousel from '../components/ArtistCarousel';
 import PanelistCarousel from '../components/PanelistCarousel';
+import NavbarMenu from '../components/NavbarMenu';
 
-import menuOpen from '../public/menu-open-01.png';
-import menuClose from '../public/img-assets-01.png';
+import igGrey from '../public/instagram_grey-01.png';
+import twGrey from '../public/twitter_grey-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
-import takashiBg from '../public/placeholder2.jpg';
 import dottedLine from '../public/dot_line.png';
 import logikFlowers from '../public/placeholder1.png';
 import frensKey from '../public/sugoi_keys_tomodachi.jpeg';
@@ -15,6 +15,7 @@ import plugKey from '../public/sugoi_keys_plugholders.jpeg';
 import hustlerKey from '../public/sugoi_keys_hustler.jpeg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
+import darkblockLogo from '../public/darkblock_logo.png';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
@@ -25,37 +26,6 @@ import { ethers, utils, BigNumber } from 'ethers';
 import { useEthers } from '@usedapp/core';
 
 config.autoAddCss = false;
-
-function goToGuests(){
-    document.querySelector('#artists').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-function goToEvents(){
-    document.querySelector('#events').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-function goToMint(){
-    document.querySelector('#tickets').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-function goToSwag(){
-    document.querySelector('#tickets').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-function goToSponsors(){
-    document.querySelector('#sponsors').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-function goToContact(){
-    document.querySelector('#contact').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
 
 export default function Home() {
 
@@ -76,7 +46,6 @@ export default function Home() {
 	const [ownerOfPlugTid, setOwnerOfPlugTid] = useState("");
 
     /* UI FUNCTIONALITY */
-    const [menuShown, setMenuShown] = useState(false);
     const [viewArtists, setViewArtists] = useState(true);
     const [day1, setDay1] = useState(true);
     const [day2, setDay2] = useState(false);
@@ -118,16 +87,6 @@ export default function Home() {
         setPlugCount(parseInt(numPlugs.toHexString(), 16));
 		return parseInt(numPlugs.toHexString(), 16);
 	};
-
-    const menuButtonClicked = async () => {
-        if (menuShown) {
-            setMenuShown(false);
-            //need to add animations
-        } else {
-            setMenuShown(true);
-            //need to add animations
-        }
-    };
 
     const viewArtistsClicked = async () => {
         if (!viewArtists)
@@ -236,57 +195,7 @@ export default function Home() {
 
     return (
         <div id="sugoi" className="max-w-full">
-            {/* nav bar / button */}
-            <div id="nav-btn">
-                {menuShown ?
-                    (
-                        <button onClick={menuButtonClicked} className="close">
-                            <div className="img-container">
-                                <img src={menuClose.src} />
-                            </div>
-                        </button>
-                    ) : 
-                    (
-                        <button onClick={menuButtonClicked} className="open">
-                            <div className="img-container">
-                                <img src={menuOpen.src} />
-                            </div>
-                        </button>
-                    )
-                }
-            </div>
-
-            {/* landing / hero section */}
-            <div id="hero-menu">
-                <div className="hero-banner">
-                    <div className="img-container">
-                        <img src={sugoiBanner.src} />
-                    </div>
-                </div>
-                {/* this section right here is what will be animated on above button pushes */}
-            
-                <div className={menuShown ? "opened" : "closed"}>
-                    <img src={takashiBg.src} />
-                    <div id="nav-menu">
-                        <ul>
-                            {/* <li className="bg-peach"><a onClick={goHome}>HOME</a></li> */}
-                            <li className="bg-peach"><a onClick={goToGuests}>FEATURED GUESTS</a></li>
-                            <li className="bg-peach"><a onClick={goToEvents}>EVENT SCHEDULE</a></li>
-                            <li className="bg-peach"><a onClick={goToMint}>MINT KEY & RSVP</a></li>
-                            <li className="bg-peach"><a onClick={goToSwag}>DIGITAL SWAG BAGS</a></li>
-                            <li className="bg-peach"><a onClick={goToSponsors}>SPONSORS</a></li>
-                            <li className="bg-peach"><a onClick={goToContact}>CONTACT</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="hero-banner">
-                    <div className="img-container">
-                        <img src={sugoiBanner.src} />
-                    </div>
-                </div>
-            </div>
-
+            <NavbarMenu />
             {/* sugoi by logik section  */}
             <div id="bylogik" className="section text-olive-green">
                 <h1 className="header">
@@ -314,8 +223,9 @@ export default function Home() {
                 {account &&
                  numPlugs >= 1 &&
                  <div id="claim-container">
-                    <input type="number" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
-	                <input type="number" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
+                    <input id="hidden-input" autocomplete="false" name="hidden" value="none"></input>
+                    <input autoComplete="none" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
+	                <input autoComplete="none" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
                     <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
                  </div>
                 }
@@ -553,8 +463,9 @@ export default function Home() {
                     {account &&
                      numPlugs >= 1 &&
                      <div id="claim-container">
-                        <input type="number" placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
-                        <input type="number" placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
+                        <input id="hidden-input" autocomplete="false" name="hidden"></input>
+                        <input placeholder="# Keys" onChange={handleQuantityChange} value={keyQuantity} className="claim-field"></input>
+                        <input placeholder="Plug ID" onChange={handlePlugTidChange} value={plugTid} className="claim-field"></input>
                         <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
                      </div>
                     }
@@ -607,12 +518,14 @@ export default function Home() {
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
                         <a href="twitter" className="social">
-                            {/* twitter icon */}
-                            Twitter
+                            <div className="img-container">
+                                <img src={twGrey.src} />
+                            </div>
                         </a>
                         <a href="ig" className="social">
-                            {/* ig icon */}
-                            IG
+                            <div className="img-container">
+                                <img src={igGrey.src} />
+                            </div>
                         </a>
                     </div>
                     <div className="col-33">
@@ -623,12 +536,14 @@ export default function Home() {
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
                         <a href="twitter" className="social">
-                            {/* twitter icon */}
-                            Twitter
+                            <div className="img-container">
+                                <img src={twGrey.src} />
+                            </div>
                         </a>
                         <a href="ig" className="social">
-                            {/* ig icon */}
-                            IG
+                            <div className="img-container">
+                                <img src={igGrey.src} />
+                            </div>
                         </a>
                     </div>
                     <div className="col-33">
@@ -639,12 +554,14 @@ export default function Home() {
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
                         </p>
                         <a href="twitter" className="social">
-                            {/* twitter icon */}
-                            Twitter
+                            <div className="img-container">
+                                <img src={twGrey.src} />
+                            </div>
                         </a>
                         <a href="ig" className="social">
-                            {/* ig icon */}
-                            IG
+                            <div className="img-container">
+                                <img src={igGrey.src} />
+                            </div>
                         </a>
                     </div>
                 </div>

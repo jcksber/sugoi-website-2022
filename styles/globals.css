@@ -291,16 +291,18 @@ ul.body {
 #sugoi #nav-btn {
 	position: relative;
 	width: 100%; height: 66px;
-	padding: 7px;
-	margin: 0;
+	margin: 0; padding: 7px;
 	text-align: right;
 }
 
-#sugoi #nav-btn button {
+#sugoi #nav-btn .menu-btn {
 	position: relative;
 	width: 50px; height: 50px;
-	top: 10px;
-	right: 10px;
+	top: 10px; right: 10px;
+	display: none;
+}
+#sugoi #nav-btn .menu-btn.active {
+	display: inline-block;
 }
 #sugoi #nav-btn button:hover {
 	opacity: 0.6;
@@ -309,27 +311,201 @@ ul.body {
 .hero-banner {
 	border-top: solid 1px #574a10;
 	border-bottom: solid 1px #574a10;
+	z-index: 1000;
+	position: absolute;
 }
 
 /* NAV MENU & PLACEHOLDER IMG */
 #sugoi #hero-menu {
 	position: relative;
-	width: 100%; height: 500px;
+	width: 100%; height: 546px;
 	margin-top: 20px;
+	overflow: hidden;
 }
 
-.opened, .closed {
-	transition: height 1s ease-in;
-	-webkit-transition: height 1s ease-in;
+#hero-bg-img-wrapper {
+	position: relative;
+	overflow: hidden;
+	height: 500px;
 }
 
-#sugoi .opened img,
-#sugoi .closed #nav-menu {
+#hero-bg-img {
+	position: absolute;
+	top: 0;
+}
+
+#scroll {
+	width: 100%;
+	height: 545px;
+	padding-top: 22px;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+#hero-menu.welcome  #scroll {
+	animation: scrollWelcome 3s ease-in-out;
+}
+
+#hero-menu.welcome  #scroll {
+	animation: scrollWelcome 3s ease-in-out;
+}
+
+#hero-menu.open  #scroll {
+	animation: scrollOpen 1s ease-in-out;
+}
+
+#hero-menu.close  #scroll {
+	animation: scrollClose 1s ease-in-out;
+}
+
+
+
+@keyframes scrollWelcome {
+	0% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+	20% {
+		-webkit-transform: translate3d(0,-500px,0);
+		transform: translate3d(0,-500px,0);
+	}
+	40% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+
+	60% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+
+	80% {
+		-webkit-transform: translate3d(0,-500px,0);
+		transform: translate3d(0,-500px,0);
+	}
+	100% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+}
+
+@keyframes scrollOpen {
+	0% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+	50% {
+		-webkit-transform: translate3d(0,-500px,0);
+		transform: translate3d(0,-500px,0);
+	}
+	100% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+}
+
+@keyframes scrollClose {
+	0% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+	50% {
+		-webkit-transform: translate3d(0,-500px,0);
+		transform: translate3d(0,-500px,0);
+	}
+	100% {
+		-webkit-transform: translate3d(0,0%,0);
+		transform: translate3d(0,0%,0);
+	}
+}
+
+#sugoi #hero-menu .hamburger #hero-bg-img-wrapper,
+#sugoi #hero-menu .hamburger #nav-menu {
+	width: 100%; height: 500px;
+}
+
+#sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
+	visibility: visible;
+	transition: all 0s;
+	transition-delay: .5s;
+}
+
+#sugoi #hero-menu .hamburger #nav-menu {
+	visibility: hidden; 
+	height: 0;
+    transition: all 0s;
+	transition-delay: .5s;
+}
+
+#sugoi #hero-menu.open #hero-bg-img-wrapper {
+	visibility: hidden; 
 	height: 0;
 }
 
+#sugoi #hero-menu.open #nav-menu {
+	visibility: visible;
+	height: 500px;
+}
+
+#wow {
+	display: none;
+	height: 500px;
+}
+
+#hero-menu.welcome #wow {
+	display: block;
+	animation: 3s wow  forwards;
+}
+
+#hero-menu.welcome #hero-bg-img {
+	animation: 3s wowsers forwards;
+}
+
+/* M here I know these keyframes are incredibely dumb this should all be a javascript function but I started down this path and I'm not a fucking quitter*/
+@keyframes wow {
+	0% {
+		visibility: hidden;
+	}
+	20% {
+		visibility: hidden;
+	}
+	40% {
+		visibility: visible;
+	}
+	60% {
+		visibility: visible;
+	}
+	80% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+
+@keyframes wowsers {
+	0% {
+		visibility: visible;
+	}
+	20% {
+		visibility: hidden;
+	}
+	40% {
+		visibility: hidden;
+	}
+	60% {
+		visibility: hidden;
+	}
+	80% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
+	}
+}
+
 #nav-menu ul li {
-	height: 68px;
+	height: 84px;
 	border-bottom: solid 1px #574a10;
 }
 #nav-menu ul li:last-of-type {
@@ -337,7 +513,7 @@ ul.body {
 }
 #nav-menu ul li a {
 	position: relative;
-	bottom: 15px;
+	bottom: 7px;
 	margin-left: 25px;
 	font-family: 'Palent-Regular';
 	font-size: 4em;
@@ -346,6 +522,9 @@ ul.body {
 }
 #nav-menu ul li:hover {
 	background-color: #ff0;
+}
+#nav-menu ul li a span {
+	font-size: 0.4em;
 }
 
 #sugoi #hero-menu .closed {
@@ -356,15 +535,32 @@ ul.body {
 
 /*iPad*/
 @media screen and (max-width: 1000px) {
-	#sugoi #nav-btn button {
+	#sugoi #nav-btn .menu-btn {
 		top: 2px;
 	}
 	#sugoi #hero-menu {
-		height: 360px;
+		height: 470px;
 		margin-top: 0;
 	}
-	#sugoi #hero-menu .closed {
-		height: 360px;
+	#scroll {
+		height: 470px;
+		padding-top: 14px;
+	}
+	#wow {
+		height: 442px;
+	}
+	#hamburger {
+		height: 442px;
+	}
+	#nav-menu ul li {
+		height: 74px;
+	}
+	#nav-menu ul li a {
+		font-size: 3.5em;
+		bottom: 5px;
+	}
+	#nav-menu ul li a span {
+		font-size: 0.3em;
 	}
 }
 
@@ -378,18 +574,36 @@ ul.body {
 	.hero-banner .img-container {
 		width: 220%;
 	}
-	#sugoi #hero-menu,
-	#sugoi #hero-menu .closed,
-	#sugoi #hero-menu .closed img {
+	#sugoi #hero-menu {
 		height: 280px;
 	}
 	#sugoi #hero-menu {
 		z-index: 1;
 	}
-	#nav-menu ul li a {
-		font-size: 2.3em;
-		top: 6px; bottom: 0;
+	#nav-menu ul li {
+		height: 42px;
 	}
+	#nav-menu ul li a {
+		font-size: 2.1em;
+		bottom: 6px;
+	}
+	#nav-menu ul li#swag a {
+		font-size: 1.5em;
+		top: 2px; bottom: 0;
+	}
+	#scroll {
+		padding-top: 0;
+	}
+	#hero-bg-img {
+		height: 252px;
+	}
+	#hero-bg-img-wrapper {
+		height: 252px;
+	}
+	#hamburger {
+		height: 252px;
+	}
+	
 }
 
 /**********************************************************
@@ -429,13 +643,17 @@ ul.body {
 	border-top-right-radius: 9em;
 }
 
-#claim-container {
+#bylogik #claim-container {
+	width: 340px;
 	margin-top: 20px; margin-bottom: 15px;
+}
+#hidden-input {
+	display: none;
 }
 #bylogik .claim-field {
 	display: inline-block;
-	width: 106px; height: 35px;
-	margin: auto;
+	width: 32%; height: 35px;
+	margin: 0;
 	border-radius: 10px;
 	text-align: center;
 }
@@ -444,13 +662,10 @@ ul.body {
 	box-shadow: 0px 0px 8px -4px #574a10;
 	background-color: #ffff00;
 }
-#bylogik input.claim-field:first-of-type {
-	margin-left: 0;
-	margin-right: 10px;
+#bylogik input.claim-field:last-of-type {
+	margin-left: 1.75%; margin-right: 1.75%;
 }
 #bylogik .claim-field:last-child {
-	margin-left: 10px;
-	margin-right: 0;
 	padding-top: 2px;
 	top: 1px;
 }
@@ -466,8 +681,13 @@ input:focus-visible {
 	#bylogik #logik-flowers {
 		left: 450px;
 	}
-	#bylogik > button#mint {
-		padding-top: 5px;
+	#bylogik > button#mint,
+	#bylogik > button#connect {
+		padding-top: 2px;
+		/*maybe 0???*/
+	}
+	#bylogik .claim-field {
+		width: 32%; height: 55px;
 	}
 }
 
@@ -481,8 +701,8 @@ input:focus-visible {
 		width: 150px; height: 175px;
 		top: 160px; left: 250px;
 	}
-	#bylogik .claim-field {
-		width: 32%; height: 55px;
+	#claim-container {
+		width: 100%;
 	}
 	#bylogik input.claim-field:first-of-type {
 		margin: 0;
@@ -558,14 +778,18 @@ input:focus-visible {
 
 .caro-card > a {
 	position: relative;
+	text-align: center;
 	top: 20px;
 }
 .caro-card > a:hover {
 	opacity: 0.9;
 }
-
 .caro-card > a:first-of-type {
-	margin-right: 16px;
+	margin-right: 25px;
+}
+.caro-card > a .img-container {
+	display: inline-block;
+	width: 20px; height: 20px;
 }
 
 .alice-carousel__dots-item:not(.__custom) {
@@ -588,6 +812,7 @@ input:focus-visible {
 	}
 	#artists .long-btn {
 		display: block;
+		padding-top: 3px;
 	}
 	.alice-carousel {
 		margin-top: 60px !important;
@@ -693,10 +918,14 @@ input:focus-visible {
 	width: 100%;
 }
 
+#tickets #claim-container {
+	margin-bottom: 15px;
+}
+
 .ticket-container {
 	position: relative;
-	width: 200px; height: 200px;
-	margin-bottom: 100px;
+	width: 180px; height: 200px;
+	margin-bottom: 150px;
 	text-align: center;
 }
 #frens.ticket-container {
@@ -704,8 +933,12 @@ input:focus-visible {
 }
 #plug.ticket-container {
 	position: absolute;
-	top: 190px;
+	top: 220px;
 	right: calc(32% - 200px);
+}
+
+.ticket-container h5 {
+	margin-top: 15px;
 }
 
 
@@ -763,20 +996,24 @@ input:focus-visible {
 		margin-top: 12px;
 	}
 	#tickets .ticket-container {
-		width: 150px; height: 240px;
+		width: 150px; height: 220px;
 	}
 	#tickets #frens.ticket-container {
-		right: 60px;
+		top: 50px;
+	}
+	#tickets #frens.ticket-container,
+	#tickets #hustler.ticket-container {
+		right: 30px;
 	}
 	#tickets #plug.ticket-container {
-		top: 550px;
-		right: calc(32% - 100px);
-	}
-	#tickets #hustler.ticket-container {
-		right: 60px;
+		top: 620px;
+		right: calc(32% - 50px);
 	}
 	#tickets .claim-field {
 		height: 55px;
+	}
+	#tickets button.long-btn#mint {
+		padding-top: 3px;
 	}
 }
 
@@ -844,8 +1081,8 @@ input:focus-visible {
 	margin: 0 auto;
 }
 
-#sponsors .row .col-25 .img-container img,
-#sponsors .row .col-33 .img-container img {
+#sponsors .row .col-25 > .img-container img,
+#sponsors .row .col-33 > .img-container img {
 	transform: rotate(90deg);
 }
 
@@ -862,7 +1099,12 @@ input:focus-visible {
 }
 
 #sponsors .row .col-33 > a:first-of-type {
-	margin-right: 16px;
+	margin-right: 25px;
+}
+
+#sponsors .row .col-33 > a .img-container {
+	display: inline-block;
+	width: 20px; height: 20px;
 }
 
 @media screen and (max-width: 1000px) {
