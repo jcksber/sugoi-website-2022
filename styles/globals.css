@@ -673,7 +673,7 @@ ul.body {
 	background-color: #ffff00;
 }
 #bylogik input.claim-field:last-of-type {
-	margin-left: 1.75%; margin-right: 1.75%;
+	margin-left: 2%; margin-right: 2%;
 }
 #bylogik .claim-field:last-child {
 	padding-top: 2px;
@@ -711,14 +711,14 @@ input:focus-visible {
 		width: 150px; height: 175px;
 		top: 160px; left: 250px;
 	}
-	#claim-container {
+	#bylogik #claim-container {
 		width: 100%;
 	}
 	#bylogik input.claim-field:first-of-type {
 		margin: 0;
 	}
 	#bylogik input.claim-field:last-of-type {
-		margin-left: 1.75%; margin-right: 1.75%;
+		margin-left: 2%; margin-right: 2%;
 	}
 	#bylogik .claim-field:last-child {
 		margin: 0;
@@ -923,9 +923,13 @@ input:focus-visible {
 	margin-bottom: 30px;
 }
 
-#tickets button.long-btn#mint,
+#tickets #connect,
+#tickets #mint,
 #tickets a.long-btn {
 	width: 100%;
+}
+#tickets button.long-btn#connect {
+	padding-top: 4px;
 }
 
 #tickets #claim-container {
@@ -977,7 +981,7 @@ input:focus-visible {
 }
 
 #tickets input.claim-field:last-of-type {
-	margin-left: 1.75%; margin-right: 1.75%;
+	margin-left: 2%; margin-right: 2%;
 }
 #tickets .claim-field:last-child {
 	padding-top: 2px;
@@ -1225,7 +1229,7 @@ input:focus-visible {
 #footer #sugoi-logo {
 	position: relative;
 	margin: 0 auto;
-	width: 50px; height: 29px;
+	width: 50px; height: 33px;
 }
 
 #footer #logik-logo {
