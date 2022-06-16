@@ -464,7 +464,7 @@ ul.body {
 	-moz-transition-delay: .5s;
 }
 
-#sugoi #hero-menu.open #hero-bg-img-wrapper {
+#sugoi #hero-menu.open .hamburger #hero-bg-img-wrapper {
 	visibility: hidden; 
 	height: 0;
 }
@@ -582,7 +582,7 @@ ul.body {
 		width: 220%;
 	}
 	#sugoi #hero-menu {
-		height: 280px;
+		height: 285px;
 	}
 	#sugoi #hero-menu {
 		z-index: 1;
