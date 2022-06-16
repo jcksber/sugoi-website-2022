@@ -337,53 +337,62 @@ ul.body {
 #scroll {
 	width: 100%;
 	height: 545px;
-	padding-top: 22px;
+	padding-top: 20px;
+	-moz-transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
 #hero-menu.welcome  #scroll {
 	animation: scrollWelcome 3s ease-in-out;
-}
-
-#hero-menu.welcome  #scroll {
-	animation: scrollWelcome 3s ease-in-out;
+	-webkit-animation: scrollWelcome 3s ease-in-out;
+	-moz-animation: scrollWelcome 3s ease-in-out;
 }
 
 #hero-menu.open  #scroll {
 	animation: scrollOpen 1s ease-in-out;
+	-webkit-animation: scrollOpen 1s ease-in-out;
+	-moz-animation: scrollOpen 1s ease-in-out;
 }
 
 #hero-menu.close  #scroll {
 	animation: scrollClose 1s ease-in-out;
+	-webkit-animation: scrollClose 1s ease-in-out;
+	-moz-animation: scrollClose 1s ease-in-out;
 }
 
 
 
 @keyframes scrollWelcome {
 	0% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
 	20% {
+		-moz-transform: translate3d(0,-500px,0);
 		-webkit-transform: translate3d(0,-500px,0);
 		transform: translate3d(0,-500px,0);
 	}
 	40% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
 
 	60% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
 
 	80% {
+		-moz-transform: translate3d(0,-500px,0);
 		-webkit-transform: translate3d(0,-500px,0);
 		transform: translate3d(0,-500px,0);
 	}
 	100% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
@@ -391,14 +400,17 @@ ul.body {
 
 @keyframes scrollOpen {
 	0% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
 	50% {
+		-moz-transform: translate3d(0,-500px,0);
 		-webkit-transform: translate3d(0,-500px,0);
 		transform: translate3d(0,-500px,0);
 	}
 	100% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
@@ -406,14 +418,17 @@ ul.body {
 
 @keyframes scrollClose {
 	0% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
 	50% {
+		-moz-transform: translate3d(0,-500px,0);
 		-webkit-transform: translate3d(0,-500px,0);
 		transform: translate3d(0,-500px,0);
 	}
 	100% {
+		-moz-transform: translate3d(0,0%,0);
 		-webkit-transform: translate3d(0,0%,0);
 		transform: translate3d(0,0%,0);
 	}
@@ -426,15 +441,27 @@ ul.body {
 
 #sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
 	visibility: visible;
+
 	transition: all 0s;
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+
 	transition-delay: .5s;
+	-webkit-transition-delay: .5s;
+	-moz-transition-delay: .5s;
 }
 
 #sugoi #hero-menu .hamburger #nav-menu {
 	visibility: hidden; 
 	height: 0;
+
     transition: all 0s;
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+
 	transition-delay: .5s;
+	-webkit-transition-delay: .5s;
+	-moz-transition-delay: .5s;
 }
 
 #sugoi #hero-menu.open #hero-bg-img-wrapper {
@@ -455,53 +482,33 @@ ul.body {
 #hero-menu.welcome #wow {
 	display: block;
 	animation: 3s wow  forwards;
+	-webkit-animation: 3s wow  forwards;
+	-moz-animation: 3s wow  forwards;
 }
 
 #hero-menu.welcome #hero-bg-img {
 	animation: 3s wowsers forwards;
+	-webkit-animation: 3s wowsers forwards;
+	-moz-animation: 3s wowsers forwards;
 }
 
 /* M here I know these keyframes are incredibely dumb this should all be a javascript function but I started down this path and I'm not a fucking quitter*/
 @keyframes wow {
-	0% {
-		visibility: hidden;
-	}
-	20% {
-		visibility: hidden;
-	}
-	40% {
-		visibility: visible;
-	}
-	60% {
-		visibility: visible;
-	}
-	80% {
-		visibility: hidden;
-	}
-	100% {
-		visibility: hidden;
-	}
+	0% { visibility: hidden; }
+	20% { visibility: hidden; }
+	40% { visibility: visible; }
+	60% { visibility: visible; }
+	80% { visibility: hidden; }
+	100% { visibility: hidden; }
 }
 
 @keyframes wowsers {
-	0% {
-		visibility: visible;
-	}
-	20% {
-		visibility: hidden;
-	}
-	40% {
-		visibility: hidden;
-	}
-	60% {
-		visibility: hidden;
-	}
-	80% {
-		visibility: hidden;
-	}
-	100% {
-		visibility: visible;
-	}
+	0% { visibility: visible; }
+	20% { visibility: hidden; }
+	40% { visibility: hidden; }
+	60% { visibility: hidden; }
+	80% { visibility: hidden; }
+	100% { visibility: visible; }
 }
 
 #nav-menu ul li {
@@ -594,10 +601,13 @@ ul.body {
 	#scroll {
 		padding-top: 0;
 	}
+	#wow {
+		height: 252px;
+	}
 	#hero-bg-img {
 		height: 252px;
 	}
-	#hero-bg-img-wrapper {
+	#sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
 		height: 252px;
 	}
 	#hamburger {
