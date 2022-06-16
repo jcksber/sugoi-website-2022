@@ -337,7 +337,7 @@ ul.body {
 #scroll {
 	width: 100%;
 	height: 545px;
-	padding-top: 22px;
+	padding-top: 20px;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -594,10 +594,13 @@ ul.body {
 	#scroll {
 		padding-top: 0;
 	}
+	#wow {
+		height: 252px;
+	}
 	#hero-bg-img {
 		height: 252px;
 	}
-	#hero-bg-img-wrapper {
+	#sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
 		height: 252px;
 	}
 	#hamburger {
