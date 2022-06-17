@@ -18,6 +18,14 @@ import hustlerKey from '../public/sugoi_keys_hustler.jpeg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
 import darkblockLogo from '../public/darkblock_logo.png';
+import americana from '../public/sponsors/Americana-logobar.png';
+import treetrunk from '../public/sponsors/TT_Logo.png';
+import altLogo from '../public/sponsors/ALT_Logo_Black.png';
+import allSmilesLogo from '../public/sponsors/Smilesss Logo Black.png';
+import cortexLogo from '../public/sponsors/cortex.png';
+import mrAugmentedLogo from '../public/sponsors/MRAUGMENTED_LOGO.png';
+import sunriseLogo from '../public/sponsors/Sunrise-Logo-White.png';
+
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
@@ -76,6 +84,7 @@ export default function Home() {
         setKeyCount(parseInt(numKeys.toHexString(), 16));
 		return parseInt(numKeys.toHexString(), 16);
 	};
+
     // Obtain the number of Plugs in connected wallet
 	const getNumPlugs = async () => {
 		const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -236,9 +245,9 @@ export default function Home() {
             {/* featured artists section */}
             <div id="artists" className="section text-olive-green">
                 <h1 className="header">FEATURING</h1>
-                <button id="view-artists" onClick={viewArtistsClicked} className={ viewArtists ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>VIEW ARTISTS</button>
-                <button id="view-hosts" onClick={viewHostsClicked} className={ viewHosts ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>VIEW HOSTS</button>
-                <button id="view-speakers" onClick={viewSpeakersClicked} className={ viewSpeakers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>VIEW SPEAKERS</button>
+                <button id="view-artists" onClick={viewArtistsClicked} className={ viewArtists ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>ARTISTS</button>
+                <button id="view-hosts" onClick={viewHostsClicked} className={ viewHosts ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>HOSTS</button>
+                <button id="view-speakers" onClick={viewSpeakersClicked} className={ viewSpeakers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>SPEAKERS</button>
                 { viewArtists && <ArtistCarousel />}
                 { viewHosts && <HostCarousel /> }
                 { viewSpeakers && <SpeakerCarousel />}
@@ -315,9 +324,9 @@ export default function Home() {
                     OUR SPONSORS
                 </h1>
                 <div className="row">
-                    <div className="col-33">
+                    <div className="col-100">
                         <div className="img-container">
-                            <img src={plugKey.src} />
+                            <img src={treetrunk.src} />
                         </div>
                         <p className="body">
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
@@ -325,17 +334,12 @@ export default function Home() {
                         <a href="twitter" className="social">
                             <div className="img-container">
                                 <img src={twGrey.src} />
-                            </div>
-                        </a>
-                        <a href="ig" className="social">
-                            <div className="img-container">
-                                <img src={igGrey.src} />
                             </div>
                         </a>
                     </div>
-                    <div className="col-33">
+                    <div className="col-100">
                         <div className="img-container">
-                            <img src={plugKey.src} />
+                            <img src={americana.src} />
                         </div>
                         <p className="body">
                             Insert short sentence about sponsor here. Can be two sentences long or three wow!
@@ -343,29 +347,6 @@ export default function Home() {
                         <a href="twitter" className="social">
                             <div className="img-container">
                                 <img src={twGrey.src} />
-                            </div>
-                        </a>
-                        <a href="ig" className="social">
-                            <div className="img-container">
-                                <img src={igGrey.src} />
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-33">
-                        <div className="img-container">
-                            <img src={plugKey.src} />
-                        </div>
-                        <p className="body">
-                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
-                        </p>
-                        <a href="twitter" className="social">
-                            <div className="img-container">
-                                <img src={twGrey.src} />
-                            </div>
-                        </a>
-                        <a href="ig" className="social">
-                            <div className="img-container">
-                                <img src={igGrey.src} />
                             </div>
                         </a>
                     </div>
@@ -373,44 +354,44 @@ export default function Home() {
                 <div id="second" className="row">
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src={darkblockLogo.src} />
                         </div>
                     </div>
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src={altLogo.src} />
                         </div>
                     </div>
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src={cortexLogo.src} />
                         </div>
                     </div>
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src={allSmilesLogo.src} />
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src={sunriseLogo.src} />
                         </div>
                     </div>
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src={mrAugmentedLogo.src} />
                         </div>
                     </div>
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src="" />
                         </div>
                     </div>
                     <div className="col-25">
                         <div className="img-container">
-                            <img src={frensKey.src} />
+                            <img src="" />
                         </div>
                     </div>
                 </div>

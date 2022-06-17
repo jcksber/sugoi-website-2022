@@ -144,6 +144,12 @@
 	padding: 0;
 }
 
+.col-50 {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+
 .col-33 {
 	position: relative;
 	display: inline-block;
@@ -1091,38 +1097,37 @@ input:focus-visible {
 }
 
 #sponsors .row .col-25,
-#sponsors .row .col-33 {
+#sponsors .row .col-100 {
 	text-align: center;
 }
 
 #sponsors .row .col-25 .img-container,
-#sponsors .row .col-33 .img-container {
-	width: 90px; height: 150px;
+#sponsors .row .col-100 .img-container {
+	width: 120px; height: 120px;
 	margin: 0 auto;
 }
 
-#sponsors .row .col-25 > .img-container img,
-#sponsors .row .col-33 > .img-container img {
+.rotate-that {
 	transform: rotate(90deg);
 }
 
-#sponsors .row .col-33 > p {
+#sponsors .row .col-100 > p {
 	line-height: 20px;
 }
 
-#sponsors .row .col-33 > a {
+#sponsors .row .col-100 > a {
 	position: relative;
 	top: 35px;
 }
-#sponsors .row .col-33 > a:hover {
+#sponsors .row .col-100 > a:hover {
 	opacity: 0.9;
 }
 
-#sponsors .row .col-33 > a:first-of-type {
+#sponsors .row .col-100 > a:first-of-type {
 	margin-right: 25px;
 }
 
-#sponsors .row .col-33 > a .img-container {
+#sponsors .row .col-100 > a .img-container {
 	display: inline-block;
 	width: 20px; height: 20px;
 }
@@ -1134,17 +1139,17 @@ input:focus-visible {
 	#sponsors h1.header {
 		margin-bottom: 50px;
 	}
-	#sponsors .row .col-33 {
+	#sponsors .row .col-100 {
 		width: 49%;
 	}
-	#sponsors .row .col-33:last-of-type {
+	#sponsors .row .col-100:last-of-type {
 		display: block;
 		margin: 15px auto;
 	}
-	#sponsors .row .col-33 .img-container {
-		width: 130px; height: 200px;
+	#sponsors .row .col-100 .img-container {
+		width: 320px; height: 100px;
 	}
-	#sponsors .row .col-33 p {
+	#sponsors .row .col-100 p {
 		width: 75%;
 		margin: 0 auto;
 	}
@@ -1160,11 +1165,11 @@ input:focus-visible {
 		font-size: 2.9em;
 		margin-bottom: 0;
 	}
-	#sponsors .row .col-33 {
+	#sponsors .row .col-100 {
 		width: 100%;
 		margin: 15px auto;
 	}
-	#sponsors .row .col-33 > a {
+	#sponsors .row .col-100 > a {
 		top: 20px;
 	}
 	#sponsors #second.row {
