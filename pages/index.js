@@ -384,7 +384,7 @@ export default function Home() {
                             <img src={mrAugmentedLogo.src} />
                         </div>
                     </div>
-                    <div className="col-25">
+                    {/* <div className="col-25">
                         <div className="img-container">
                             <img src="" />
                         </div>
@@ -393,7 +393,7 @@ export default function Home() {
                         <div className="img-container">
                             <img src="" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
