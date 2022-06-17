@@ -11,21 +11,8 @@ import waheed from '../public/artists/Waheed.jpeg';
 const handleDragStart = (e) => e.preventDefault();
 
 const numItems = {
-    0: {
-        items: 1
-    },
-    512: {
-        items: 2
-    },
-    728: {
-        items: 3
-    },
-    928: {
-        items: 4
-    },
-    1224: {
-        items: 5
-    }
+    0: { items: 1 }, 512: { items: 2 }, 728: { items: 3 }, 
+    928: { items: 4 }, 1224: { items: 5 }, 1500: {items: 7 }
 }
 
 const artists = [
@@ -33,7 +20,7 @@ const artists = [
         <div className="img-container">
             <img src={waheed.src} />
         </div>
-        <h5 className="sub-header">WAHEED</h5>
+        <h5 className="sub-header">WAHEED ZAI</h5>
         <p className="body">Artist all smilesss</p>
         <a href="https://twitter.com/all_smilesss" className="social">
             <div className="img-container">
@@ -160,11 +147,6 @@ const artists = [
                 <img src={twGreen.src} />
             </div>
         </a>
-        <a href="ig" className="social">
-            <div className="img-container">
-                <img src={igGreen.src} />
-            </div>
-        </a>
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
@@ -175,11 +157,6 @@ const artists = [
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
-            </div>
-        </a>
-        <a href="ig" className="social">
-            <div className="img-container">
-                <img src={igGreen.src} />
             </div>
         </a>
     </div>
