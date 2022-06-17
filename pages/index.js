@@ -22,7 +22,7 @@ import americana from '../public/sponsors/Americana.png';
 import treetrunk from '../public/sponsors/Treetrunk.png';
 import altLogo from '../public/sponsors/ALT.png';
 import allSmilesLogo from '../public/sponsors/AllSmilesss.png';
-import cortexLogo from '../public/sponsors/Cortex.png';
+import cortexLogo from '../public/sponsors/CortexLogo.png';
 import mrAugmentedLogo from '../public/sponsors/Augmented.png';
 import sunriseLogo from '../public/sponsors/Sunrise.png';
 import blueLogo from '../public/sponsors/Blue.png';
