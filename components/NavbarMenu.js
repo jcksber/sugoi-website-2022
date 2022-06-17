@@ -46,7 +46,7 @@ export default function NavbarMenu() {
         const menu = document.getElementById('hero-menu');
 
         setTimeout(function(){
-            menu.classList.add('welcome')
+            menu.classList.add('welcome');
        }, 250);
     });
 

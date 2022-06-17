@@ -7,6 +7,7 @@ import twGreen from '../public/twitter_green-01.png';
 import sabet from '../public/artists/Sabet.jpeg';
 import gianniLee from '../public/artists/GianniLee.jpeg';
 import waheed from '../public/artists/Waheed.jpeg';
+// import gabe from '.../public/artists/GabeWeis.jpeg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -56,9 +57,9 @@ const artists = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <h5 className="sub-header">GABE WEISE</h5>
+        <p className="body">Resilient Cubist</p>
+        <a href="" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

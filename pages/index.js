@@ -17,14 +17,17 @@ import plugKey from '../public/sugoi_keys_plugholders.jpeg';
 import hustlerKey from '../public/sugoi_keys_hustler.jpeg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
-import darkblockLogo from '../public/darkblock_logo.png';
-import americana from '../public/sponsors/Americana-logobar.png';
-import treetrunk from '../public/sponsors/TT_Logo.png';
-import altLogo from '../public/sponsors/ALT_Logo_Black.png';
-import allSmilesLogo from '../public/sponsors/Smilesss Logo Black.png';
-import cortexLogo from '../public/sponsors/cortex.png';
-import mrAugmentedLogo from '../public/sponsors/MRAUGMENTED_LOGO.png';
-import sunriseLogo from '../public/sponsors/Sunrise-Logo-White.png';
+import darkblockLogo from '../public/sponsors/DarkBlock.png';
+import americana from '../public/sponsors/Americana.png';
+import treetrunk from '../public/sponsors/Treetrunk.png';
+import altLogo from '../public/sponsors/ALT.png';
+import allSmilesLogo from '../public/sponsors/AllSmilesss.png';
+import cortexLogo from '../public/sponsors/Cortex.png';
+import mrAugmentedLogo from '../public/sponsors/Augmented.png';
+import sunriseLogo from '../public/sponsors/Sunrise.png';
+import blueLogo from '../public/sponsors/Blue.png';
+import crwnmagLogo from '../public/sponsors/Crwnmag.png';
+import sabetLogo from '../public/sponsors/Sabet.png';
 
 
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -283,7 +286,7 @@ export default function Home() {
                         <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
                      </div>
                     }
-                    {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT WALLET</button>}
+                    {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT TO GAIN ACCESS</button>}
                     <a href="https://nftaccess.app/event/sugoi-nft-nyc-2022" id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
                     <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
                 </div>
@@ -384,14 +387,36 @@ export default function Home() {
                             <img src={mrAugmentedLogo.src} />
                         </div>
                     </div>
-                    {/* <div className="col-25">
+                    <div className="col-25">
                         <div className="img-container">
-                            <img src="" />
+                            <img src={blueLogo.src} />
                         </div>
                     </div>
                     <div className="col-25">
                         <div className="img-container">
-                            <img src="" />
+                            <img src={crwnmagLogo.src} />
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={sabetLogo.src} />
+                        </div>
+                    </div>
+                    {/* <div className="col-25">
+                        <div className="img-container">
+                            <img src={mrAugmentedLogo.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={blueLogo.src} />
+                        </div>
+                    </div>
+                    <div className="col-25">
+                        <div className="img-container">
+                            <img src={crwnmagLogo.src} />
                         </div>
                     </div> */}
                 </div>

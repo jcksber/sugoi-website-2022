@@ -440,10 +440,14 @@ ul.body {
 	}
 }
 
-#sugoi #hero-menu .hamburger #hero-bg-img-wrapper,
 #sugoi #hero-menu .hamburger #nav-menu {
 	width: 100%; height: 500px;
 }
+
+#sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
+	width: 2800px;
+}
+
 
 #sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
 	visibility: visible;
