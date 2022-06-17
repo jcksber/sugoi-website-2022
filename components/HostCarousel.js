@@ -2,7 +2,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 import twGreen from '../public/twitter_green-01.png';
-import trish from '../public/speakers/trish.JPG';
+import trish from '../public/speakers/Trish.JPG';
 import victoriaLover from '../public/speakers/VictoriaLover.png';
 
 const handleDragStart = (e) => e.preventDefault();
