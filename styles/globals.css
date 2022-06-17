@@ -1086,7 +1086,7 @@ input:focus-visible {
  **********************************************************/
 
 #sponsors {
-	height: 1000px;
+	height: 1200px;
 	background-color: #d0cbbf;
 	border: solid 1px #494637;
 }
@@ -1114,14 +1114,20 @@ input:focus-visible {
 .rotate-that {
 	transform: rotate(90deg);
 }
-
+#sponsors .row .col-100 .img-container {
+	width: 150px; height: auto;
+}
 #sponsors .row .col-100 > p {
 	line-height: 20px;
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: -30px;
 }
 
 #sponsors .row .col-100 > a {
 	position: relative;
-	top: 35px;
+	top: 5px;
 }
 #sponsors .row .col-100 > a:hover {
 	opacity: 0.9;
@@ -1145,17 +1151,21 @@ input:focus-visible {
 	}
 	#sponsors .row .col-100 {
 		width: 49%;
+		margin: 0 auto;
 	}
 	#sponsors .row .col-100:last-of-type {
 		display: block;
 		margin: 15px auto;
 	}
-	#sponsors .row .col-100 .img-container {
+	/* #sponsors .row .col-100 .img-container {
 		width: 320px; height: 100px;
-	}
+	} */
 	#sponsors .row .col-100 p {
 		width: 75%;
 		margin: 0 auto;
+	}
+	#sponsors .row .col-100 > a:first-of-type {
+		margin-right: 0;
 	}
 }
 
