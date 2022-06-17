@@ -1,13 +1,12 @@
-import { useState, useEffect } from 'react'
+
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-import igGreen from '../public/instagram_green-01.png';
 import twGreen from '../public/twitter_green-01.png';
 import sabet from '../public/artists/Sabet.jpeg';
 import gianniLee from '../public/artists/GianniLee.jpeg';
 import waheed from '../public/artists/Waheed.jpeg';
-// import gabe from '.../public/artists/GabeWeis.jpeg';
+import gabe from '../public/artists/gabe.jpeg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -55,7 +54,7 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={gabe.src} />
         </div>
         <h5 className="sub-header">GABE WEISE</h5>
         <p className="body">Resilient Cubist</p>
