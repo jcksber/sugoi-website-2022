@@ -486,6 +486,7 @@ ul.body {
 
 #wow {
 	display: none;
+	width: 100vw;
 	height: 500px;
 }
 
