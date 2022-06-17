@@ -43,7 +43,7 @@ export default function Home() {
     /* WEB3 FUNCTIONALITY */
     const [numKeys, setKeyCount] = useState(0);
     const [numPlugs, setPlugCount] = useState(0);
-    const [keyQuantity, setKeyQuantity] = useState(0);
+    const [keyQuantity, setKeyQuantity] = useState("");
 	const [plugTid, setPlugTid] = useState("");
 	const [ownerOfPlugTid, setOwnerOfPlugTid] = useState("");
 
