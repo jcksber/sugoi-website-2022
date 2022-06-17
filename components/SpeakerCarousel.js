@@ -13,6 +13,12 @@ import jordanMitchell from '../public/speakers/JORDANMITCHELL.JPG';
 import mrBrian from '../public/speakers/MrBrianDesign.jpg';
 import profits from '../public/speakers/Profits.jpeg';
 import terrellJones from '../public/speakers/TerrellJones.jpeg';
+import val from '../public/speakers/Val.JPG';
+import satoshigoat from '../public/speakers/satoshigoat.png';
+import alexAlpert from '../public/speakers/AlexAlpert.jpg';
+import benMayorWhite from '../public/speakers/BenMayorWhite.jpg';
+import johnWolpert from '../public/speakers/JohnWolpert.jpg';
+import sarina from '../public/speakers/SarinaCharugundla.jpg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -120,6 +126,18 @@ const panelists = [
     </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
+            <img src={satoshigoat.src} />
+        </div>
+        <h5 className="sub-header">SATOSHIGOAT</h5>
+        <p className="body">Dev</p>
+        <a href="https://twitter.com/satoshigoat" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
             <img src={profits.src} />
         </div>
         <h5 className="sub-header">PROFITS</h5>
@@ -137,6 +155,66 @@ const panelists = [
         <h5 className="sub-header">TERRELL JONES</h5>
         <p className="body">Visual Artist</p>
         <a href="https://twitter.com/terrelldom" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={val.src} />
+        </div>
+        <h5 className="sub-header">VALCOHOLICS</h5>
+        <p className="body">CEP</p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={johnWolpert.src} />
+        </div>
+        <h5 className="sub-header">JOHN WOLPERT</h5>
+        <p className="body">Co-Founder of Treetrunk</p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={sarina.src} />
+        </div>
+        <h5 className="sub-header">SARINA</h5>
+        <p className="body">Co-Founder of Treetrunk</p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={benMayorWhite.src} />
+        </div>
+        <h5 className="sub-header">BEN MAYOR WHITE</h5>
+        <p className="body">Founder Frensco / Former Adidas</p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={alexAlpert.src} />
+        </div>
+        <h5 className="sub-header">ALEX ALPERT</h5>
+        <p className="body">Director of NFT Creative - OneOf</p>
+        <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

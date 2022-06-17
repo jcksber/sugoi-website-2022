@@ -111,6 +111,10 @@
  * GENERAL STYLES
  **********************************************************/
 
+h5 {
+	letter-spacing: 1px;
+}
+
 .img-container > img {
 	width: 100%; height: 100%;
 	margin: 0; padding: 0;
@@ -176,6 +180,7 @@
 }
 .body {
 	font-family: 'ZenOldMincho-Regular';
+	letter-spacing: -0.02em;
 }
 ul.body {
 	line-height: 23px;
@@ -191,10 +196,14 @@ ul.body {
 	line-height: 20px;
 }
 
+.long-btn,
+.short-btn {
+	letter-spacing: 0.07em;
+}
 .long-btn {
 	position: relative;
 	margin-bottom: 15px;
-	width: 340px; height: 35px;
+	width: 340px; height: 39px;
 	padding: 3px;
 	display: block;
 	text-align: center;
@@ -208,7 +217,7 @@ ul.body {
 .short-btn {
 	position: relative;
 	margin-bottom: 15px;
-	width: 170px; height: 35px;
+	width: 170px; height: 39px;
 	padding: 3px;
 	display: block;
 	text-align: center;
@@ -290,7 +299,7 @@ ul.body {
 }
 
 /**********************************************************
- * HERO SECTION
+ * LANDING SECTION
  **********************************************************/
 
 /* NAV BAR */
@@ -720,7 +729,7 @@ input:focus-visible {
 	}
 	#bylogik #logik-flowers {
 		width: 150px; height: 175px;
-		top: 120px; left: 250px;
+		top: 150px; left: 250px;
 	}
 	#bylogik #claim-container {
 		width: 100%;
@@ -1173,7 +1182,7 @@ input:focus-visible {
 /*phones (vertical)*/
 @media screen and (max-width: 512px) {
 	#sponsors {
-		height: 2000px;
+		height: 1600px;
 	}
 	#sponsors h1.header {
 		text-align: center;

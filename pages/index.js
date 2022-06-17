@@ -6,9 +6,8 @@ import SpeakerCarousel from '../components/SpeakerCarousel';
 import HostCarousel from '../components/HostCarousel';
 import NavbarMenu from '../components/NavbarMenu';
 import EventsSchedule from '../components/EventsSchedule';
+import Sponsors from '../components/Sponsors';
 
-import igGrey from '../public/instagram_grey-01.png';
-import twGrey from '../public/twitter_grey-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
 import dottedLine from '../public/dot_line.png';
 import logikFlowers from '../public/placeholder1.png';
@@ -17,22 +16,11 @@ import plugKey from '../public/sugoi_keys_plugholders.jpeg';
 import hustlerKey from '../public/sugoi_keys_hustler.jpeg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
-import darkblockLogo from '../public/sponsors/DarkBlock.png';
-import americana from '../public/sponsors/Americana.png';
-import treetrunk from '../public/sponsors/Treetrunk.png';
-import altLogo from '../public/sponsors/ALT.png';
-import allSmilesLogo from '../public/sponsors/AllSmilesss.png';
-import cortexLogo from '../public/sponsors/CortexLogo.png';
-import mrAugmentedLogo from '../public/sponsors/Augmented.png';
-import sunriseLogo from '../public/sponsors/Sunrise.png';
-import blueLogo from '../public/sponsors/Blue.png';
-import crwnmagLogo from '../public/sponsors/Crwnmag.png';
-import sabetLogo from '../public/sponsors/Sabet.png';
 
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { ethers, utils, BigNumber } from 'ethers';
@@ -178,11 +166,10 @@ export default function Home() {
                     txn = await keyContract.claim(account, keyQuantity, plugTid);
                 }
             } else if (numKeys > 0) {
-                toast("If you don't own a Plug, you can only claim 1 key");
-                return;
-            } else {
-                txn = await keyContract.publicClaim(account);
+                toast("WARNING: if you don't own a Plug, you can only claim 1 key");
             }
+            //execute transaction to claim
+            txn = await keyContract.publicClaim(account);
 			return {
 				success: true,
 				status: "✅ Check out your transaction on Etherscan: https://etherscan.io/tx/" + txn.hash
@@ -215,9 +202,9 @@ export default function Home() {
                 <h5 id="details" className="sub-header text-olive-green">DETAILS</h5>
                 <ul className="body text-olive-green">
                     <li>
-                        3 days of events including informative<br/>
-                        panels, live music, immersive NFT art,<br/>
-                        and minting<br/>
+                        3 days of events including<br/>
+                        informative panels, live music,<br/>
+                        immersive NFT art, and minting<br/>
                         IRL connections with web3 homies
                     </li>
                 </ul>
@@ -234,9 +221,9 @@ export default function Home() {
                     <button onClick={claimSugoiKey} className="claim-field long-btn bg-yellow">CLAIM</button>
                  </div>
                 }
-                {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT WALLET</button>}
-                <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP HERE</a>
-                <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
+                {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT TO GAIN ACCESS</button>}
+                <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
+                <a href="" id="digital-swag" className="long-btn bg-yellow">DIGITAL SWAG BAG (COMING SOON)</a>
                 <div id="logik-flowers" className="img-container">
                     <img src={logikFlowers.src} />
                 </div>
@@ -259,12 +246,14 @@ export default function Home() {
             <div className="dotted-line img-container">
                 <img src={dottedLine.src} />
             </div>
+
             {/* event schedule section */}
             <EventsSchedule />
             
             <div className="dotted-line img-container">
                 <img src={dottedLine.src} />
             </div>
+
             {/* tickets and merch  */}
             <div id="tickets" className="section">
                 <div className="vh">
@@ -288,7 +277,7 @@ export default function Home() {
                     }
                     {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT TO GAIN ACCESS</button>}
                     <a href="https://nftaccess.app/event/sugoi-nft-nyc-2022" id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
-                    <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">UNLOCK DIGITAL SWAG BAG</a>
+                    <a href="https://sugoi.global/digital-swag-bag" id="digital-swag" className="long-btn bg-yellow">DIGITAL SWAG BAG (COMING SOON)</a>
                 </div>
                 <div className="vh">
                     <div id="frens" className="ticket-container text-olive-green">
@@ -321,106 +310,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id="sponsors" className="section text-dark-grey">
-                <h1 className="header">
-                    THANK YOU TO<br/>
-                    OUR SPONSORS
-                </h1>
-                <div className="row">
-                    <div className="col-100">
-                        <div className="img-container">
-                            <img src={treetrunk.src} />
-                        </div>
-                        <p className="body">
-                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
-                        </p>
-                        <a href="twitter" className="social">
-                            <div className="img-container">
-                                <img src={twGrey.src} />
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-100">
-                        <div className="img-container">
-                            <img src={americana.src} />
-                        </div>
-                        <p className="body">
-                            Insert short sentence about sponsor here. Can be two sentences long or three wow!
-                        </p>
-                        <a href="twitter" className="social">
-                            <div className="img-container">
-                                <img src={twGrey.src} />
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div id="second" className="row">
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={darkblockLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={altLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={cortexLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={allSmilesLogo.src} />
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={sunriseLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={mrAugmentedLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={blueLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={crwnmagLogo.src} />
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={sabetLogo.src} />
-                        </div>
-                    </div>
-                    {/* <div className="col-25">
-                        <div className="img-container">
-                            <img src={mrAugmentedLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={blueLogo.src} />
-                        </div>
-                    </div>
-                    <div className="col-25">
-                        <div className="img-container">
-                            <img src={crwnmagLogo.src} />
-                        </div>
-                    </div> */}
-                </div>
-            </div>
+            {/* sponsors section */}
+            <Sponsors />
 
             <div id="contact" className="section text-olive-green">
                 <h1 className="header">CONTACT US</h1>
