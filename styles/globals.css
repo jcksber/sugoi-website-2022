@@ -682,7 +682,7 @@ ul.body {
 }
 #bylogik .claim-field {
 	display: inline-block;
-	width: 32%; height: 35px;
+	width: 32%; height: 39px;
 	margin: 0;
 	border-radius: 10px;
 	text-align: center;
@@ -696,7 +696,7 @@ ul.body {
 	margin-left: 2%; margin-right: 2%;
 }
 #bylogik .claim-field:last-child {
-	padding-top: 2px;
+	padding-top: 3px;
 	top: 1px;
 }
 input:focus-visible {
@@ -985,7 +985,7 @@ input:focus-visible {
 
 #tickets .claim-field {
 	display: inline-block;
-	width: 32%; height: 35px;
+	width: 32%; height: 39px;
 	margin: auto;
 	border-radius: 10px;
 	text-align: center;
