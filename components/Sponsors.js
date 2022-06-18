@@ -25,9 +25,9 @@ export default function Sponsors() {
                         <img src={treetrunk.src} />
                     </div>
                     <p className="body">
-                        Insert short sentence about sponsor here. Can be two sentences long or three wow!
+                    TreeTrunk NFT - the first multi-party royalty-bearing NFT.  The TreeTrunk approach was conceived by ConsenSys Mesh group executive John Wolpert. 
                     </p>
-                    <a href="twitter" className="social">
+                    <a href="https://twitter.com/TreeTrunkNFT" className="social">
                         <div className="img-container">
                             <img src={twGrey.src} />
                         </div>
@@ -38,9 +38,9 @@ export default function Sponsors() {
                         <img src={americana.src} />
                     </div>
                     <p className="body">
-                        Insert short sentence about sponsor here. Can be two sentences long or three wow!
+                    The first marketplace to buy and sell physical things as NFTs.
                     </p>
-                    <a href="twitter" className="social">
+                    <a href="https://twitter.com/AmericanaNFT" className="social">
                         <div className="img-container">
                             <img src={twGrey.src} />
                         </div>

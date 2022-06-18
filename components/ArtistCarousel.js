@@ -56,7 +56,7 @@ const artists = [
         <div className="img-container">
             <img src={gabe.src} />
         </div>
-        <h5 className="sub-header">GABE WEISE</h5>
+        <h5 className="sub-header">GABE WEIS</h5>
         <p className="body">Resilient Cubist</p>
         <a href="" className="social">
             <div className="img-container">

@@ -142,7 +142,7 @@ const panelists = [
         </div>
         <h5 className="sub-header">PROFITS</h5>
         <p className="body">CMO/Advisor</p>
-        <a href="twitter" className="social">
+        <a href="https://mobile.twitter.com/_ShaniceBest" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -177,7 +177,7 @@ const panelists = [
             <img src={johnWolpert.src} />
         </div>
         <h5 className="sub-header">JOHN WOLPERT</h5>
-        <p className="body">Co-Founder of Treetrunk</p>
+        <p className="body">Co-Founder of TreeTrunk</p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -189,7 +189,7 @@ const panelists = [
             <img src={sarina.src} />
         </div>
         <h5 className="sub-header">SARINA</h5>
-        <p className="body">Co-Founder of Treetrunk</p>
+        <p className="body">Co-Founder of TreeTrunk</p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
