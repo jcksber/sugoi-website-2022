@@ -25,7 +25,7 @@ export default function Sponsors() {
                         <img src={treetrunk.src} />
                     </div>
                     <p className="body">
-                    TreeTrunk NFT - the first multi-party royalty-bearing NFT.  The TreeTrunk approach was conceived by ConsenSys Mesh group executive John Wolpert. 
+                    The first multi-party royalty-bearing NFT.  The TreeTrunk approach was conceived by ConsenSys Mesh group executive John Wolpert. 
                     </p>
                     <a href="https://twitter.com/TreeTrunkNFT" className="social">
                         <div className="img-container">

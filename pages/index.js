@@ -235,7 +235,7 @@ export default function Home() {
                  </div>
                 }
                 {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT TO GAIN ACCESS</button>}
-                <a href="https://nftaccess.app/..." id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
+                <a href="https://nftaccess.app/event/sugoi-nft-nyc-2022" id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
                 <a href="" id="digital-swag" className="long-btn bg-yellow">DIGITAL SWAG BAG (COMING SOON)</a>
                 <div id="logik-flowers" className="img-container">
                     <img src={logikFlowers.src} />
