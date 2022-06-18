@@ -68,7 +68,6 @@ const performers = [
             <img src="" />
         </div>
         <h5 className="sub-header">SURPRISE MAGIC<br/>GUEST</h5>
-        <p className="body">Musician</p>
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
