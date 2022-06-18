@@ -249,10 +249,10 @@ export default function Home() {
             {/* featured artists section */}
             <div id="artists" className="section text-olive-green">
                 <h1 className="header">FEATURING</h1>
-                <button id="view-artists" onClick={viewArtistsClicked} className={ viewArtists ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>ARTISTS</button>
-                <button id="view-performers" onClick={viewPerformersClicked} className={ viewPerformers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>PERFORMERS</button>
                 <button id="view-hosts" onClick={viewHostsClicked} className={ viewHosts ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>HOSTS</button>
                 <button id="view-speakers" onClick={viewSpeakersClicked} className={ viewSpeakers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>SPEAKERS</button>
+                <button id="view-artists" onClick={viewArtistsClicked} className={ viewArtists ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>ARTISTS</button>
+                <button id="view-performers" onClick={viewPerformersClicked} className={ viewPerformers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>PERFORMERS</button>
                 { viewArtists && <ArtistCarousel /> }
                 { viewPerformers && <PerformersCarousel /> }
                 { viewHosts && <HostCarousel /> }

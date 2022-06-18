@@ -858,6 +858,7 @@ input:focus-visible {
 /*phones (vertical)*/
 @media screen and (max-width: 512px) {
 	#artists {
+		height: 840px;
 		margin-top: 150px;
 	}
 	#artists .long-btn {

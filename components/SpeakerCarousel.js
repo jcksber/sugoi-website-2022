@@ -27,6 +27,9 @@ import quHarrisonTerry from '../public/speakers/QuHarrisonTerry.jpg';
 import spottieWifi from '../public/speakers/SpottieWifi.jpeg';
 import morgan from '../public/speakers/MorganSarkissian.jpeg';
 import vgf from '../public/speakers/vgf.png';
+import jr from '../public/speakers/JR.jpeg';
+import snax from '../public/speakers/Snax.jpg';
+import goldie from '../public/speakers/Goldie.jpg';
 
 
 const handleDragStart = (e) => e.preventDefault();
@@ -66,7 +69,7 @@ const panelists = [
             <img src={illaDaProducer.src} />
         </div>
         <h5 className="sub-header">ILLA DA PRODUCER</h5>
-        <p className="body"></p>
+        <p className="body">12x Grammy nominated platinum producer</p>
         <a href="https://twitter.com/illaDaProducer" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -78,7 +81,7 @@ const panelists = [
             <img src={morgan.src} />
         </div>
         <h5 className="sub-header">MORGAN SARKISSIAN</h5>
-        <p className="body"></p>
+        <p className="body">Content creator</p>
         <a href="https://twitter.com/Helloimmorgan" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -90,7 +93,7 @@ const panelists = [
             <img src={spottieWifi.src} />
         </div>
         <h5 className="sub-header">SPOTTIE WIFI</h5>
-        <p className="body"></p>
+        <p className="body">Rapper</p>
         <a href="https://twitter.com/SpottieWiFi" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -102,7 +105,7 @@ const panelists = [
             <img src={cryptoJeweler.src} />
         </div>
         <h5 className="sub-header">CRYPTO JEWELER</h5>
-        <p className="body"></p>
+        <p className="body">Artist</p>
         <a href="https://twitter.com/cryptojeweler" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -114,8 +117,8 @@ const panelists = [
             <img src={jonahBlake.src} />
         </div>
         <h5 className="sub-header">JONAH BLAKE</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <p className="body">Chief Gaming Officer / Founder</p>
+        <a href="https://twitter.com/RealJonahBlake" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -235,7 +238,7 @@ const panelists = [
         </div>
         <h5 className="sub-header">VALCOHOLICS</h5>
         <p className="body">CEP</p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/valcoholics1" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -247,7 +250,7 @@ const panelists = [
         </div>
         <h5 className="sub-header">ALEX ALPERT</h5>
         <p className="body">Director of NFT Creative - OneOf</p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/alexalpert6" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -258,8 +261,8 @@ const panelists = [
             <img src={takai.src} />
         </div>
         <h5 className="sub-header">TAKAI THE ARTIST</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <p className="body">Storyteller</p>
+        <a href="https://twitter.com/takaitheartist" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -270,8 +273,8 @@ const panelists = [
             <img src={warhodl.src} />
         </div>
         <h5 className="sub-header">WARHODL</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <p className="body">Decentralized pop artist</p>
+        <a href="https://twitter.com/WARHODL" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -282,8 +285,8 @@ const panelists = [
             <img src={mikeMongo.src} />
         </div>
         <h5 className="sub-header">MIKE MONGO</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <p className="body">Astronat Teacher</p>
+        <a href="https://twitter.com/MikeMongo" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -294,7 +297,7 @@ const panelists = [
             <img src={quHarrisonTerry.src} />
         </div>
         <h5 className="sub-header">QU HARRISON TERRY</h5>
-        <p className="body"></p>
+        <p className="body">Author / Marketer</p>
         <a href="https://twitter.com/quharrison" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -306,7 +309,7 @@ const panelists = [
             <img src={ruffDraft.src} />
         </div>
         <h5 className="sub-header">RUFF DRAFT</h5>
-        <p className="body"></p>
+        <p className="body">Photographer / Technologist @ Google</p>
         <a href="https://twitter.com/RUFF_DRAFT" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -318,13 +321,49 @@ const panelists = [
             <img src={vgf.src} />
         </div>
         <h5 className="sub-header">VGF</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/" className="social">
+        <p className="body">Media & Operations @ PixelVault</p>
+        <a href="https://twitter.com/VGFreakXBL" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
         </a>
-    </div>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={jr.src} />
+        </div>
+        <h5 className="sub-header">JR</h5>
+        <p className="body">Founder</p>
+        <a href="https://twitter.com/JRArtSpace_NFT" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={snax.src} />
+        </div>
+        <h5 className="sub-header">SNAX</h5>
+        <p className="body">Pizza DAO / RarePizzas</p>
+        <a href="https://twitter.com/snack_man" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={goldie.src} />
+        </div>
+        <h5 className="sub-header">GOLDIE</h5>
+        <p className="body">Artist & Founder @ ScaryGarys</p>
+        <a href="https://twitter.com/GoldiesNFTart" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
 ];
 
 export default function PanelistCarousel() {

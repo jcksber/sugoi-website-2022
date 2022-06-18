@@ -212,7 +212,7 @@ export default function NavbarMenu() {
                         <h5 className="sub-header">2PM</h5>
                         <p className="body">
                             The Convergence of Pop Culture and Web3<br/>
-                            Host: Mecyver<br/>
+                            Host: mec.<br/>
                             Speakers: Ed Balloon, Bryan Calhoun, Allen Hena, LOGIK
                         </p>
                         <h5 className="sub-header">2:30PM</h5>

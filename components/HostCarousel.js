@@ -39,7 +39,7 @@ const hosts = [
             <img src={motivate.src} />
         </div>
         <h5 className="sub-header">MOTIVATE</h5>
-        <p className="body"></p>
+        <p className="body">Founder @ URCONDUIT</p>
         <a href="https://twitter.com/EricSpivak    }}" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -51,7 +51,7 @@ const hosts = [
             <img src={trish.src} />
         </div>
         <h5 className="sub-header">TRISH</h5>
-        <p className="body">Community builder</p>
+        <p className="body">Community Builder / Web3 Advisor</p>
         <a href="https://twitter.com/NFT_ish" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -87,7 +87,7 @@ const hosts = [
             <img src={louKerner.src} />
         </div>
         <h5 className="sub-header">LOU KERNER</h5>
-        <p className="body"></p>
+        <p className="body">Partner @ Blockchain Coinvestors</p>
         <a href="https://twitter.com/loukerner" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -134,8 +134,8 @@ const hosts = [
         <div className="img-container">
             <img src={mecyver.src} />
         </div>
-        <h5 className="sub-header">MECYVER</h5>
-        <p className="body"></p>
+        <h5 className="sub-header">MEC.</h5>
+        <p className="body">Web3 Educator / Founder</p>
         <a href="https://twitter.com/mecdot" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -147,7 +147,7 @@ const hosts = [
             <img src={emilyLazar.src} />
         </div>
         <h5 className="sub-header">EMILY LAZAR</h5>
-        <p className="body"></p>
+        <p className="body">Musician & decentralization maxi</p>
         <a href="https://twitter.com/EmilyLazar_SM" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />

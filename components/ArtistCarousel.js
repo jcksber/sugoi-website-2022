@@ -24,7 +24,7 @@ const artists = [
             <img src={swopes.src} />
         </div>
         <h5 className="sub-header">SWOPES</h5>
-        <p className="body"></p>
+        <p className="body">Visual Storyteller</p>
         <a href="https://twitter.com/Swopes" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -85,7 +85,7 @@ const artists = [
         </div>
         <h5 className="sub-header">GABE WEIS</h5>
         <p className="body">Resilient Cubist</p>
-        <a href="" className="social">
+        <a href="https://twitter.com/GabrielJWeis" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -96,8 +96,8 @@ const artists = [
             <img src={brandonBreaux.src} />
         </div>
         <h5 className="sub-header">BRANDON BREAUX</h5>
-        <p className="body"></p>
-        <a href="" className="social">
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/theBreaux" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
