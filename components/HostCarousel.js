@@ -74,7 +74,7 @@ const hosts = [
         <div className="img-container">
             <img src={israel.src} />
         </div>
-        <h5 className="sub-header">ISRAEL</h5>
+        <h5 className="sub-header">ISRAEL WILSON</h5>
         <p className="body">Artist / Technologist</p>
         <a href="https://twitter.com/israelswilson" className="social">
             <div className="img-container">

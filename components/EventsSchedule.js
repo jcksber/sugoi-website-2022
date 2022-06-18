@@ -51,7 +51,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             OG Clubhouse<br/>
                             Host: Trish<br/>
-                            Speakers: Emily Lazar, Mike Mongo, Warhodl, Stonez
+                            Speakers: Emily Lazar, Mike Mongo, Warhodl, Stonez, Ashira
                         </p>
                         <h5 className="sub-header">NOON</h5>
                         <p className="body">
@@ -235,7 +235,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             Mindfulness in the Metaverse<br/>
                             Host: Lady Phe<br/>
-                            Speakers: Satoshigoat, Guest will be announced
+                            Speakers: Satoshigoat, Lemmy
                         </p>
 
                         <h3 className="event-header">PERFORMANCES</h3>
