@@ -7,6 +7,7 @@ import sabet from '../public/artists/Sabet.jpeg';
 import waheed from '../public/artists/Waheed.jpeg';
 import gabe from '../public/artists/gabe.jpeg';
 import foodmasku from '../public/artists/Foodmasku.png';
+import gianniLee from '../public/artists/GianniLee.jpeg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -47,6 +48,18 @@ const artists = [
         <h5 className="sub-header">GABE WEIS</h5>
         <p className="body">Resilient Cubist</p>
         <a href="" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={gianniLee.src} />
+        </div>
+        <h5 className="sub-header">GIANNI LEE</h5>
+        <p className="body">Artist / Futurist</p>
+        <a href="https://twitter.com/giannilee" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

@@ -22,10 +22,12 @@ export default function Sponsors() {
             <div className="row">
                 <div className="col-100">
                     <div className="img-container">
-                        <img src={treetrunk.src} />
+                        <a href="https://treetrunk.io/">
+                            <img src={treetrunk.src} />
+                        </a>
                     </div>
                     <p className="body">
-                    The first multi-party royalty-bearing NFT.  The TreeTrunk approach was conceived by ConsenSys Mesh group executive John Wolpert. 
+                        The first multi-party royalty-bearing NFT.  The TreeTrunk approach was conceived by ConsenSys Mesh group executive John Wolpert. 
                     </p>
                     <a href="https://twitter.com/TreeTrunkNFT" className="social">
                         <div className="img-container">
@@ -35,10 +37,12 @@ export default function Sponsors() {
                 </div>
                 <div className="col-100">
                     <div className="img-container">
-                        <img src={americana.src} />
+                        <a href="https://americana.io/">
+                            <img src={americana.src} />
+                        </a>
                     </div>
                     <p className="body">
-                    The first marketplace to buy and sell physical things as NFTs.
+                        The first marketplace to buy and sell physical things as NFTs.
                     </p>
                     <a href="https://twitter.com/AmericanaNFT" className="social">
                         <div className="img-container">
@@ -50,51 +54,69 @@ export default function Sponsors() {
             <div id="second" className="row">
                 <div className="col-25">
                     <div className="img-container">
-                        <img src={darkblockLogo.src} />
+                        <a href="https://www.darkblock.io/">
+                            <img src={darkblockLogo.src} />
+                        </a>
                     </div>
                 </div>
                 <div className="col-25">
                     <div className="img-container">
-                        <img src={altLogo.src} />
+                        <a href="https://www.alt.xyz/">
+                            <img src={altLogo.src} />
+                        </a>
                     </div>
                 </div>
                 <div className="col-25">
                     <div className="img-container">
-                        <img src={cortexLogo.src} />
+                        <a href="https://www.crtx.app/">
+                            <img src={cortexLogo.src} />
+                        </a>
                     </div>
                 </div>
                 <div className="col-25">
                     <div className="img-container">
-                        <img src={allSmilesLogo.src} />
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-25">
-                    <div className="img-container">
-                        <img src={sunriseLogo.src} />
-                    </div>
-                </div>
-                <div className="col-25">
-                    <div className="img-container">
-                        <img src={mrAugmentedLogo.src} />
-                    </div>
-                </div>
-                <div className="col-25">
-                    <div className="img-container">
-                        <img src={blueLogo.src} />
-                    </div>
-                </div>
-                <div className="col-25">
-                    <div className="img-container">
-                        <img src={crwnmagLogo.src} />
+                        <a href="https://www.smilesss.com/">
+                            <img src={allSmilesLogo.src} />
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="row">
                 <div className="col-25">
                     <div className="img-container">
-                        <img src={sabetLogo.src} />
+                        <a href="https://www.sunrise.art/">
+                            <img src={sunriseLogo.src} />
+                        </a>
+                    </div>
+                </div>
+                <div className="col-25">
+                    <div className="img-container">
+                        <a href="https://mraugmented.com/">
+                            <img src={mrAugmentedLogo.src} />
+                        </a>
+                    </div>
+                </div>
+                <div className="col-25">
+                    <div className="img-container">
+                        <a href="https://www.bluethegreat.com/">
+                            <img src={blueLogo.src} />
+                        </a>
+                    </div>
+                </div>
+                <div className="col-25">
+                    <div className="img-container">
+                        <a href="https://www.crwnmag.com/">
+                            <img src={crwnmagLogo.src} />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-25">
+                    <div className="img-container">
+                        <a href="https://www.sabet.art/">
+                            <img src={sabetLogo.src} />
+                        </a>
                     </div>
                 </div>
                 {/* <div className="col-25">

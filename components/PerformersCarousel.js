@@ -5,7 +5,7 @@ import twGreen from '../public/twitter_green-01.png';
 import edBalloon from '../public/artists/EdBalloon.jpg';
 import ekat from '../public/artists/Ekat.jpeg';
 import stonieBlue from '../public/artists/StonieBlue.jpg';
-import gianniLee from '../public/artists/GianniLee.jpeg';
+import policeState from '../public/artists/PoliceState.jpg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -53,11 +53,11 @@ const performers = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={gianniLee.src} />
+            <img src={policeState.src} />
         </div>
-        <h5 className="sub-header">GIANNI LEE</h5>
-        <p className="body">Artist / Futurist</p>
-        <a href="https://twitter.com/giannilee" className="social">
+        <h5 className="sub-header">POLICE STATE</h5>
+        <p className="body"></p>
+        <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -69,18 +69,6 @@ const performers = [
         </div>
         <h5 className="sub-header">A VERY SPECIAL<br/>GUEST</h5>
         <p className="body"></p>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src="" />
-        </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">

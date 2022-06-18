@@ -26,6 +26,8 @@ import illaDaProducer from '../public/speakers/IllaDaProducer.jpeg';
 import ruffDraft from '../public/speakers/RuffDraft.jpeg';
 import quHarrisonTerry from '../public/speakers/QuHarrisonTerry.jpg';
 import spottieWifi from '../public/speakers/SpottieWifi.jpeg';
+import emilyLazar from '../public/speakers/EmilyLazar.jpg';
+import morgan from '../public/speakers/MorganSarkissian.jpeg';
 
 
 const handleDragStart = (e) => e.preventDefault();
@@ -307,6 +309,30 @@ const panelists = [
         <h5 className="sub-header">SPOTTIE WIFI</h5>
         <p className="body"></p>
         <a href="https://twitter.com/SpottieWiFi" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={emilyLazar.src} />
+        </div>
+        <h5 className="sub-header">EMILY LAZAR</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/EmilyLazar_SM" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={morgan.src} />
+        </div>
+        <h5 className="sub-header">MORGAN SARKISSIAN</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/Helloimmorgan" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
