@@ -57,7 +57,7 @@ const performers = [
         </div>
         <h5 className="sub-header">POLICE STATE</h5>
         <p className="body"></p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/DoRightMars" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

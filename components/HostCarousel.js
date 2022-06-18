@@ -47,7 +47,7 @@ const hosts = [
         </div>
         <h5 className="sub-header">JORDAN MITCHELL</h5>
         <p className="body">Photographer</p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/J_MoneyMitch" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
