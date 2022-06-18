@@ -93,42 +93,6 @@ const performers = [
                 <img src={twGreen.src} />
             </div>
         </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src="" />
-        </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src="" />
-        </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src="" />
-        </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
     </div>
 ];
 
