@@ -2,6 +2,8 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 import twGreen from '../public/twitter_green-01.png';
+import edBalloon from '../public/artists/EdBalloon.jpg';
+import ekat from '../public/artists/Ekat.jpeg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -13,11 +15,11 @@ const numItems = {
 const performers = [
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={edBalloon.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
+        <h5 className="sub-header">ED BALLOON</h5>
         <p className="body"></p>
-        <a href="" className="social">
+        <a href="https://twitter.com/Ed_Balloon" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -25,11 +27,11 @@ const performers = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={ekat.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
+        <h5 className="sub-header">EKAT</h5>
         <p className="body"></p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/EkatDance" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

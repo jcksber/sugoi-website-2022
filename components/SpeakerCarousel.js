@@ -22,6 +22,7 @@ import sarina from '../public/speakers/SarinaCharugundla.jpg';
 import takai from '../public/speakers/takaitheartist.jpeg';
 import warhodl from '../public/speakers/Warhodl.png';
 import mikeMongo from '../public/speakers/MikeMongo.jpg';
+import jonahBlake from '../public/speakers/JonahBlake.jpg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -261,9 +262,9 @@ const panelists = [
     </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={jonahBlake.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
+        <h5 className="sub-header">JONAH BLAKE</h5>
         <p className="body"></p>
         <a href="twitter" className="social">
             <div className="img-container">
