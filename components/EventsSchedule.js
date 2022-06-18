@@ -106,7 +106,7 @@ export default function NavbarMenu() {
 
                         <h3 className="event-header">VIBE SESH</h3>
                         <h5 className="sub-header">6-8PM</h5>
-                        <p className="body">Drinks<br/>DJ Gianni Lee<br/>DJ Police State<br/>DJ No Shirt</p>
+                        <p className="body">Drinks & DJ Sets<br/>Gianni Lee<br/>Police State<br/>No Shirt</p>
                     </div>
                 }
                 {day2 &&
@@ -239,11 +239,12 @@ export default function NavbarMenu() {
                         </p>
 
                         <h3 className="event-header">PERFORMANCES</h3>
-                        <h5 className="sub-header">5PM DJs</h5>
-                        <h5 className="sub-header">6:15PM Ekat Dance Number</h5>
-                        <h5 className="sub-header">6:45PM DJs</h5>
+                        <h5 className="sub-header">5PM No Shirt DJ Set</h5>
+                        <h5 className="sub-header">5:45PM Ekat's Dance Number</h5>
+                        <h5 className="sub-header">6:15PM Stonie Blue DJ Set</h5>
                         <h5 className="sub-header">7:30PM Ed Balloon</h5>
-                        <h5 className="sub-header">9PM Special Guest</h5>
+                        <h5 className="sub-header">8:30PM Police State DJ Set</h5>
+                        <h5 className="sub-header">9PM Surprise Guest</h5>
                     </div>
                 }
             </div>
