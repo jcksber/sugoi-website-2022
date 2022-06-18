@@ -49,35 +49,35 @@ export default function NavbarMenu() {
                         <h3 className="event-header">PANELS</h3>
                         <h5 className="sub-header">11:30AM</h5>
                         <p className="body">
-                            The Importance of Onboarding<br/>
+                            OG Clubhouse<br/>
                             Host: Trish<br/>
-                            Speakers: Emily Lazar, Profits, Nkechi
+                            Speakers: Emily Lazar, Profits, Warhodl, Stonez
                         </p>
                         <h5 className="sub-header">NOON</h5>
                         <p className="body">
-                            Before We Ape In: Degens<br/>
+                            Degens<br/>
                             Host: Trish<br/>
-                            Speakers: JaketheDegen, Mike Mongo
+                            Speakers: JaketheDegen, Mike Mongo, Morgan, Storm
                         </p>
                         <h5 className="sub-header">1PM</h5>
                         <p className="body">
-                            <b>BREAKS - BIG Room Artist Take Over</b>
+                            <b>BIG Room Artists Take Over</b>
                         </p>
                         <h5 className="sub-header">1:30PM</h5>
                         <p className="body">
                             Smart Contracts for Artists<br/>
                             Host: LOGIK<br/>
-                            Speakers: VGF, Satoshigoat, John Wolpert, Jiwa
+                            Speakers: Satoshigoat, John Wolpert, Jiwa
                         </p>
                         <h5 className="sub-header">2:30PM</h5>
                         <p className="body">
                             The Keys to Tokengated Experiences<br/>
                             Host: LOGIK<br/>
-                            Speakers: Darkblock.io Heremy Sahlman & Chris Seline
+                            Speakers: Darkblock.io Jeremy Sahlman & Chris Seline
                         </p>
                         <h5 className="sub-header">3PM</h5>
                         <p className="body">
-                            <b>BREAKS - BIG Room Artist Take Over</b>
+                            <b>BIG Room Artists Take Over</b>
                         </p>
                         <h5 className="sub-header">3:30PM</h5>
                         <p className="body">
@@ -89,20 +89,24 @@ export default function NavbarMenu() {
                         <p className="body">
                             Owning Your Voice in Web3<br/>
                             Host: Jordan<br/>
-                            Speakers: Ishita, Jen Stein, Val, Nick Smoll
+                            Speakers: Ishita, (Jen Stein), Valoholic, Nick Smoll
                         </p>
                         <h5 className="sub-header">4:30PM</h5>
-                        <p className="body">
-                            Web3 Research and Development<br/>
-                            Host: Lou Kerner<br/>
-                            Speakers: Ruff Draft, JP Cyber Alchemist, Chris Seline (Darkblock)
-                        </p>
-                        <h5 className="sub-header">5PM</h5>
                         <p className="body">
                             Redefining the future of the Music Industry<br/>
                             Host: Emily Lazar<br/>
                             Speakers: Illa Da Producer, Spottie Wifi, Alex Alpert
                         </p>
+                        <h5 className="sub-header">5PM</h5>
+                        <p className="body">
+                            Web3 Research and Development<br/>
+                            Host: Lou Kerner<br/>
+                            Speakers: Ruff Draft, JP Cyber Alchemist, Chris Seline, VGF
+                        </p>
+
+                        <h3 className="event-header">VIBE SESH</h3>
+                        <h5 className="sub-header">6-8PM</h5>
+                        <p className="body">Drinks<br/>DJ Gianni Lee<br/>DJ Police State<br/>DJ No Shirt</p>
                     </div>
                 }
                 {day2 &&
@@ -110,7 +114,7 @@ export default function NavbarMenu() {
                         <h3 className="event-header">PANELS</h3>
                         <h5 className="sub-header">11AM</h5>
                         <p className="body">
-                            <b>BREAKS - BIG Room Artist Take Over</b>
+                            <b>BIG Room Artists Take Over</b>
                         </p>
                         <h5 className="sub-header">NOON</h5>
                         <p className="body">
@@ -120,9 +124,9 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">12:30PM</h5>
                         <p className="body">
-                            Making an Impact in Web3 with Storytelling<br/>
+                            Making an Impact in Web3 via Storytelling<br/>
                             Host: MOTIVATE<br/>
-                            Speakers: Terrell Jones, Andre O'shea Theo King (Customer Experience @ ALT), MoRuf
+                            Speakers: Terrell Jones, Andre O'shea, Theo King (Customer Experience @ ALT), MoRuf
                         </p>
                         <h5 className="sub-header">1PM</h5>
                         <p className="body">
@@ -132,19 +136,19 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">1:30PM</h5>
                         <p className="body">
-                            <b>BREAKS - BIG Room Artist Take Over</b><br/>
+                            <b>BIG Room Artists Take Over</b><br/>
                         </p>
                         <h5 className="sub-header">2PM</h5>
                         <p className="body">
                             What Web3 Has Taught Me<br/>
                             Host: LOGIK<br/>
-                            Speakers: VGF, MOTIVATE, Taylor, Jonah Blake
+                            Speakers: MOTIVATE, Taylor, Jonah Blake, Goldie
                         </p>
                         <h5 className="sub-header">2:30PM</h5>
                         <p className="body">
-                            Where Do We Go From Here: sponsored WEB3 Pull Up<br/>
-                            Host: Sankofa & Mike B<br/>
-                            Speakers: Mike B, Rhyver White, Sankofa, Nessa Rutazamba
+                            Where Do We Go From Here: sponsored by WEB3 Pull Up<br/>
+                            Hosts: Sankofa & Mike B<br/>
+                            Speakers: Mike B, Rhyver White, Nessa Rutazamba
                         </p>
                         <h5 className="sub-header">3PM</h5>
                         <p className="body">
@@ -155,14 +159,15 @@ export default function NavbarMenu() {
 
                         <h3 className="event-header">TREETRUNK TAKEOVER</h3>
                         <h5 className="sub-header">4PM</h5>
-                        <p className="body">Specialty Drinks + DJ</p>
+                        <p className="body">Artist meet & greet</p>
                         <h5 className="sub-header">5PM</h5>
                         <p className="body">
-                            TreeTrunk Founders Panel<br/>
+                            TreeTrunk Artist Panel<br/>
+                            Host: Sarina Charungundia<br/>
                             Speakers: John Wolpert & team
                         </p>
                         <h5 className="sub-header">5:45PM</h5>
-                        <p className="body">Treetrunk Artists Panel</p>
+                        <p className="body">Treetrunk Founders Panel</p>
                         <h5 className="sub-header">6:30PM</h5>
                         <p className="body">DJ CLOSE</p>
                     </div>
@@ -172,7 +177,7 @@ export default function NavbarMenu() {
                         <h3 className="event-header">PANELS</h3>
                         <h5 className="sub-header">11AM</h5>
                         <p className="body">
-                            WTF is a DAO sponsored<br/>
+                            WTF is a DAO<br/>
                             Host: Israel Wilson<br/>
                             Speakers: Snax, sh3k1n4h, KrayTrain
                         </p>
@@ -185,8 +190,8 @@ export default function NavbarMenu() {
                         <h5 className="sub-header">NOON</h5>
                         <p className="body">
                             Photography / Film / Fashion<br/>
-                            Host: Vic<br/>
-                            Speakers: Zoe Stekkle, Anita Sadowska, Manouska, Julie Pacino
+                            Host: Victoria Lover<br/>
+                            Speakers: Zoe Stekkle, Anita Sadowska, Julie Pacino
                         </p>
                         <h5 className="sub-header">12:30PM</h5>
                         <p className="body">
@@ -194,7 +199,7 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">1PM</h5>
                         <p className="body">
-                            Physical / Digital Items<br/>
+                            Physical into Non-Fungible<br/>
                             Host: MOTIVATE<br/>
                             Speakers: Americana.io
                         </p>
@@ -218,26 +223,27 @@ export default function NavbarMenu() {
                         <p className="body">
                             Keepin' it G in Web3<br/>
                             Host: Vic<br/>
-                            Speakers: Ruff Draft, Jonah Blake, Israel, Trish
+                            Speakers: Ruff Draft, Jonah Blake, Israel Wilson, Trish
                         </p>
                         <h5 className="sub-header">3:30PM</h5>
                         <p className="body">
                             The Power of Smart Contracts<br/>
                             Host: LOGIK<br/>
-                            Speakers: Ari, John Wolpert, Jack Kasbeer, Mecyver
+                            Speakers: Ari, John Wolpert, Jack Kasbeer (satoshigoat)
                         </p>
                         <h5 className="sub-header">4PM</h5>
                         <p className="body">
                             Mindfulness in the Metaverse<br/>
                             Host: Lady Phe<br/>
-                            Speakers: TBD
+                            Speakers: Satoshigoat, Guest will be announced
                         </p>
 
                         <h3 className="event-header">PERFORMANCES</h3>
-                        <h5 className="sub-header">4:30PM DJs</h5>
-                        <h5 className="sub-header">5PM Ekat</h5>
-                        <h5 className="sub-header">6PM DJs</h5>
-                        <h5 className="sub-header">6:30PM Ed Balloon</h5>
+                        <h5 className="sub-header">5PM DJs</h5>
+                        <h5 className="sub-header">6:15PM Ekat</h5>
+                        <h5 className="sub-header">6:45PM DJs</h5>
+                        <h5 className="sub-header">7:30PM Ed Balloon</h5>
+                        <h5 className="sub-header">9PM Special Guest</h5>
                     </div>
                 }
             </div>

@@ -27,6 +27,7 @@ import ruffDraft from '../public/speakers/RuffDraft.jpeg';
 import quHarrisonTerry from '../public/speakers/QuHarrisonTerry.jpg';
 import spottieWifi from '../public/speakers/SpottieWifi.jpeg';
 import morgan from '../public/speakers/MorganSarkissian.jpeg';
+import vgf from '../public/speakers/vgf.png';
 
 
 const handleDragStart = (e) => e.preventDefault();
@@ -210,7 +211,7 @@ const panelists = [
             <img src={satoshigoat.src} />
         </div>
         <h5 className="sub-header">SATOSHIGOAT</h5>
-        <p className="body">Dev</p>
+        <p className="body">CTO of Sugoi</p>
         <a href="https://twitter.com/satoshigoat" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -325,7 +326,18 @@ const panelists = [
             </div>
         </a>
     </div>,
-    
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={vgf.src} />
+        </div>
+        <h5 className="sub-header">VGF</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>
 ];
 
 export default function PanelistCarousel() {
