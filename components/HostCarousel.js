@@ -5,6 +5,8 @@ import twGreen from '../public/twitter_green-01.png';
 import trish from '../public/speakers/Trish.JPG';
 import victoriaLover from '../public/speakers/VictoriaLover.png';
 import jordanMitchell from '../public/speakers/JORDANMITCHELL.JPG';
+import kasVegas from '../public/speakers/KasVegas.jpg';
+import logik from '../public/speakers/Logik.jpeg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -52,11 +54,11 @@ const hosts = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={kasVegas.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <h5 className="sub-header">KAS VEGAS</h5>
+        <p className="body">Community builder</p>
+        <a href="https://twitter.com/kas__vegas" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -64,11 +66,11 @@ const hosts = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={logik.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <h5 className="sub-header">LOGIK</h5>
+        <p className="body">Founder of SUGOI</p>
+        <a href="https://twitter.com/juliangilliam" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

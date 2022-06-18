@@ -4,9 +4,9 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 import twGreen from '../public/twitter_green-01.png';
 import sabet from '../public/artists/Sabet.jpeg';
-import gianniLee from '../public/artists/GianniLee.jpeg';
 import waheed from '../public/artists/Waheed.jpeg';
 import gabe from '../public/artists/gabe.jpeg';
+import foodmasku from '../public/artists/Foodmasku.png';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -42,18 +42,6 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={gianniLee.src} />
-        </div>
-        <h5 className="sub-header">GIANNI LEE</h5>
-        <p className="body">Artist / Futurist</p>
-        <a href="https://twitter.com/giannilee" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
             <img src={gabe.src} />
         </div>
         <h5 className="sub-header">GABE WEIS</h5>
@@ -66,11 +54,11 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={foodmasku.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
+        <h5 className="sub-header">FOODMASKU</h5>
         <p className="body"></p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/foodmasku" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

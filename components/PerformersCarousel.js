@@ -5,6 +5,7 @@ import twGreen from '../public/twitter_green-01.png';
 import edBalloon from '../public/artists/EdBalloon.jpg';
 import ekat from '../public/artists/Ekat.jpeg';
 import stonieBlue from '../public/artists/StonieBlue.jpg';
+import gianniLee from '../public/artists/GianniLee.jpeg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -45,6 +46,18 @@ const performers = [
         <h5 className="sub-header">STONIE BLUE</h5>
         <p className="body"></p>
         <a href="https://mobile.twitter.com/antbluejr" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={gianniLee.src} />
+        </div>
+        <h5 className="sub-header">GIANNI LEE</h5>
+        <p className="body">Artist / Futurist</p>
+        <a href="https://twitter.com/giannilee" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
