@@ -51,13 +51,13 @@ export default function NavbarMenu() {
                         <p className="body">
                             OG Clubhouse<br/>
                             Host: Trish<br/>
-                            Speakers: Emily Lazar, Profits, Warhodl, Stonez
+                            Speakers: Emily Lazar, Mike Mongo, Warhodl, Stonez
                         </p>
                         <h5 className="sub-header">NOON</h5>
                         <p className="body">
                             Degens<br/>
                             Host: Trish<br/>
-                            Speakers: JaketheDegen, Mike Mongo, Morgan, Storm
+                            Speakers: JaketheDegen, Morgan, Storm,
                         </p>
                         <h5 className="sub-header">1PM</h5>
                         <p className="body">
