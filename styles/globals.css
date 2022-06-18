@@ -764,14 +764,9 @@ input:focus-visible {
 
 #artists .long-btn {
 	display: inline-block;
+	width: 23%;
 	margin: 0 auto;
-}
-#artists #view-artists.long-btn {
-	margin-right: 15px;
-}
-#artists .long-btn:last-of-type {
-	display: block;
-	margin: 0 auto; margin-top: 15px;
+	margin-left: 1%; margin-right: 1%;
 }
 
 .alice-carousel {
@@ -821,9 +816,7 @@ input:focus-visible {
 .caro-card > a:hover {
 	opacity: 0.9;
 }
-/* .caro-card > a:first-of-type {
-	margin-right: 25px;
-} */
+
 .caro-card > a .img-container {
 	display: inline-block;
 	width: 20px; height: 20px;
@@ -843,13 +836,11 @@ input:focus-visible {
 		padding-left: 7%;
 		padding-right: 7%;
 	}
-	#artists #view-artists.long-btn {
-		margin-right: auto;
-		margin-bottom: 15px;
-	}
 	#artists .long-btn {
 		display: block;
+		width: 340px;
 		padding-top: 3px;
+		margin: 8px auto;
 	}
 	.alice-carousel {
 		margin-top: 60px !important;

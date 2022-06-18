@@ -128,7 +128,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             Navigating Unprecedented Success in Web3<br/>
                             Host: LOGIK<br/>
-                            Speakers: Waheed, JR, Sabet, Gabe Weiss
+                            Speakers: Waheed, JR, Sabet, Gabe Weis
                         </p>
                         <h5 className="sub-header">1:30PM</h5>
                         <p className="body">

@@ -4,6 +4,7 @@ import plugAbi from '../utils/plug_abi.json';
 import ArtistCarousel from '../components/ArtistCarousel';
 import SpeakerCarousel from '../components/SpeakerCarousel';
 import HostCarousel from '../components/HostCarousel';
+import PerformersCarousel from '../components/PerformersCarousel';
 import NavbarMenu from '../components/NavbarMenu';
 import EventsSchedule from '../components/EventsSchedule';
 import Sponsors from '../components/Sponsors';
@@ -48,6 +49,7 @@ export default function Home() {
 
     /*UI FUNCTIONALITY*/
     const [viewArtists, setViewArtists] = useState(true);
+    const [viewPerformers, setViewPerformers] = useState(false);
     const [viewHosts, setViewHosts] = useState(false);
     const [viewSpeakers, setViewSpeakers] = useState(false);
     
@@ -93,6 +95,15 @@ export default function Home() {
     const viewArtistsClicked = async () => {
         if (!viewArtists) {
             setViewArtists(true);
+            setViewPerformers(false);
+            setViewHosts(false);
+            setViewSpeakers(false);
+        }
+    }
+    const viewPerformersClicked = async () => {
+        if (!viewPerformers) {
+            setViewArtists(false);
+            setViewPerformers(true);
             setViewHosts(false);
             setViewSpeakers(false);
         }
@@ -100,6 +111,7 @@ export default function Home() {
     const viewHostsClicked = async () => {
         if (!viewHosts) {
             setViewArtists(false);
+            setViewPerformers(false);
             setViewHosts(true);
             setViewSpeakers(false);
         }
@@ -107,6 +119,7 @@ export default function Home() {
     const viewSpeakersClicked = async () => {
         if (!viewSpeakers) {
             setViewArtists(false);
+            setViewPerformers(false);
             setViewHosts(false);
             setViewSpeakers(true);
         }
@@ -236,11 +249,13 @@ export default function Home() {
             <div id="artists" className="section text-olive-green">
                 <h1 className="header">FEATURING</h1>
                 <button id="view-artists" onClick={viewArtistsClicked} className={ viewArtists ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>ARTISTS</button>
+                <button id="view-performers" onClick={viewPerformersClicked} className={ viewPerformers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>PERFORMERS</button>
                 <button id="view-hosts" onClick={viewHostsClicked} className={ viewHosts ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>HOSTS</button>
                 <button id="view-speakers" onClick={viewSpeakersClicked} className={ viewSpeakers ? 'long-btn bg-yellow' : 'long-btn bg-peach'}>SPEAKERS</button>
-                { viewArtists && <ArtistCarousel />}
+                { viewArtists && <ArtistCarousel /> }
+                { viewPerformers && <PerformersCarousel /> }
                 { viewHosts && <HostCarousel /> }
-                { viewSpeakers && <SpeakerCarousel />}
+                { viewSpeakers && <SpeakerCarousel /> }
             </div>
 
             <div className="dotted-line img-container">
