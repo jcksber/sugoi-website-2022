@@ -9,6 +9,7 @@ import kasVegas from '../public/speakers/KasVegas.jpg';
 import logik from '../public/speakers/Logik.jpeg';
 import israel from '../public/speakers/Israel.jpg';
 import louKerner from '../public/speakers/lou_kerner.png';
+import emilyLazar from '../public/speakers/EmilyLazar.jpg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -109,6 +110,18 @@ const hosts = [
         <h5 className="sub-header">COMING SOON</h5>
         <p className="body"></p>
         <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={emilyLazar.src} />
+        </div>
+        <h5 className="sub-header">EMILY LAZAR</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/EmilyLazar_SM" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

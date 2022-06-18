@@ -26,7 +26,6 @@ import illaDaProducer from '../public/speakers/IllaDaProducer.jpeg';
 import ruffDraft from '../public/speakers/RuffDraft.jpeg';
 import quHarrisonTerry from '../public/speakers/QuHarrisonTerry.jpg';
 import spottieWifi from '../public/speakers/SpottieWifi.jpeg';
-import emilyLazar from '../public/speakers/EmilyLazar.jpg';
 import morgan from '../public/speakers/MorganSarkissian.jpeg';
 
 
@@ -38,6 +37,102 @@ const numItems = {
 }
 
 const panelists = [
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={benMayorWhite.src} />
+        </div>
+        <h5 className="sub-header">BEN MAYOR WHITE</h5>
+        <p className="body">Founder Frensco / Former Adidas</p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={johnWolpert.src} />
+        </div>
+        <h5 className="sub-header">JOHN WOLPERT</h5>
+        <p className="body">Co-Founder of TreeTrunk</p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={sarina.src} />
+        </div>
+        <h5 className="sub-header">SARINA</h5>
+        <p className="body">Co-Founder of TreeTrunk</p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={illaDaProducer.src} />
+        </div>
+        <h5 className="sub-header">ILLA DA PRODUCER</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/illaDaProducer" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={morgan.src} />
+        </div>
+        <h5 className="sub-header">MORGAN SARKISSIAN</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/Helloimmorgan" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={spottieWifi.src} />
+        </div>
+        <h5 className="sub-header">SPOTTIE WIFI</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/SpottieWiFi" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={cryptoJeweler.src} />
+        </div>
+        <h5 className="sub-header">CRYPTO JEWELER</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/cryptojeweler" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={jonahBlake.src} />
+        </div>
+        <h5 className="sub-header">JONAH BLAKE</h5>
+        <p className="body"></p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
             <img src={anitaSadowska.src} />
@@ -57,18 +152,6 @@ const panelists = [
         <h5 className="sub-header">CHRIS SELINE</h5>
         <p className="body">CEO Darkblock.io</p>
         <a href="https://twitter.com/dumbfounder" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={cryptoJeweler.src} />
-        </div>
-        <h5 className="sub-header">CRYPTO JEWELER</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/cryptojeweler" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -172,42 +255,6 @@ const panelists = [
     </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={johnWolpert.src} />
-        </div>
-        <h5 className="sub-header">JOHN WOLPERT</h5>
-        <p className="body">Co-Founder of TreeTrunk</p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={sarina.src} />
-        </div>
-        <h5 className="sub-header">SARINA</h5>
-        <p className="body">Co-Founder of TreeTrunk</p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={benMayorWhite.src} />
-        </div>
-        <h5 className="sub-header">BEN MAYOR WHITE</h5>
-        <p className="body">Founder Frensco / Former Adidas</p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
             <img src={alexAlpert.src} />
         </div>
         <h5 className="sub-header">ALEX ALPERT</h5>
@@ -256,30 +303,6 @@ const panelists = [
     </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={jonahBlake.src} />
-        </div>
-        <h5 className="sub-header">JONAH BLAKE</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={illaDaProducer.src} />
-        </div>
-        <h5 className="sub-header">ILLA DA PRODUCER</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/illaDaProducer" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
             <img src={quHarrisonTerry.src} />
         </div>
         <h5 className="sub-header">QU HARRISON TERRY</h5>
@@ -302,42 +325,7 @@ const panelists = [
             </div>
         </a>
     </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={spottieWifi.src} />
-        </div>
-        <h5 className="sub-header">SPOTTIE WIFI</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/SpottieWiFi" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={emilyLazar.src} />
-        </div>
-        <h5 className="sub-header">EMILY LAZAR</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/EmilyLazar_SM" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={morgan.src} />
-        </div>
-        <h5 className="sub-header">MORGAN SARKISSIAN</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/Helloimmorgan" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
+    
 ];
 
 export default function PanelistCarousel() {
