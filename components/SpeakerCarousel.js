@@ -225,6 +225,42 @@ const panelists = [
     </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
+            <img src={takai.src} />
+        </div>
+        <h5 className="sub-header">TAKAI THE ARTIST</h5>
+        <p className="body"></p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={warhodl.src} />
+        </div>
+        <h5 className="sub-header">WARHODL</h5>
+        <p className="body"></p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={mikeMongo.src} />
+        </div>
+        <h5 className="sub-header">MIKE MONGO</h5>
+        <p className="body"></p>
+        <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
             <img src="" />
         </div>
         <h5 className="sub-header">COMING SOON</h5>
