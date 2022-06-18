@@ -1054,6 +1054,9 @@ input:focus-visible {
 	#tickets button.long-btn#mint {
 		padding-top: 3px;
 	}
+	#tickets #digital-swag {
+		font-size: 1em;
+	}
 }
 
 /*phones (vertical)*/
