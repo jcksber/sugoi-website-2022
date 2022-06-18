@@ -4,6 +4,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import twGreen from '../public/twitter_green-01.png';
 import trish from '../public/speakers/Trish.JPG';
 import victoriaLover from '../public/speakers/VictoriaLover.png';
+import jordanMitchell from '../public/speakers/JORDANMITCHELL.JPG';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -37,12 +38,12 @@ const hosts = [
             </div>
         </a>
     </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={jordanMitchell.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
+        <h5 className="sub-header">JORDAN MITCHELL</h5>
+        <p className="body">Photographer</p>
         <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />

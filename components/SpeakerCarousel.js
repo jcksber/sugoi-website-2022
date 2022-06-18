@@ -9,7 +9,6 @@ import cryptoJeweler from '../public/speakers/CryptoJeweler.jpeg';
 import eddieGangland from '../public/speakers/EddieGangland.jpeg';
 import ishitaBanerjee from '../public/speakers/IshitaBanerjee.jpeg';
 import jiwa from '../public/speakers/Jiwa.jpg';
-import jordanMitchell from '../public/speakers/JORDANMITCHELL.JPG';
 import mrBrian from '../public/speakers/MrBrianDesign.jpg';
 import profits from '../public/speakers/Profits.jpeg';
 import terrellJones from '../public/speakers/TerrellJones.jpeg';
@@ -23,6 +22,11 @@ import takai from '../public/speakers/takaitheartist.jpeg';
 import warhodl from '../public/speakers/Warhodl.png';
 import mikeMongo from '../public/speakers/MikeMongo.jpg';
 import jonahBlake from '../public/speakers/JonahBlake.jpg';
+import illaDaProducer from '../public/speakers/IllaDaProducer.jpeg';
+import ruffDraft from '../public/speakers/RuffDraft.jpeg';
+import quHarrisonTerry from '../public/speakers/QuHarrisonTerry.jpg';
+import spottieWifi from '../public/speakers/SpottieWifi.jpeg';
+
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -99,18 +103,6 @@ const panelists = [
         <h5 className="sub-header">JIWA</h5>
         <p className="body">Founder at ntent.art</p>
         <a href="https://twitter.com/dotjiwa" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={jordanMitchell.src} />
-        </div>
-        <h5 className="sub-header">JORDAN MITCHELL</h5>
-        <p className="body">Photographer</p>
-        <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -267,6 +259,54 @@ const panelists = [
         <h5 className="sub-header">JONAH BLAKE</h5>
         <p className="body"></p>
         <a href="twitter" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={illaDaProducer.src} />
+        </div>
+        <h5 className="sub-header">ILLA DA PRODUCER</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/illaDaProducer" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={quHarrisonTerry.src} />
+        </div>
+        <h5 className="sub-header">QU HARRISON TERRY</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/quharrison" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={ruffDraft.src} />
+        </div>
+        <h5 className="sub-header">RUFF DRAFT</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/RUFF_DRAFT" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={spottieWifi.src} />
+        </div>
+        <h5 className="sub-header">SPOTTIE WIFI</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/SpottieWiFi" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
