@@ -10,6 +10,8 @@ import logik from '../public/speakers/Logik.jpeg';
 import israel from '../public/speakers/Israel.jpg';
 import louKerner from '../public/speakers/lou_kerner.png';
 import emilyLazar from '../public/speakers/EmilyLazar.jpg';
+import mecyver from '../public/speakers/mecyver.png';
+import motivate from '../public/speakers/motivate.png';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -21,59 +23,23 @@ const numItems = {
 const hosts = [
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={trish.src} />
-        </div>
-        <h5 className="sub-header">TRISH</h5>
-        <p className="body">Community builder</p>
-        <a href="https://twitter.com/NFT_ish" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={victoriaLover.src} />
-        </div>
-        <h5 className="sub-header">VICTORIA LOVER</h5>
-        <p className="body">Artist</p>
-        <a href="https://twitter.com/victoriaklover" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={jordanMitchell.src} />
-        </div>
-        <h5 className="sub-header">JORDAN MITCHELL</h5>
-        <p className="body">Photographer</p>
-        <a href="https://twitter.com/J_MoneyMitch" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={kasVegas.src} />
-        </div>
-        <h5 className="sub-header">KAS VEGAS</h5>
-        <p className="body">Community builder</p>
-        <a href="https://twitter.com/kas__vegas" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
             <img src={logik.src} />
         </div>
         <h5 className="sub-header">LOGIK</h5>
         <p className="body">Founder of SUGOI</p>
         <a href="https://twitter.com/juliangilliam" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={trish.src} />
+        </div>
+        <h5 className="sub-header">TRISH</h5>
+        <p className="body">Community builder</p>
+        <a href="https://twitter.com/NFT_ish" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -105,11 +71,47 @@ const hosts = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={kasVegas.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
+        <h5 className="sub-header">KAS VEGAS</h5>
+        <p className="body">Community builder</p>
+        <a href="https://twitter.com/kas__vegas" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={victoriaLover.src} />
+        </div>
+        <h5 className="sub-header">VICTORIA LOVER</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/victoriaklover" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={jordanMitchell.src} />
+        </div>
+        <h5 className="sub-header">JORDAN MITCHELL</h5>
+        <p className="body">Photographer</p>
+        <a href="https://twitter.com/J_MoneyMitch" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={mecyver.src} />
+        </div>
+        <h5 className="sub-header">MECYVER</h5>
         <p className="body"></p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/mecdot" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -122,6 +124,18 @@ const hosts = [
         <h5 className="sub-header">EMILY LAZAR</h5>
         <p className="body"></p>
         <a href="https://twitter.com/EmilyLazar_SM" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={motivate.src} />
+        </div>
+        <h5 className="sub-header">MOTIVATE</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/EricSpivak" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
