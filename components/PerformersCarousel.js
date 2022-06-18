@@ -20,7 +20,7 @@ const performers = [
             <img src={edBalloon.src} />
         </div>
         <h5 className="sub-header">ED BALLOON</h5>
-        <p className="body"></p>
+        <p className="body">Musician</p>
         <a href="https://twitter.com/Ed_Balloon" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -32,7 +32,7 @@ const performers = [
             <img src={ekat.src} />
         </div>
         <h5 className="sub-header">EKAT</h5>
-        <p className="body"></p>
+        <p className="body">Ballerina</p>
         <a href="https://twitter.com/EkatDance" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -44,7 +44,7 @@ const performers = [
             <img src={stonieBlue.src} />
         </div>
         <h5 className="sub-header">STONIE BLUE</h5>
-        <p className="body"></p>
+        <p className="body">DJ</p>
         <a href="https://mobile.twitter.com/antbluejr" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -56,7 +56,7 @@ const performers = [
             <img src={policeState.src} />
         </div>
         <h5 className="sub-header">POLICE STATE</h5>
-        <p className="body"></p>
+        <p className="body">DJ</p>
         <a href="https://twitter.com/DoRightMars" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -67,8 +67,8 @@ const performers = [
         <div className="img-container">
             <img src="" />
         </div>
-        <h5 className="sub-header">A VERY SPECIAL<br/>GUEST</h5>
-        <p className="body"></p>
+        <h5 className="sub-header">SURPRISE MAGIC<br/>GUEST</h5>
+        <p className="body">Musician</p>
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">

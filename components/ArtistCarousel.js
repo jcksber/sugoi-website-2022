@@ -8,6 +8,7 @@ import waheed from '../public/artists/Waheed.jpeg';
 import gabe from '../public/artists/gabe.jpeg';
 import foodmasku from '../public/artists/Foodmasku.png';
 import gianniLee from '../public/artists/GianniLee.jpeg';
+import swopes from '../public/artists/swopes.png';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -22,7 +23,7 @@ const artists = [
             <img src={waheed.src} />
         </div>
         <h5 className="sub-header">WAHEED ZAI</h5>
-        <p className="body">Artist all smilesss</p>
+        <p className="body">All Smilesss</p>
         <a href="https://twitter.com/all_smilesss" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -70,7 +71,7 @@ const artists = [
             <img src={foodmasku.src} />
         </div>
         <h5 className="sub-header">FOODMASKU</h5>
-        <p className="body"></p>
+        <p className="body">Realist</p>
         <a href="https://twitter.com/foodmasku" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -79,11 +80,11 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={swopes.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
+        <h5 className="sub-header">SWOPES</h5>
         <p className="body"></p>
-        <a href="twitter" className="social">
+        <a href="https://twitter.com/Swopes" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
