@@ -211,7 +211,7 @@ const panelists = [
             <img src={satoshigoat.src} />
         </div>
         <h5 className="sub-header">SATOSHIGOAT</h5>
-        <p className="body">CTO of Sugoi</p>
+        <p className="body">CTO of SUGOI</p>
         <a href="https://twitter.com/satoshigoat" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
