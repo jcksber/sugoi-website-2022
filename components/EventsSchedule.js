@@ -163,7 +163,7 @@ export default function NavbarMenu() {
                         <h5 className="sub-header">5PM</h5>
                         <p className="body">
                             TreeTrunk Artist Panel<br/>
-                            Host: Sarina Charungundia<br/>
+                            Host: Sarina Charungundla<br/>
                             Speakers: John Wolpert & team
                         </p>
                         <h5 className="sub-header">5:45PM</h5>

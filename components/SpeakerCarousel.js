@@ -17,7 +17,6 @@ import satoshigoat from '../public/speakers/satoshigoat.jpeg';
 import alexAlpert from '../public/speakers/AlexAlpert.jpg';
 import benMayorWhite from '../public/speakers/BenMayorWhite.jpg';
 import johnWolpert from '../public/speakers/JohnWolpert.jpg';
-import sarina from '../public/speakers/SarinaCharugundla.jpg';
 import takai from '../public/speakers/takaitheartist.jpeg';
 import warhodl from '../public/speakers/Warhodl.png';
 import mikeMongo from '../public/speakers/MikeMongo.jpg';
@@ -55,18 +54,6 @@ const panelists = [
             <img src={johnWolpert.src} />
         </div>
         <h5 className="sub-header">JOHN WOLPERT</h5>
-        <p className="body">Co-Founder of TreeTrunk</p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={sarina.src} />
-        </div>
-        <h5 className="sub-header">SARINA</h5>
         <p className="body">Co-Founder of TreeTrunk</p>
         <a href="twitter" className="social">
             <div className="img-container">

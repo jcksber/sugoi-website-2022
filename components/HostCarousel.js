@@ -12,6 +12,7 @@ import louKerner from '../public/speakers/lou_kerner.png';
 import emilyLazar from '../public/speakers/EmilyLazar.jpg';
 import mecyver from '../public/speakers/mecyver.png';
 import motivate from '../public/speakers/motivate.png';
+import sarina from '../public/speakers/SarinaCharugundla.jpg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -52,6 +53,18 @@ const hosts = [
         <h5 className="sub-header">TRISH</h5>
         <p className="body">Community builder</p>
         <a href="https://twitter.com/NFT_ish" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={sarina.src} />
+        </div>
+        <h5 className="sub-header">SARINA CHARUNGUNDLA</h5>
+        <p className="body">Co-Founder of TreeTrunk</p>
+        <a href="twitter" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
