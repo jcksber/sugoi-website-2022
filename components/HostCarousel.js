@@ -33,6 +33,18 @@ const hosts = [
             </div>
         </a>
     </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={motivate.src} />
+        </div>
+        <h5 className="sub-header">MOTIVATE</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/EricSpivak    }}" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
             <img src={trish.src} />
@@ -124,18 +136,6 @@ const hosts = [
         <h5 className="sub-header">EMILY LAZAR</h5>
         <p className="body"></p>
         <a href="https://twitter.com/EmilyLazar_SM" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={motivate.src} />
-        </div>
-        <h5 className="sub-header">MOTIVATE</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/EricSpivak" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
