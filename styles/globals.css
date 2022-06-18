@@ -703,6 +703,11 @@ input:focus-visible {
 	outline: none;
 }
 
+#bylogik #disclaimer {
+	text-align: right;
+	font-size: 0.6em;;
+}
+
 /*iPad*/
 @media screen and (max-width: 1000px) {
 	#bylogik {
@@ -742,6 +747,9 @@ input:focus-visible {
 	}
 	#bylogik .claim-field:last-child {
 		margin: 0;
+	}
+	#bylogik #disclaimer {
+		margin-top: 15px;
 	}
 }
 

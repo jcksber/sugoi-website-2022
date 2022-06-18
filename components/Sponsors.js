@@ -17,7 +17,7 @@ export default function Sponsors() {
         <div id="sponsors" className="section text-dark-grey">
             <h1 className="header">
                 THANK YOU TO<br/>
-                OUR SPONSORS
+                OUR SPONSORS & PARTNERS
             </h1>
             <div className="row">
                 <div className="col-100">

@@ -61,7 +61,7 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">1PM</h5>
                         <p className="body">
-                            <b>BIG Room Artists Take Over</b>
+                            <b>Artists Take Over</b>
                         </p>
                         <h5 className="sub-header">1:30PM</h5>
                         <p className="body">
@@ -77,7 +77,7 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">3PM</h5>
                         <p className="body">
-                            <b>BIG Room Artists Take Over</b>
+                            <b>Artists Take Over</b>
                         </p>
                         <h5 className="sub-header">3:30PM</h5>
                         <p className="body">
@@ -114,7 +114,7 @@ export default function NavbarMenu() {
                         <h3 className="event-header">PANELS</h3>
                         <h5 className="sub-header">11AM</h5>
                         <p className="body">
-                            <b>BIG Room Artists Take Over</b>
+                            <b>Artists Take Over</b>
                         </p>
                         <h5 className="sub-header">NOON</h5>
                         <p className="body">
@@ -136,7 +136,7 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">1:30PM</h5>
                         <p className="body">
-                            <b>BIG Room Artists Take Over</b><br/>
+                            <b>Artists Take Over</b><br/>
                         </p>
                         <h5 className="sub-header">2PM</h5>
                         <p className="body">
@@ -195,7 +195,7 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">12:30PM</h5>
                         <p className="body">
-                            <b>BREAK</b>
+                            <b>Artist Take Over</b>
                         </p>
                         <h5 className="sub-header">1PM</h5>
                         <p className="body">
@@ -240,7 +240,7 @@ export default function NavbarMenu() {
 
                         <h3 className="event-header">PERFORMANCES</h3>
                         <h5 className="sub-header">5PM DJs</h5>
-                        <h5 className="sub-header">6:15PM Ekat</h5>
+                        <h5 className="sub-header">6:15PM Ekat Dance Number</h5>
                         <h5 className="sub-header">6:45PM DJs</h5>
                         <h5 className="sub-header">7:30PM Ed Balloon</h5>
                         <h5 className="sub-header">9PM Special Guest</h5>
