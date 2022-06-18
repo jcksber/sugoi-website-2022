@@ -7,6 +7,7 @@ import victoriaLover from '../public/speakers/VictoriaLover.png';
 import jordanMitchell from '../public/speakers/JORDANMITCHELL.JPG';
 import kasVegas from '../public/speakers/KasVegas.jpg';
 import logik from '../public/speakers/Logik.jpeg';
+import israel from '../public/speakers/Israel.jpg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -78,35 +79,11 @@ const hosts = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={israel.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src="" />
-        </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src="" />
-        </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <h5 className="sub-header">ISRAEL</h5>
+        <p className="body">Artist / Technologist</p>
+        <a href="https://twitter.com/israelswilson" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
