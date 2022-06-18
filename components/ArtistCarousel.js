@@ -20,11 +20,47 @@ const numItems = {
 const artists = [
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
+            <img src={swopes.src} />
+        </div>
+        <h5 className="sub-header">SWOPES</h5>
+        <p className="body"></p>
+        <a href="https://twitter.com/Swopes" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
             <img src={waheed.src} />
         </div>
         <h5 className="sub-header">WAHEED ZAI</h5>
         <p className="body">All Smilesss</p>
         <a href="https://twitter.com/all_smilesss" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={foodmasku.src} />
+        </div>
+        <h5 className="sub-header">FOODMASKU</h5>
+        <p className="body">Realist</p>
+        <a href="https://twitter.com/foodmasku" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={gianniLee.src} />
+        </div>
+        <h5 className="sub-header">GIANNI LEE</h5>
+        <p className="body">Artist / Futurist</p>
+        <a href="https://twitter.com/giannilee" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -49,42 +85,6 @@ const artists = [
         <h5 className="sub-header">GABE WEIS</h5>
         <p className="body">Resilient Cubist</p>
         <a href="" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={gianniLee.src} />
-        </div>
-        <h5 className="sub-header">GIANNI LEE</h5>
-        <p className="body">Artist / Futurist</p>
-        <a href="https://twitter.com/giannilee" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={foodmasku.src} />
-        </div>
-        <h5 className="sub-header">FOODMASKU</h5>
-        <p className="body">Realist</p>
-        <a href="https://twitter.com/foodmasku" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={swopes.src} />
-        </div>
-        <h5 className="sub-header">SWOPES</h5>
-        <p className="body"></p>
-        <a href="https://twitter.com/Swopes" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
