@@ -708,6 +708,10 @@ input:focus-visible {
 	font-size: 0.6em;;
 }
 
+#bylogik #digital-swag {
+	font-size: 1em;
+}
+
 /*iPad*/
 @media screen and (max-width: 1000px) {
 	#bylogik {
@@ -992,6 +996,10 @@ input:focus-visible {
 	margin-top: 5px;
 }
 
+#tickets #digital-swag {
+	font-size: 1em;
+}
+
 #tickets .claim-field {
 	display: inline-block;
 	width: 32%; height: 39px;
@@ -1054,9 +1062,6 @@ input:focus-visible {
 	}
 	#tickets button.long-btn#mint {
 		padding-top: 3px;
-	}
-	#tickets #digital-swag {
-		font-size: 1em;
 	}
 }
 
