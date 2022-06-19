@@ -48,9 +48,9 @@ export default function Home() {
 	const [ownerOfPlugTid, setOwnerOfPlugTid] = useState("");
 
     /*UI FUNCTIONALITY*/
-    const [viewArtists, setViewArtists] = useState(true);
+    const [viewArtists, setViewArtists] = useState(false);
     const [viewPerformers, setViewPerformers] = useState(false);
-    const [viewHosts, setViewHosts] = useState(false);
+    const [viewHosts, setViewHosts] = useState(true);
     const [viewSpeakers, setViewSpeakers] = useState(false);
     
 
