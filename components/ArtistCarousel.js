@@ -10,6 +10,12 @@ import foodmasku from '../public/artists/Foodmasku.png';
 import gianniLee from '../public/artists/GianniLee.jpeg';
 import swopes from '../public/artists/Swopes.JPG';
 import brandonBreaux from '../public/artists/BrandonBreaux.jpg';
+import abieyuwa from '../public/artists/ABIEYUWA.jpg';
+import efdot from '../public/artists/EfDot.jpg';
+import ericBookford from '../public/artists/ERICBOOCKFORD.jpg';
+import kaleb from '../public/artists/Kaleb.jpg';
+import quazr from '../public/artists/QUAZR.jpg';
+
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -105,11 +111,59 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src="" />
+            <img src={abieyuwa.src} />
         </div>
-        <h5 className="sub-header">COMING SOON</h5>
-        <p className="body"></p>
-        <a href="twitter" className="social">
+        <h5 className="sub-header">ABIEYUWA</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={efdot.src} />
+        </div>
+        <h5 className="sub-header">EFDOT</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={ericBookford.src} />
+        </div>
+        <h5 className="sub-header">ERIC BOOCKFORD</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={kaleb.src} />
+        </div>
+        <h5 className="sub-header">KALEB</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={quazr.src} />
+        </div>
+        <h5 className="sub-header">QUAZR</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
