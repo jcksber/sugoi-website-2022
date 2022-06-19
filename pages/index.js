@@ -333,10 +333,10 @@ export default function Home() {
                 <h1 className="header">CONTACT US</h1>
 
                 <h5 className="sub-header">GENERAL</h5>
-                <p className="body">logik@studiologik.io</p>
+                <p className="body"><a href="mailto:logik@studiologik.io">logik@studiologik.io</a></p>
 
                 <h5 className="sub-header">SPONSORS/BRAND PARTNERS</h5>
-                <p className="body">bernielevv@gmail.com</p>
+                <p className="body"><a href="mailto:bernielevv@gmail.com">bernielevv@gmail.com</a></p>
             </div>
 
             <div id="footer" className="section bg-olive-green">
