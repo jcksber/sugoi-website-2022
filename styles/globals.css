@@ -840,7 +840,7 @@ input:focus-visible {
 /*iPad*/
 @media screen and (max-width: 1000px) {
 	#artists {
-		height: 760px;
+		height: 860px;
 		padding-left: 7%;
 		padding-right: 7%;
 	}
@@ -1099,7 +1099,7 @@ input:focus-visible {
  **********************************************************/
 
 #sponsors {
-	height: 1200px;
+	height: 1300px;
 	background-color: #d0cbbf;
 	border: solid 1px #494637;
 }
@@ -1124,9 +1124,6 @@ input:focus-visible {
 	margin: 0 auto;
 }
 
-.rotate-that {
-	transform: rotate(90deg);
-}
 #sponsors .row .col-100 .img-container {
 	width: 150px; height: auto;
 }
