@@ -17,7 +17,7 @@ import satoshigoat from '../public/speakers/satoshigoat.jpeg';
 import alexAlpert from '../public/speakers/AlexAlpert.jpg';
 import benMayorWhite from '../public/speakers/BenMayorWhite.jpg';
 import johnWolpert from '../public/speakers/JohnWolpert.jpg';
-import takai from '../public/speakers/takaitheartist.jpeg';
+import takai from '../public/speakers/takaitheartist.jpg';
 import warhodl from '../public/speakers/Warhodl.png';
 import mikeMongo from '../public/speakers/MikeMongo.jpg';
 import jonahBlake from '../public/speakers/JonahBlake.jpg';
@@ -70,7 +70,7 @@ const panelists = [
             <img src={illaDaProducer.src} />
         </div>
         <h5 className="sub-header">ILLA DA PRODUCER</h5>
-        <p className="body">12x Grammy nominated platinum producer</p>
+        <p className="body">Grammy nominated 12x platinum producer</p>
         <a href="https://twitter.com/illaDaProducer" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
@@ -103,11 +103,47 @@ const panelists = [
     </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
+            <img src={vgf.src} />
+        </div>
+        <h5 className="sub-header">VGF</h5>
+        <p className="body">Media & Operations @ PixelVault</p>
+        <a href="https://twitter.com/VGFreakXBL" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={zoe.src} />
+        </div>
+        <h5 className="sub-header">ZOË</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/ZStekkel" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
             <img src={cryptoJeweler.src} />
         </div>
         <h5 className="sub-header">CRYPTO JEWELER</h5>
         <p className="body">Artist</p>
         <a href="https://twitter.com/cryptojeweler" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={jr.src} />
+        </div>
+        <h5 className="sub-header">JR</h5>
+        <p className="body">Founder</p>
+        <a href="https://twitter.com/JRArtSpace_NFT" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -144,6 +180,18 @@ const panelists = [
         <h5 className="sub-header">CHRIS SELINE</h5>
         <p className="body">CEO Darkblock.io</p>
         <a href="https://twitter.com/dumbfounder" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={ruffDraft.src} />
+        </div>
+        <h5 className="sub-header">RUFF DRAFT</h5>
+        <p className="body">Photographer / Technologist @ Google</p>
+        <a href="https://twitter.com/RUFF_DRAFT" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -307,42 +355,6 @@ const panelists = [
     </div>,
     <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={ruffDraft.src} />
-        </div>
-        <h5 className="sub-header">RUFF DRAFT</h5>
-        <p className="body">Photographer / Technologist @ Google</p>
-        <a href="https://twitter.com/RUFF_DRAFT" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={vgf.src} />
-        </div>
-        <h5 className="sub-header">VGF</h5>
-        <p className="body">Media & Operations @ PixelVault</p>
-        <a href="https://twitter.com/VGFreakXBL" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={jr.src} />
-        </div>
-        <h5 className="sub-header">JR</h5>
-        <p className="body">Founder</p>
-        <a href="https://twitter.com/JRArtSpace_NFT" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
             <img src={snax.src} />
         </div>
         <h5 className="sub-header">SNAX</h5>
@@ -360,18 +372,6 @@ const panelists = [
         <h5 className="sub-header">GOLDIE</h5>
         <p className="body">Artist & Founder @ ScaryGarys</p>
         <a href="https://twitter.com/GoldiesNFTart" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={zoe.src} />
-        </div>
-        <h5 className="sub-header">ZOË</h5>
-        <p className="body">Artist</p>
-        <a href="https://twitter.com/ZStekkel" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

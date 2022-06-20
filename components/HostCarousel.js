@@ -13,7 +13,7 @@ import emilyLazar from '../public/speakers/EmilyLazar.jpg';
 import mecyver from '../public/speakers/mecyver.png';
 import motivate from '../public/speakers/motivate.png';
 import sarina from '../public/speakers/SarinaCharugundla.jpg';
-import ladyPhe from '../public/speakers/LadyPhe.jpg';
+import ladyPhe from '../public/speakers/LadyPhe.png';
 
 const handleDragStart = (e) => e.preventDefault();
 
