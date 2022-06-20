@@ -89,7 +89,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             Owning Your Voice in Web3<br/>
                             Host: Jordan<br/>
-                            Speakers: Ishita, (Jen Stein), Valoholic, Nick Smoll
+                            Speakers: Ishita, Jen Stein, Valoholic, Nick Smoll
                         </p>
                         <h5 className="sub-header">4:30PM</h5>
                         <p className="body">
@@ -146,7 +146,7 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">2:30PM</h5>
                         <p className="body">
-                            Where Do We Go From Here: sponsored by WEB3 Pull Up<br/>
+                            Where Do We Go From Here: sponsored by WΞB3 Pull Up<br/>
                             Hosts: Sankofa & Mike B<br/>
                             Speakers: Mike B, Rhyver White, Nessa Rutazamba
                         </p>

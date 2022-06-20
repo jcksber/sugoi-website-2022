@@ -13,6 +13,7 @@ import emilyLazar from '../public/speakers/EmilyLazar.jpg';
 import mecyver from '../public/speakers/mecyver.png';
 import motivate from '../public/speakers/motivate.png';
 import sarina from '../public/speakers/SarinaCharugundla.jpg';
+import ladyPhe from '../public/speakers/LadyPhe.jpg';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -148,6 +149,18 @@ const hosts = [
         </div>
         <h5 className="sub-header">EMILY LAZAR</h5>
         <p className="body">Musician & decentralization maxi</p>
+        <a href="https://twitter.com/EmilyLazar_SM" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={ladyPhe.src} />
+        </div>
+        <h5 className="sub-header">LADY PHE</h5>
+        <p className="body">OG</p>
         <a href="https://twitter.com/EmilyLazar_SM" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />

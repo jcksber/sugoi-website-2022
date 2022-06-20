@@ -18,6 +18,7 @@ import quazr from '../public/artists/QUAZR.jpg';
 import calid from '../public/artists/CalidB.jpg';
 import june from '../public/artists/JuneKim.png';
 import tayo from '../public/artists/TAYODAMNSHOES.jpg';
+import blue from '../public/artists/BlueTheGreat.jpg';
 
 
 const handleDragStart = (e) => e.preventDefault();
@@ -203,6 +204,18 @@ const artists = [
         <h5 className="sub-header">TAYODAMNSHOES</h5>
         <p className="body">Artist</p>
         <a href="https://twitter.com/tayodamnshoes" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={blue.src} />
+        </div>
+        <h5 className="sub-header">BLUE THE GREAT</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/BlueTheGreat" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
