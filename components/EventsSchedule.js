@@ -81,7 +81,7 @@ export default function NavbarMenu() {
                         </p>
                         <h5 className="sub-header">3:30PM</h5>
                         <p className="body">
-                            Built It & They Will Come<br/>
+                            Build It & They Will Come<br/>
                             Host: LOGIK<br/>
                             Speakers: Eddie Gangland, Crypto Jeweler, Gianni Lee & Foodmasku
                         </p>

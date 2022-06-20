@@ -10,5 +10,5 @@ import { useEthers } from '@usedapp/core';
 config.autoAddCss = false;
 
 export default function Bag() {
-
+    
 }

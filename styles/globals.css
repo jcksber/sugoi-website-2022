@@ -450,13 +450,12 @@ ul.body {
 }
 
 #sugoi #hero-menu .hamburger #nav-menu {
-	width: 100%; height: 500px;
+	width: 100%; height: 497px;
 }
 
 #sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
 	width: 2800px;
 }
-
 
 #sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
 	visibility: visible;
@@ -531,26 +530,27 @@ ul.body {
 	100% { visibility: visible; }
 }
 
-#nav-menu ul li {
+#nav-menu ul a {
 	height: 84px;
 	border-bottom: solid 1px #574a10;
 }
-#nav-menu ul li:last-of-type {
+#nav-menu ul a:last-of-type {
 	border: none;
 }
-#nav-menu ul li a {
+#nav-menu ul a {
+	display: block;
 	position: relative;
 	bottom: 7px;
-	margin-left: 25px;
+	padding-left: 25px;
 	font-family: 'Palent-Regular';
 	font-size: 4em;
 	color: #574a10;
 	cursor: pointer;
 }
-#nav-menu ul li:hover {
+#nav-menu ul a:hover {
 	background-color: #ff0;
 }
-#nav-menu ul li a span {
+#nav-menu ul a li span {
 	font-size: 0.4em;
 }
 
@@ -574,19 +574,19 @@ ul.body {
 		padding-top: 14px;
 	}
 	#wow {
-		height: 442px;
+		height: 438px;
 	}
 	#hamburger {
-		height: 442px;
+		height: 438px;
 	}
-	#nav-menu ul li {
+	#nav-menu ul a {
 		height: 74px;
 	}
-	#nav-menu ul li a {
+	#nav-menu ul a {
 		font-size: 3.5em;
 		bottom: 5px;
 	}
-	#nav-menu ul li a span {
+	#nav-menu ul a li span {
 		font-size: 0.3em;
 	}
 }
@@ -607,31 +607,31 @@ ul.body {
 	#sugoi #hero-menu {
 		z-index: 1;
 	}
-	#nav-menu ul li {
+	#nav-menu ul a {
 		height: 42px;
 	}
-	#nav-menu ul li a {
-		font-size: 2.1em;
+	#nav-menu ul a {
+		font-size: 2em;
 		bottom: 6px;
 	}
-	#nav-menu ul li#swag a {
-		font-size: 1.5em;
-		top: 2px; bottom: 0;
+	#nav-menu ul a li#swag {
+		font-size: 0.7em;
+		top: 4px; bottom: 0;
 	}
 	#scroll {
 		padding-top: 0;
 	}
 	#wow {
-		height: 252px;
+		height: 246px;
 	}
 	#hero-bg-img {
-		height: 252px;
+		height: 246px;
 	}
 	#sugoi #hero-menu .hamburger #hero-bg-img-wrapper {
-		height: 252px;
+		height: 246px;
 	}
 	#hamburger {
-		height: 252px;
+		height: 246px;
 	}
 	
 }
@@ -658,6 +658,7 @@ ul.body {
 }
 #bylogik > a#digital-swag {
 	margin-bottom: 0;
+	top: 6px;
 }
 
 #bylogik #logik-flowers {

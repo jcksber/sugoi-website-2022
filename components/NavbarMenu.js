@@ -107,12 +107,12 @@ export default function NavbarMenu() {
                     <div id="nav-menu">
                         <ul>
                             {/* <li className="bg-peach"><a onClick={goHome}>HOME</a></li> */}
-                            <li className="bg-peach"><a onClick={goToGuests}>FEATURED GUESTS</a></li>
-                            <li className="bg-peach"><a onClick={goToEvents}>EVENT SCHEDULE</a></li>
-                            <li className="bg-peach"><a onClick={goToMint}>MINT KEY & RSVP</a></li>
-                            <li id="swag" className="bg-peach"><a onClick={goToSwag}>DIGITAL SWAG BAGS <span>POWERED BY DARKBLOCK.IO</span></a></li>
-                            <li className="bg-peach"><a onClick={goToSponsors}>SPONSORS</a></li>
-                            <li className="bg-peach"><a onClick={goToContact}>CONTACT</a></li>
+                            <a onClick={goToGuests} className="bg-peach"><li>FEATURED GUESTS</li></a>
+                            <a onClick={goToEvents} className="bg-peach"><li>EVENT SCHEDULE</li></a>
+                            <a onClick={goToMint} className="bg-peach"><li>MINT KEY & RSVP</li></a>
+                            <a onClick={goToSwag} className="bg-peach"><li id="swag">DIGITAL SWAG BAGS <span>POWERED BY DARKBLOCK.IO</span></li></a>
+                            <a onClick={goToSponsors} className="bg-peach"><li>SPONSORS</li></a>
+                            <a onClick={goToContact} className="bg-peach"><li>CONTACT</li></a>
                         </ul>
                     </div>
                 </div>
