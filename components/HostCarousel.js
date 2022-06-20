@@ -161,7 +161,7 @@ const hosts = [
         </div>
         <h5 className="sub-header">LADY PHE</h5>
         <p className="body">OG</p>
-        <a href="https://twitter.com/EmilyLazar_SM" className="social">
+        <a href="https://twitter.com/yesladypheOnix" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
