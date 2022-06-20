@@ -41,7 +41,7 @@ const hosts = [
         </div>
         <h5 className="sub-header">MOTIVATE</h5>
         <p className="body">Founder @ URCONDUIT</p>
-        <a href="https://twitter.com/EricSpivak    }}" className="social">
+        <a href="https://twitter.com/EricSpivak" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -78,6 +78,18 @@ const hosts = [
         <h5 className="sub-header">ISRAEL WILSON</h5>
         <p className="body">Artist / Technologist</p>
         <a href="https://twitter.com/israelswilson" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={ladyPhe.src} />
+        </div>
+        <h5 className="sub-header">LADY PHE</h5>
+        <p className="body">OG</p>
+        <a href="https://twitter.com/yesladypheOnix" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -150,18 +162,6 @@ const hosts = [
         <h5 className="sub-header">EMILY LAZAR</h5>
         <p className="body">Musician & decentralization maxi</p>
         <a href="https://twitter.com/EmilyLazar_SM" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={ladyPhe.src} />
-        </div>
-        <h5 className="sub-header">LADY PHE</h5>
-        <p className="body">OG</p>
-        <a href="https://twitter.com/yesladypheOnix" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

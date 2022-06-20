@@ -29,7 +29,6 @@ import morgan from '../public/speakers/MorganSarkissian.jpeg';
 import vgf from '../public/speakers/vgf.png';
 import jr from '../public/speakers/JR.jpeg';
 import snax from '../public/speakers/Snax.jpg';
-import goldie from '../public/speakers/Goldie.jpg';
 import zoe from '../public/speakers/Zoe.JPG';
 
 
@@ -364,19 +363,7 @@ const panelists = [
                 <img src={twGreen.src} />
             </div>
         </a>
-    </div>,
-    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={goldie.src} />
-        </div>
-        <h5 className="sub-header">GOLDIE</h5>
-        <p className="body">Artist & Founder @ ScaryGarys</p>
-        <a href="https://twitter.com/GoldiesNFTart" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
+    </div>
 ];
 
 export default function PanelistCarousel() {

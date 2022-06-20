@@ -10,7 +10,6 @@ import foodmasku from '../public/artists/Foodmasku.png';
 import gianniLee from '../public/artists/GianniLee.jpeg';
 import swopes from '../public/artists/Swopes.JPG';
 import brandonBreaux from '../public/artists/BrandonBreaux.jpg';
-import abieyuwa from '../public/artists/ABIEYUWA.jpg';
 import efdot from '../public/artists/EfDot.jpg';
 import ericBookford from '../public/artists/ERICBOOCKFORD.jpg';
 import kaleb from '../public/artists/Kaleb.jpg';
@@ -19,6 +18,9 @@ import calid from '../public/artists/CalidB.jpg';
 import june from '../public/artists/JuneKim.png';
 import tayo from '../public/artists/TAYODAMNSHOES.jpg';
 import blue from '../public/artists/BlueTheGreat.jpg';
+import goldie from '../public/artists/Goldie.jpg';
+import phen from '../public/artists/Phen.png';
+import victoriaWest from '../public/artists/VictoriaWest.jpg';
 
 
 const handleDragStart = (e) => e.preventDefault();
@@ -55,11 +57,23 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={foodmasku.src} />
+            <img src={blue.src} />
         </div>
-        <h5 className="sub-header">FOODMASKU</h5>
-        <p className="body">Realist</p>
-        <a href="https://twitter.com/foodmasku" className="social">
+        <h5 className="sub-header">BLUE THE GREAT</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/BlueTheGreat" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={brandonBreaux.src} />
+        </div>
+        <h5 className="sub-header">BRANDON BREAUX</h5>
+        <p className="body">Artist</p>
+        <a href="https://twitter.com/theBreaux" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -91,6 +105,18 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
+            <img src={foodmasku.src} />
+        </div>
+        <h5 className="sub-header">FOODMASKU</h5>
+        <p className="body">Realist</p>
+        <a href="https://twitter.com/foodmasku" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
+    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
             <img src={gabe.src} />
         </div>
         <h5 className="sub-header">GABE WEIS</h5>
@@ -103,23 +129,11 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={brandonBreaux.src} />
+            <img src={phen.src} />
         </div>
-        <h5 className="sub-header">BRANDON BREAUX</h5>
+        <h5 className="sub-header">PHEN</h5>
         <p className="body">Artist</p>
-        <a href="https://twitter.com/theBreaux" className="social">
-            <div className="img-container">
-                <img src={twGreen.src} />
-            </div>
-        </a>
-    </div>,
-    <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
-        <div className="img-container">
-            <img src={abieyuwa.src} />
-        </div>
-        <h5 className="sub-header">ABIEYUWA</h5>
-        <p className="body">Artist</p>
-        <a href="https://twitter.com/abieyuwaart" className="social">
+        <a href="https://twitter.com/phenmas" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -137,13 +151,25 @@ const artists = [
             </div>
         </a>
     </div>,
+    <div className="caro-card panelist" onDragStart={handleDragStart} role="presentation">
+        <div className="img-container">
+            <img src={goldie.src} />
+        </div>
+        <h5 className="sub-header">GOLDIE</h5>
+        <p className="body">Artist & Founder @ ScaryGarys</p>
+        <a href="https://twitter.com/GoldiesNFTart" className="social">
+            <div className="img-container">
+                <img src={twGreen.src} />
+            </div>
+        </a>
+    </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
             <img src={ericBookford.src} />
         </div>
         <h5 className="sub-header">ERIC BOOCKFORD</h5>
         <p className="body">Artist</p>
-        <a href="https://twitter.com/" className="social">
+        <a href="https://twitter.com/ericboocNFT" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -155,7 +181,7 @@ const artists = [
         </div>
         <h5 className="sub-header">KALEB</h5>
         <p className="body">Artist</p>
-        <a href="https://twitter.com/" className="social">
+        <a href="https://twitter.com/KalebsCode" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -190,8 +216,8 @@ const artists = [
             <img src={june.src} />
         </div>
         <h5 className="sub-header">JUNE KIM</h5>
-        <p className="body">Artist</p>
-        <a href="https://twitter.com/" className="social">
+        <p className="body">Sculptor</p>
+        <a href="https://twitter.com/june_redthread" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>
@@ -211,11 +237,11 @@ const artists = [
     </div>,
     <div className="caro-card artist" onDragStart={handleDragStart} role="presentation">
         <div className="img-container">
-            <img src={blue.src} />
+            <img src={victoriaWest.src} />
         </div>
-        <h5 className="sub-header">BLUE THE GREAT</h5>
-        <p className="body">Artist</p>
-        <a href="https://twitter.com/BlueTheGreat" className="social">
+        <h5 className="sub-header">VICTORIA WEST</h5>
+        <p className="body">Photographer</p>
+        <a href="https://twitter.com/tayodamnshoes" className="social">
             <div className="img-container">
                 <img src={twGreen.src} />
             </div>

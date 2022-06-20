@@ -11,6 +11,8 @@ import sunriseLogo from '../public/sponsors/Sunrise.png';
 import blueLogo from '../public/sponsors/Blue.png';
 import crwnmagLogo from '../public/sponsors/Crwnmag.png';
 import sabetLogo from '../public/sponsors/Sabet.png';
+import gianniLeeLogo from '../public/sponsors/gianni_lee_site.png';
+import themodeLogo from '../public/sponsors/themode_logo.png';
 
 export default function Sponsors() {
     return (
@@ -35,8 +37,8 @@ export default function Sponsors() {
                         </div>
                     </a>
                 </div>
-                <div className="col-100">
-                    <div className="img-container">
+                <div id="americana" className="col-100">
+                    <div id="logo-container" className="img-container">
                         <a href="https://americana.io/">
                             <img src={americana.src} />
                         </a>
@@ -119,17 +121,17 @@ export default function Sponsors() {
                         </a>
                     </div>
                 </div>
-                {/* <div className="col-25">
+                <div className="col-25">
                     <div className="img-container">
-                        <img src={mrAugmentedLogo.src} />
+                        <img src={gianniLeeLogo.src} />
                     </div>
                 </div>
                 <div className="col-25">
                     <div className="img-container">
-                        <img src={blueLogo.src} />
+                        <img src={themodeLogo.src} />
                     </div>
                 </div>
-                <div className="col-25">
+                {/*<div className="col-25">
                     <div className="img-container">
                         <img src={crwnmagLogo.src} />
                     </div>

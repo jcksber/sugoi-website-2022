@@ -1007,7 +1007,7 @@ input:focus-visible {
 
 #tickets #digital-swag {
 	font-size: 0.9em;
-	padding-top: 15px;
+	padding-top: 8px;
 }
 
 #tickets .claim-field {
@@ -1073,6 +1073,9 @@ input:focus-visible {
 	#tickets button.long-btn#mint {
 		padding-top: 3px;
 	}
+	#tickets #digital-swag {
+		padding-top: 15px;
+	}
 }
 
 /*phones (vertical)*/
@@ -1133,6 +1136,13 @@ input:focus-visible {
 	text-align: center;
 }
 
+#sponsors #americana {
+	margin-top: 50px;
+}
+#sponsors #americana p.body {
+	margin-top: 40px;
+}
+
 #sponsors .row .col-25 .img-container,
 #sponsors .row .col-100 .img-container {
 	width: 120px; height: 120px;
@@ -1140,19 +1150,21 @@ input:focus-visible {
 }
 
 #sponsors .row .col-100 .img-container {
-	width: 150px; height: auto;
+	width: 340px; height: auto;
+}
+#sponsors #americana #logo-container {
+	width: 280px;
 }
 #sponsors .row .col-100 > p {
-	line-height: 20px;
+	position: relative;
 	width: 50%;
 	margin: 0 auto;
-	position: relative;
-	top: -30px;
+	line-height: 20px;
 }
 
 #sponsors .row .col-100 > a {
 	position: relative;
-	top: 5px;
+	top: 16px;
 }
 #sponsors .row .col-100 > a:hover {
 	opacity: 0.9;

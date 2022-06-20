@@ -235,7 +235,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             Mindfulness in the Metaverse<br/>
                             Host: Lady Phe<br/>
-                            Speakers: Satoshigoat, Lemmy
+                            Speakers: Israel Wilson, Satoshigoat, Lemmy
                         </p>
 
                         <h3 className="event-header">PERFORMANCES</h3>
