@@ -55,7 +55,9 @@ export default function Home() {
     
 
     useEffect(() => {
-        // on-render we want to trigger the "welcome animation"
+        if (!window.ethereum) {
+            toast("Download Metamask!");
+        }
         if (account) {
 			setKeyCount(getNumKeys());
             setPlugCount(getNumPlugs());
