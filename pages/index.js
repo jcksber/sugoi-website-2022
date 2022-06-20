@@ -297,31 +297,37 @@ export default function Home() {
                 </div>
                 <div className="vh">
                     <div id="frens" className="ticket-container text-olive-green">
-                        <div className="img-container">
-                            <img src={frensKey.src}/>
-                        </div>
-                        <h5 className="sub-header">FRENS</h5>
-                        <p className="body">
-                            General Admission
-                        </p>
+                        <a href="https://opensea.io/collection/sugoi-nft-nyc-2022">
+                            <div className="img-container">
+                                <img src={frensKey.src}/>
+                            </div>
+                            <h5 className="sub-header">FRENS</h5>
+                            <p className="body">
+                                General Admission
+                            </p>
+                        </a>
                     </div>
                     <div id="plug" className="ticket-container text-olive-green">
-                        <div className="img-container">
-                            <img src={plugKey.src}/>
-                        </div>
-                        <h5 className="sub-header">PLUGS</h5>
-                        <p className="body">
-                            Plug NFT Holders Only
-                        </p>
+                        <a href="https://opensea.io/collection/sugoi-nft-nyc-2022">
+                            <div className="img-container">
+                                <img src={plugKey.src}/>
+                            </div>
+                            <h5 className="sub-header">PLUGS</h5>
+                            <p className="body">
+                                Plug NFT Holders Only
+                            </p>
+                        </a>
                     </div>
                     <div id="hustler" className="ticket-container text-olive-green">
-                        <div className="img-container">
-                            <img src={hustlerKey.src}/>
-                        </div>
-                        <h5 className="sub-header">HUSTLERS</h5>
-                        <p className="body">
-                            Plug (Hustler) NFT Holders Only
-                        </p>
+                        <a href="https://opensea.io/collection/sugoi-nft-nyc-2022">
+                            <div className="img-container">
+                                <img src={hustlerKey.src}/>
+                            </div>
+                            <h5 className="sub-header">HUSTLERS</h5>
+                            <p className="body">
+                                Plug (Hustler) NFT Holders Only
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
