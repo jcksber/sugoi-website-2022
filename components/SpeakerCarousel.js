@@ -17,7 +17,7 @@ import satoshigoat from '../public/speakers/satoshigoat.jpeg';
 import alexAlpert from '../public/speakers/AlexAlpert.jpg';
 import benMayorWhite from '../public/speakers/BenMayorWhite.jpg';
 import johnWolpert from '../public/speakers/JohnWolpert.jpg';
-import takai from '../public/speakers/takaitheartist.jpg';
+import takai from '../public/speakers/takaitheartist.jpeg';
 import warhodl from '../public/speakers/Warhodl.png';
 import mikeMongo from '../public/speakers/MikeMongo.jpg';
 import jonahBlake from '../public/speakers/JonahBlake.jpg';
