@@ -13,6 +13,7 @@ import crwnmagLogo from '../public/sponsors/Crwnmag.png';
 import sabetLogo from '../public/sponsors/Sabet.png';
 import gianniLeeLogo from '../public/sponsors/gianni_lee_site.png';
 import themodeLogo from '../public/sponsors/themode_logo.png';
+import newfriendtech from '../public/sponsors/newfriendtech.png';
 
 export default function Sponsors() {
     return (
@@ -107,9 +108,7 @@ export default function Sponsors() {
                 </div>
                 <div className="col-25">
                     <div className="img-container">
-                        <a href="https://www.crwnmag.com/">
-                            <img src={crwnmagLogo.src} />
-                        </a>
+                        <img src={newfriendtech.src} />
                     </div>
                 </div>
             </div>
@@ -128,14 +127,16 @@ export default function Sponsors() {
                 </div>
                 <div className="col-25">
                     <div className="img-container">
+                        <a href="https://www.crwnmag.com/">
+                            <img src={crwnmagLogo.src} />
+                        </a>
+                    </div>
+                </div>
+                <div className="col-25">
+                    <div className="img-container">
                         <img src={themodeLogo.src} />
                     </div>
                 </div>
-                {/*<div className="col-25">
-                    <div className="img-container">
-                        <img src={crwnmagLogo.src} />
-                    </div>
-                </div> */}
             </div>
         </div>
     )
