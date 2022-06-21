@@ -62,7 +62,6 @@ export default function NavbarMenu() {
                 <div className="hero-banner">
                     <div className="img-container">
                         <img src={sugoiBanner.src} />
-            
                     </div>
                 </div>
                 <div id="scroll">

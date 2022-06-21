@@ -51,6 +51,7 @@ export default function SecureTheBag() {
                 <h1 className="header text-olive-green">
                     DIGITAL SWAG BAG
                 </h1>
+
                 {/* not connected */}
                 {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT TO GAIN ACCESS</button>}
 
@@ -66,8 +67,11 @@ export default function SecureTheBag() {
 
                 {/* connected and has sugoi key */}
                 {account && keyBalance > 0 &&
+                // <div id="vault">
+                //     <iframe src="https://staging.darkblock.io/platform/eth/wl/0x8088f4612eaDB9d60D5C8Abf4a9D0FDfC3dF2f1E/0" title="darkblock"></iframe>
+                // </div>
                 <div id="vault">
-                    <iframe src="https://staging.darkblock.io/platform/eth/wl/0x8088f4612eaDB9d60D5C8Abf4a9D0FDfC3dF2f1E/0" title="darkblock"></iframe>
+                    <iframe src="https://staging.darkblock.io/platform/eth/wl/0x495f947276749ce646f68ac8c248420045cb7b5e/1"></iframe>
                 </div>
                 }
             </div>
