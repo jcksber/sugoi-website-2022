@@ -57,7 +57,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             Degens<br/>
                             Host: Trish<br/>
-                            Speakers: JaketheDegen, Morgan, Storm, Profits
+                            Speakers: JaketheDegen, Morgan, Profits
                         </p>
                         <h5 className="sub-header">1PM</h5>
                         <p className="body">

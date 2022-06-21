@@ -620,6 +620,7 @@ ul.body {
 	}
 	#nav-menu ul a li#swag {
 		font-size: 0.7em;
+		position: relative;
 		top: 4px; bottom: 0;
 	}
 	#scroll {
@@ -637,7 +638,9 @@ ul.body {
 	#hamburger {
 		height: 246px;
 	}
-	
+	#sugoi #nav-btn {
+		padding-top: 7px;
+	}
 }
 
 /**********************************************************
@@ -1301,6 +1304,40 @@ input:focus-visible {
 	margin-bottom: 30px;
 }
 
+/* VAULT ****/
+
+#vault {
+	width: 650px;
+	height: 650px;
+	margin: 0 auto;
+}
+
+#vault iframe {
+	width: 100%; height: 100%;
+	border: 1px solid #574a10;
+}
+
+#swagbox {
+	text-align: center;
+}
+#swagbox h1.header {
+	font-size: 5em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#swagbox h5.sub-header {
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 512px) {
+	#vault {
+		width: 100%;
+	}
+	#swagbox h1.header {
+		line-height: 70px;
+	}
+}
 
 
 

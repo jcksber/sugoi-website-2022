@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Link from 'next/link';
 import menuOpen from '../public/menu-open-01.png';
 import menuClose from '../public/img-assets-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
@@ -107,12 +108,12 @@ export default function NavbarMenu() {
                     <div id="nav-menu">
                         <ul>
                             {/* <li className="bg-peach"><a onClick={goHome}>HOME</a></li> */}
-                            <a onClick={goToGuests} className="bg-peach"><li>FEATURED GUESTS</li></a>
-                            <a onClick={goToEvents} className="bg-peach"><li>EVENT SCHEDULE</li></a>
-                            <a onClick={goToMint} className="bg-peach"><li>MINT KEY & RSVP</li></a>
-                            <a onClick={goToSwag} className="bg-peach"><li id="swag">DIGITAL SWAG BAGS <span>POWERED BY DARKBLOCK.IO</span></li></a>
-                            <a onClick={goToSponsors} className="bg-peach"><li>SPONSORS</li></a>
-                            <a onClick={goToContact} className="bg-peach"><li>CONTACT</li></a>
+                            <a href="https://sugoi.global/#artists" className="bg-peach"><li>FEATURED GUESTS</li></a>
+                            <a href="https://sugoi.global#events" className="bg-peach"><li>EVENT SCHEDULE</li></a>
+                            <a href="https://sugoi.global#tickets" className="bg-peach"><li>MINT KEY & RSVP</li></a>
+                            <a href="https://sugoi.global/securethebag" className="bg-peach"><li id="swag">DIGITAL SWAG BAGS<span>POWERED BY DARKBLOCK.IO</span></li></a>
+                            <a href="https://sugoi.global#sponsors" className="bg-peach"><li>SPONSORS</li></a>
+                            <a href="https://sugoi.global#contact" className="bg-peach"><li>CONTACT</li></a>
                         </ul>
                     </div>
                 </div>
