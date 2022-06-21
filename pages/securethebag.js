@@ -2,6 +2,10 @@ import sugoiKeyAbi from '../utils/sugoi_key_aboi.json';
 
 import NavbarMenu from '../components/NavbarMenu';
 
+import sugoiBanner from '../public/sugoi_banner.jpg';
+import footerSugoi from '../public/sugoi_footer-01.png';
+import footerLogik from '../public/logik_peach-01.png';
+
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
 import { useEthers } from '@usedapp/core';
@@ -37,7 +41,7 @@ export default function SecureTheBag() {
 
     const buildIframeSrc = () => {
       if (nftToken) {
-        const src = `https://app.darkblock.io/platform/eth/embed/nft/0x8088f4612eadb9d60d5c8abf4a9d0fdfc3df2f1e/${nftToken}`;
+        const src = `https://app.darkblock.io/platform/eth/embed/nft/0x8088f4612eaDB9d60D5C8Abf4a9D0FDfC3dF2f1E/${nftToken}`;
         setIframeSrc(src);
       } else {
         setIframeSrc(null)
@@ -83,14 +87,14 @@ export default function SecureTheBag() {
                 {account && keyBalance > 0 &&
                   <>
                     <div id="vault" className="w-full">
-                      <h2 className="text-xl font-bold mb-2">As an owner of a key, you have access to our Digital Swag
+                      <h2 className="text-xl font-bold mb-2 text-peach">As an owner of a key, you have access to our Digital Swag
                         Bag (provided by Darkblock.io).</h2>
-                      <p className="mb-4">The Swag Bag contents can only be unlocked by the owner of the key.</p>
+                      <p className="mb-4 text-dark-grey">The Swag Bag contents can only be unlocked by the owner of the key.</p>
                       <input
                         className="mb-4 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="tokenId"
                         type="text"
-                        placeholder="Input NFT ID"
+                        placeholder="Sugoi Key ID"
                         onChange={(e) => setNftToken(e.target.value)}
                       />
                       <button
@@ -109,6 +113,25 @@ export default function SecureTheBag() {
                   </>
 
                 }
+            </div>
+            <div id="footer" className="section bg-olive-green">
+                <div className="hero-banner">
+                    <div className="img-container">
+                        <img src={sugoiBanner.src} />
+                    </div>
+                </div>
+                <div id="sugoi-logo" className="img-container">
+                    <img src={footerSugoi.src} />
+                </div>
+                <div id="logik-logo" className="img-container">
+                    <img src={footerLogik.src} />
+                </div>
+                <p className="text-peach">
+                    Sugoi connects Web3 and Big Tech to the Culture<br/>
+                    (C) 2022 LOGIK Studios. All rights reserved.<br/>
+                    Brand architecture by <a href="https://twitter.com/ennischung" className="text-orange">@ennischung</a><br/>
+                    Frontend & NFT by <a href="https://twitter.com/satoshigoat" className="text-orange">@satoshigoat</a>
+                </p>
             </div>
         </div>
     );
