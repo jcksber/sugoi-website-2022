@@ -73,7 +73,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             The Keys to Tokengated Experiences<br/>
                             Host: LOGIK<br/>
-                            Speakers: Darkblock.io Jeremy Sahlman & Chris Seline
+                            Speakers: Darkblock.io Darri Ulfsson, Raggi, Chris Seline
                         </p>
                         <h5 className="sub-header">3PM</h5>
                         <p className="body">
