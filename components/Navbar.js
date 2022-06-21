@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 import menuOpen from '../public/menu-open-01.png';
 import menuClose from '../public/img-assets-01.png';
 import sugoiBanner from '../public/sugoi_banner.jpg';
-import wow from '../public/wow-01.png';
-import takashiBg from '../public/placeholder2.jpg';
 
 export default function NavbarMenu() {
     
@@ -56,16 +54,15 @@ export default function NavbarMenu() {
                     </div>
                 </button>
             </div>
+            <div className="hero-banner">
+                <div className="img-container">
+                    <img src={sugoiBanner.src} />
+                </div>
+            </div>
 
             {/* landing / hero section */}
             <div id="hero-menu">
-                <div className="hero-banner">
-                    <div className="img-container">
-                        <img src={sugoiBanner.src} />
-            
-                    </div>
-                </div>
-                <div id="scroll">
+                <
                 <div id="hamburger" className="hamburger">
                     <div id="hero-bg-img-wrapper">
                  
@@ -83,12 +80,6 @@ export default function NavbarMenu() {
                             <a href="https://sugoi.global#contact" className="bg-peach"><li>CONTACT</li></a>
                         </ul>
                     </div>
-                </div>
-                <div className="hero-banner">
-                    <div className="img-container">
-                        <img src={sugoiBanner.src} />
-                    </div>
-                </div>
                 </div>
             </div>
         </div>

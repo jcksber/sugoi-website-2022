@@ -715,11 +715,6 @@ input:focus-visible {
 	font-size: 0.6em;;
 }
 
-#bylogik #digital-swag {
-	font-size: 1em;
-	padding-top: 7px;
-}
-
 /*iPad*/
 @media screen and (max-width: 1000px) {
 	#bylogik {
@@ -736,10 +731,10 @@ input:focus-visible {
 	#bylogik .claim-field {
 		width: 32%; height: 55px;
 	}
-	#bylogik > a#digital-swag {
+	/* #bylogik > a#digital-swag {
 		top: 0;
 		padding-top: 15px;
-	}
+	} */
 }
 
 /*phones (vertical)*/
@@ -1008,10 +1003,10 @@ input:focus-visible {
 	margin-top: 5px;
 }
 
-#tickets #digital-swag {
+/* #tickets #digital-swag {
 	font-size: 0.9em;
 	padding-top: 8px;
-}
+} */
 
 #tickets .claim-field {
 	display: inline-block;
@@ -1076,9 +1071,9 @@ input:focus-visible {
 	#tickets button.long-btn#mint {
 		padding-top: 3px;
 	}
-	#tickets #digital-swag {
+	/* #tickets #digital-swag {
 		padding-top: 15px;
-	}
+	} */
 }
 
 /*phones (vertical)*/
