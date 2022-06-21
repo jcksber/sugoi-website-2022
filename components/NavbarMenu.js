@@ -69,7 +69,7 @@ export default function NavbarMenu() {
                     <div id="hero-bg-img-wrapper">
                  
                         <img id="hero-bg-img" src={takashiBg.src} />
-                        <img id="wow" class="absolute w-full" src={wow.src} />
+                        <img id="wow" className="absolute w-full" src={wow.src} />
                     </div>
                     <div id="nav-menu">
                         <ul>
