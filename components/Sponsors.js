@@ -146,8 +146,8 @@ export default function Sponsors() {
             <div className="row">
                 <div className="col-25">
                     <div className="img-container">
-                        <a href="https://www.crwnmag.com/">
-                            <img src={crwnmagLogo.src} />
+                        <a href="https://www.iq9x.com/">
+                            <img src={iq9x.src} />
                         </a>
                     </div>
                 </div>

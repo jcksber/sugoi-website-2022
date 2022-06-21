@@ -1120,7 +1120,7 @@ input:focus-visible {
  **********************************************************/
 
 #sponsors {
-	height: 1300px;
+	height: 1340px;
 	background-color: #d0cbbf;
 	border: solid 1px #494637;
 }
@@ -1212,7 +1212,7 @@ input:focus-visible {
 /*phones (vertical)*/
 @media screen and (max-width: 512px) {
 	#sponsors {
-		height: 1600px;
+		height: 1840px;
 	}
 	#sponsors h1.header {
 		text-align: center;
