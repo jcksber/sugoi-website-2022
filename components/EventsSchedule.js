@@ -191,7 +191,7 @@ export default function NavbarMenu() {
                         <p className="body">
                             Photography / Film / Fashion<br/>
                             Host: Victoria Lover<br/>
-                            Speakers: Zoe Stekkle, Anita Sadowska, Julie Pacino
+                            Speakers: Zoe Stekkle, Anita Sadowska, Julie Pacino, Takaitheartist
                         </p>
                         <h5 className="sub-header">12:30PM</h5>
                         <p className="body">
