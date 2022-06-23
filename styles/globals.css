@@ -1302,18 +1302,23 @@ input:focus-visible {
 /* VAULT ****/
 
 #vault {
-	width: 100%;
-	height: 850px;
+	width: 100%; height: 850px;
 	margin: 0 auto;
 }
 
 #vault iframe {
-	width: 100%; height: 100%;
+	width: 100%; height: 750px;
 	border: 1px solid #574a10;
+}
+
+#swag-bag-img {
+	height: 300px; width: 300px;
+	margin: 15px auto;
 }
 
 #swagbox {
 	text-align: center;
+	margin-top: 20px;
 }
 #swagbox h1.header {
 	font-size: 5em;

@@ -5,6 +5,7 @@ import NavbarMenu from '../components/NavbarMenu';
 import sugoiBanner from '../public/sugoi_banner.jpg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
+import swagBagImg from '../public/swag-bag-img.png';
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect } from 'react'
@@ -49,23 +50,26 @@ export default function SecureTheBag() {
     }
 
     const getKeyBalance = async () => {
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const signer = provider.getSigner();
-      const keyContract = await new ethers.Contract(
-        KEY_ADDRESS,
-        KEY_ABI,
-        signer
-      );
-      const numKeys = await keyContract.balanceOf(account);
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        const keyContract = await new ethers.Contract(
+            KEY_ADDRESS,
+            KEY_ABI,
+            signer
+        );
+        const numKeys = await keyContract.balanceOf(account);
         setKeyBalance(numKeys);
 
-		  return parseInt(numKeys.toHexString(), 16);
+		return parseInt(numKeys.toHexString(), 16);
     }
 
     return (
         <div id="sugoi" className="max-w-full">
             <NavbarMenu/>
             <div id="swagbox" className="section">
+                <div id="swag-bag-img" className="img-container">
+                    <img src={swagBagImg.src} />
+                </div>
                 <h1 className="header text-olive-green">
                     DIGITAL SWAG BAG
                 </h1>
