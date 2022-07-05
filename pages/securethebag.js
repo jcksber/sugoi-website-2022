@@ -1,19 +1,19 @@
+import { useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
 import sugoiKeyAbi from '../utils/sugoi_key_aboi.json';
-
 import NavbarMenu from '../components/NavbarMenu';
-
 import sugoiBanner from '../public/sugoi_banner.jpg';
 import footerSugoi from '../public/sugoi_footer-01.png';
 import footerLogik from '../public/logik_peach-01.png';
 import swagBagImg from '../public/swag-bag-img.png';
-
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { useState, useEffect } from 'react'
 import { useEthers } from '@usedapp/core';
 import { ethers, utils } from 'ethers';
-
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Web3 from 'web3';
+
+const EthereumDarkblockWidget = dynamic(() => import('@darkblock.io/eth-widget'), { ssr: false })
 
 config.autoAddCss = false;
 
@@ -31,21 +31,37 @@ export default function SecureTheBag() {
 
     /* NFT TOKEN */
     const [nftToken, setNftToken] = useState('');
-    const [iframeSrc, setIframeSrc] = useState(null);
+    const [w3, setW3] = useState(null);
+    const [token, setToken] = useState(null);
+
+    async function loadWeb3Adapter() {
+        if (window.ethereum) {
+            try {
+                let web3 = new Web3(window.ethereum);
+                setW3(web3);
+
+            } catch (error) {
+                setW3(null);
+            }
+        }
+    }
+
+    useEffect(async () => {
+        await loadWeb3Adapter();
+    }, []);
 
     useEffect(() => {
         if (!window.ethereum)
             toast("You need a blockchain wallet!");
         if (account)
             getKeyBalance();
-    });
+    }, []);
 
     const buildIframeSrc = () => {
       if (nftToken) {
-        const src = `https://app.darkblock.io/platform/eth/embed/nft/0x8088f4612eaDB9d60D5C8Abf4a9D0FDfC3dF2f1E/${nftToken}`;
-        setIframeSrc(src);
+          setToken(nftToken);
       } else {
-        setIframeSrc(null)
+          setToken(null);
       }
     }
 
@@ -61,6 +77,17 @@ export default function SecureTheBag() {
         setKeyBalance(numKeys);
 
 		return parseInt(numKeys.toHexString(), 16);
+    }
+
+    const dbConfig = {
+        customCssClass: '', // pass here a class name you plan to use
+        debug: false, // debug flag to console.log some variables
+        imgViewer: {
+            // image viewer control parameters
+            showRotationControl: true,
+            autoHideControls: true,
+            controlsFadeDelay: true,
+        },
     }
 
     return (
@@ -88,8 +115,7 @@ export default function SecureTheBag() {
                 }
 
                 {/* connected and has sugoi key */}
-                {account && keyBalance > 0 &&
-                  <>
+                {w3 && account &&
                     <div id="vault" className="w-full">
                       <h2 className="text-xl font-bold mb-2 text-peach">As an owner of a key, you have access to our Digital Swag
                         Bag (provided by Darkblock.io).</h2>
@@ -108,14 +134,10 @@ export default function SecureTheBag() {
                       >
                         Grab Your Swag
                       </button>
-
-                      <iframe
-                        className={iframeSrc ? "" : "hidden"}
-                        src={iframeSrc}
-                      ></iframe>
+                        {w3 && token && (
+                          <EthereumDarkblockWidget contractAddress={KEY_ADDRESS} tokenId={token} w3={w3} cb={() => {}} config={dbConfig} />
+                        )}
                     </div>
-                  </>
-
                 }
             </div>
             <div id="footer" className="section bg-olive-green">
