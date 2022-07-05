@@ -57,12 +57,16 @@ export default function SecureTheBag() {
             getKeyBalance();
     }, []);
 
-    const buildIframeSrc = () => {
-      if (nftToken) {
-          setToken(nftToken);
-      } else {
+    const buildDBContent = () => {
+        setToken(null);
+        if (nftToken) {
+          setTimeout(() => {
+              setToken(nftToken);
+          }, 500);
+
+        } else {
           setToken(null);
-      }
+        }
     }
 
     const getKeyBalance = async () => {
@@ -117,24 +121,25 @@ export default function SecureTheBag() {
                 {/* connected and has sugoi key */}
                 {w3 && account &&
                     <div id="vault" className="w-full">
-                      <h2 className="text-xl font-bold mb-2 text-peach">As an owner of a key, you have access to our Digital Swag
-                        Bag (provided by Darkblock.io).</h2>
-                      <p className="mb-4 text-dark-grey">The Swag Bag contents can only be unlocked by the owner of the key.</p>
-                      <input
-                        className="mb-4 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="tokenId"
-                        type="text"
-                        placeholder="Sugoi Key ID"
-                        onChange={(e) => setNftToken(e.target.value)}
-                      />
-                      <button
-                        className="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="button"
-                        onClick={() => buildIframeSrc()}
-                      >
-                        Grab Your Swag
-                      </button>
-                        {w3 && token && (
+                        <h2 className="text-xl font-bold mb-2 text-peach">As an owner of a key, you have access to our Digital Swag
+                            Bag (provided by Darkblock.io).
+                        </h2>
+                        <p className="mb-4 text-dark-grey">The Swag Bag contents can only be unlocked by the owner of the key.</p>
+                        <input
+                            className="mb-4 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="tokenId"
+                            type="text"
+                            placeholder="Sugoi Key ID"
+                            onChange={(e) => setNftToken(e.target.value)}
+                        />
+                        <button
+                            className="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="button"
+                            onClick={() => buildDBContent()}
+                        >
+                            Grab Your Swag
+                        </button>
+                        {w3 && KEY_ADDRESS && token && (
                           <EthereumDarkblockWidget contractAddress={KEY_ADDRESS} tokenId={token} w3={w3} cb={() => {}} config={dbConfig} />
                         )}
                     </div>
