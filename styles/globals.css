@@ -1325,6 +1325,12 @@ input:focus-visible {
 	margin-bottom: 5px;
 }
 
+#pics iframe {
+	width: 95%;
+	margin: 20px auto;
+	height: 1000px;
+}
+
 @media screen and (max-width: 512px) {
 	#vault {
 		width: 100%;

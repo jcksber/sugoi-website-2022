@@ -145,6 +145,9 @@ export default function SecureTheBag() {
                     </div>
                 }
             </div>
+            <div id="pics">
+                <iframe src="https://logik.pixieset.com/sugoinftnyc2022/" title="SUGOI 2022 photo gallery"></iframe>
+            </div>
             <div id="footer" className="section bg-olive-green">
                 <div className="hero-banner">
                     <div className="img-container">
