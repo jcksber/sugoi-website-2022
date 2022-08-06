@@ -1331,6 +1331,14 @@ input:focus-visible {
 	height: 1000px;
 }
 
+#pics h1 {
+	font-size: 4em;
+	line-height: 59px;
+	text-align: center;
+	margin: 10px auto;
+	margin-bottom: 80px;
+}
+
 @media screen and (max-width: 512px) {
 	#vault {
 		width: 100%;
