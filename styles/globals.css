@@ -1305,7 +1305,7 @@ input:focus-visible {
 	margin-top: 40px;
 }
 #media-landing .img-container {
-	height: 500px; width: auto;
+	height: 600px; width: 95%;
 	margin: 50px auto;
 }
 #media-landing .img-container iframe {

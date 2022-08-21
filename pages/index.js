@@ -238,7 +238,7 @@ export default function Home() {
                 }
                 {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT TO GAIN ACCESS</button>}
                 <a href="https://nftaccess.app/event/sugoi-nft-nyc-2022" id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
-                <a href="https://sugoi.global/securethebag" id="digital-swag" className="long-btn bg-yellow">DIGITAL SWAG BAG</a>
+                <a href="https://sugoi.global/nftnyc2022recap" id="digital-swag" className="long-btn bg-yellow">NYC 2022 RECAP</a>
                 <p id="disclaimer">*RSVP DOES NOT GUARANTEE ENTRY</p>
                 <div id="logik-flowers" className="img-container">
                     <img src={logikFlowers.src} />
@@ -295,7 +295,7 @@ export default function Home() {
                     }
                     {!account && <button id="connect" onClick={() => activateBrowserWallet()} className="long-btn bg-yellow">CONNECT TO GAIN ACCESS</button>}
                     <a href="https://nftaccess.app/event/sugoi-nft-nyc-2022" id="rsvp" className="long-btn bg-yellow">HAVE A KEY? RSVP</a>
-                    <a href="https://sugoi.global/securethebag" id="digital-swag" className="long-btn bg-yellow">DIGITAL SWAG BAG (COMING SOON)</a>
+                    <a href="https://sugoi.global/nftnyc2022recap" id="digital-swag" className="long-btn bg-yellow">NFT NYC 2022 RECAP</a>
                 </div>
                 <div className="vh">
                     <div id="frens" className="ticket-container text-olive-green">

@@ -9,15 +9,15 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 
 config.autoAddCss = false;
 
-export default function SecureTheBag() {
+export default function Media() {
 
     return (
         <div id="sugoi" className="max-w-full">
             <NavbarMenu/>
             <h1 id="recap" className="header text-olive-green">
-                SUGOI 2022 RECAP!
+                NFT NYC 2022 RECAP!
             </h1>
-            <div id="media-landing" className="section">
+            <div id="media-landing">
                 <div className="img-container">
                     <iframe src="https://www.youtube.com/embed/cUCk1NA8uY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
