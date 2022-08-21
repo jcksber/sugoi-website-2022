@@ -551,9 +551,9 @@ ul.body {
 #nav-menu ul a:hover {
 	background-color: #ff0;
 }
-#nav-menu ul a li span {
+/* #nav-menu ul a li span {
 	font-size: 0.4em;
-}
+} */
 
 #sugoi #hero-menu .closed {
 	display: block;
@@ -1299,30 +1299,18 @@ input:focus-visible {
 	margin-bottom: 30px;
 }
 
-/* VAULT ****/
+/* MEDIA ****/
 
-#vault {
-	width: 100%;
+#media-landing {
+	margin-top: 40px;
+}
+#media-landing .img-container {
+	height: 500px; width: auto;
+	margin: 50px auto;
+}
+#media-landing .img-container iframe {
+	width: 100%; height: 100%;
 	margin: 0 auto;
-}
-
-#swag-bag-img {
-	height: 300px; width: 300px;
-	margin: 15px auto;
-}
-
-#swagbox {
-	text-align: center;
-	margin-top: 20px;
-}
-#swagbox h1.header {
-	font-size: 5em;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-#swagbox h5.sub-header {
-	margin-bottom: 5px;
 }
 
 #pics iframe {
@@ -1331,21 +1319,12 @@ input:focus-visible {
 	height: 1000px;
 }
 
-#pics h1 {
+h1#recap {
 	font-size: 4em;
 	line-height: 59px;
 	text-align: center;
 	margin: 10px auto;
-	margin-bottom: 80px;
-}
-
-@media screen and (max-width: 512px) {
-	#vault {
-		width: 100%;
-	}
-	#swagbox h1.header {
-		line-height: 70px;
-	}
+	margin-top: 80px;
 }
 
 

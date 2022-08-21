@@ -77,7 +77,7 @@ export default function NavbarMenu() {
                             <a href="https://sugoi.global/#artists" className="bg-peach"><li>FEATURED GUESTS</li></a>
                             <a href="https://sugoi.global#events" className="bg-peach"><li>EVENT SCHEDULE</li></a>
                             <a href="https://sugoi.global#tickets" className="bg-peach"><li>MINT KEY & RSVP</li></a>
-                            <a href="https://sugoi.global/securethebag" className="bg-peach"><li id="swag">DIGITAL SWAG BAGS<span>POWERED BY DARKBLOCK.IO</span></li></a>
+                            <a href="https://sugoi.global/securethebag" className="bg-peach"><li id="swag">MEDIA</li></a>
                             <a href="https://sugoi.global#sponsors" className="bg-peach"><li>SPONSORS</li></a>
                             <a href="https://sugoi.global#contact" className="bg-peach"><li>CONTACT</li></a>
                         </ul>
