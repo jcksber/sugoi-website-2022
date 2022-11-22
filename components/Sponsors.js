@@ -26,14 +26,14 @@ export default function Sponsors() {
             <div className="row">
                 <div className="col-100">
                     <div className="img-container">
-                        <a href="https://treetrunk.io/">
+                        <a href="#">
                             <img src={treetrunk.src} />
                         </a>
                     </div>
                     <p className="body">
                         The first multi-party royalty-bearing NFT.  The TreeTrunk approach was conceived by ConsenSys Mesh group executive John Wolpert. 
                     </p>
-                    <a href="https://twitter.com/TreeTrunkNFT" className="social">
+                    <a href="#" className="social">
                         <div className="img-container">
                             <img src={twGrey.src} />
                         </div>
